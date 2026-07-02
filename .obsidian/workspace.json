@@ -1,0 +1,223 @@
+{
+  "main": {
+    "id": "31e60e8583c1d95f",
+    "type": "split",
+    "children": [
+      {
+        "id": "81fab21737971cad",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a878959b2b0296cc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/00_Project/DOC-000 FisioOS HQ.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DOC-000 FisioOS HQ"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "67a56cf3e9a65284",
+    "type": "split",
+    "children": [
+      {
+        "id": "9d3eacde3ce6cac7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "168ec838f1b023e8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "4540217aeeb45805",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "bddf956e3c15ed9e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "58c622fa207b8014",
+    "type": "split",
+    "children": [
+      {
+        "id": "2d56d18dcf3da102",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a007d886af63b91b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/00_Project/DOC-000 FisioOS HQ.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de DOC-000 FisioOS HQ"
+            }
+          },
+          {
+            "id": "0a3e6a388f1ed077",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/00_Project/DOC-000 FisioOS HQ.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de DOC-000 FisioOS HQ"
+            }
+          },
+          {
+            "id": "503344f3be4160d0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "cb211f8d47d64fd5",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas las propiedades"
+            }
+          },
+          {
+            "id": "7665abc878204204",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docs/00_Project/DOC-000 FisioOS HQ.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de DOC-000 FisioOS HQ"
+            }
+          },
+          {
+            "id": "62142c97244bab2d",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {
+                "file": "docs/00_Project/DOC-000 FisioOS HQ.md"
+              },
+              "icon": "lucide-file-signature",
+              "title": "Notas al pie"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false,
+      "zk-prefixer:Crear nueva nota única": false,
+      "workspaces:Gestionar disposiciones de espacio de trabajo": false,
+      "audio-recorder:Iniciar/Detener la grabación": false,
+      "markdown-importer:Abrir el importador de Markdown": false,
+      "random-note:Abrir nota al azar": false,
+      "publish:Publicar cambios...": false
+    }
+  },
+  "active": "a878959b2b0296cc",
+  "lastOpenFiles": [
+    "FisiOS_V1/README.md",
+    "docs/00_Project/DOC-000 FisioOS HQ.md",
+    "docs/09_Roadmap",
+    "docs/08_ADR",
+    "docs/07_Guides",
+    "docs/06_Research",
+    "docs/05_Product",
+    "docs/04_Ontology",
+    "docs/03_Architecture",
+    "docs/02_Constitution",
+    "docs/01_Vision",
+    "Sin nombre",
+    "README.md",
+    "2026-07-03.md",
+    "Sin título.canvas",
+    "Sin título.md"
+  ]
+}
