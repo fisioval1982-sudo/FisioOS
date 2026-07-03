@@ -194,6 +194,8 @@
   },
   "active": "49c481cda0122d82",
   "lastOpenFiles": [
+    "corpus/exports/CAT-000_Diccionario_Maestro_FisioOS_v0.1.xlsx",
+    "docs/04_Ontology/CAT-000.md",
     "knowledge/anatomy/upper_limb/wrist/STR-000140.md",
     "knowledge/anatomy/upper_limb/hand/STR-000150.md",
     "knowledge/anatomy/upper_limb/shoulder/STR-000109.md",
@@ -225,8 +227,6 @@
     "knowledge/regions/REG-000003.md",
     "knowledge/regions/REG-000002.md",
     "docs/00_Project/DOC-000.md",
-    "knowledge/regions/REG-000001.md",
-    "knowledge/anatomy/STR-000001.md",
     "software/scripts",
     "software/database",
     "knowledge/findings",
