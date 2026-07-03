@@ -194,6 +194,13 @@
   },
   "active": "168ec838f1b023e8",
   "lastOpenFiles": [
+    "software/scripts",
+    "software/database",
+    "knowledge/findings",
+    "knowledge/relations",
+    "knowledge/regions",
+    "docs/00_Project/STRUCTURE-001.md",
+    "docs/templates/TPL-ENTITY.md",
     "docs/04_Ontology/ONTO-000.md",
     "docs/03_Architecture/SPEC-000.md",
     "docs/08_ADR/ADR-005.md",
@@ -204,10 +211,6 @@
     "software/frontend",
     "research/protocols",
     "research/guidelines",
-    "research/papers",
-    "research/bibliography",
-    "library/videos",
-    "library/annotations",
     "docs/00_Project/DOC-000.md",
     "docs/templates/TPL-SPEC.md",
     "docs/templates/TPL-RESEARCH.md",
@@ -227,7 +230,6 @@
     "Sin título.md",
     "FisiOS_V1/README.md",
     "README.md",
-    "2026-07-03.md",
     "Sin título.canvas"
   ]
 }
