@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Obsidian
+.obsidian/cache
+.obsidian/workspace-mobile.json
+
+# Logs
+*.log
+
+# Temporales
+*.tmp
+*.temp
