@@ -194,6 +194,7 @@
   },
   "active": "49c481cda0122d82",
   "lastOpenFiles": [
+    "docs/08_ADR/ADR-008.md",
     "docs/08_ADR/ADR-007.md",
     "docs/00_Project/DOC-002.md",
     "docs/08_ADR/ADR-006.md",
@@ -227,7 +228,6 @@
     "knowledge/regions/REG-000006.md",
     "knowledge/regions/REG-000005.md",
     "knowledge/regions/REG-000004.md",
-    "knowledge/regions/REG-000003.md",
     "software/scripts",
     "software/database",
     "Sin título.canvas"
