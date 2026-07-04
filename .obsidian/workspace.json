@@ -194,6 +194,8 @@
   },
   "active": "49c481cda0122d82",
   "lastOpenFiles": [
+    "docs/08_ADR/ADR-007.md",
+    "docs/00_Project/DOC-002.md",
     "docs/08_ADR/ADR-006.md",
     "corpus/exports/CAT-000_Diccionario_Maestro_FisioOS_v0.1.xlsx",
     "docs/04_Ontology/CAT-000.md",
@@ -226,8 +228,6 @@
     "knowledge/regions/REG-000005.md",
     "knowledge/regions/REG-000004.md",
     "knowledge/regions/REG-000003.md",
-    "knowledge/regions/REG-000002.md",
-    "docs/00_Project/DOC-000.md",
     "software/scripts",
     "software/database",
     "Sin título.canvas"
