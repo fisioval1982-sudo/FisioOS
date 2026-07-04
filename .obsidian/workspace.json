@@ -11,10 +11,14 @@
             "id": "49c481cda0122d82",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vista gráfica"
+              "type": "markdown",
+              "state": {
+                "file": "docs/04_Ontology/entities/TEST-000001.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "TEST-000001"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/04_Ontology/entities/TEST-000001.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes"
+              "title": "Enlaces entrantes de TEST-000001"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "docs/04_Ontology/entities/TEST-000001.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes"
+              "title": "Enlaces salientes de TEST-000001"
             }
           },
           {
@@ -150,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "docs/04_Ontology/entities/TEST-000001.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema"
+              "title": "Esquema de TEST-000001"
             }
           },
           {
@@ -163,7 +170,9 @@
             "type": "leaf",
             "state": {
               "type": "footnotes",
-              "state": {},
+              "state": {
+                "file": "docs/04_Ontology/entities/TEST-000001.md"
+              },
               "icon": "lucide-file-signature",
               "title": "Notas al pie"
             }
@@ -194,42 +203,42 @@
   },
   "active": "49c481cda0122d82",
   "lastOpenFiles": [
-    "docs/08_ADR/ADR-008.md",
-    "docs/08_ADR/ADR-007.md",
-    "docs/00_Project/DOC-002.md",
-    "docs/08_ADR/ADR-006.md",
+    "docs/05_Cases/shoulder/CASE-000002.md",
+    "docs/05_Cases/shoulder/CASE-000001.md",
+    "docs/04_Ontology/modules/MODULE-002.md",
+    "docs/04_Ontology/entities/FIND-000001.md",
+    "docs/04_Ontology/entities/EX-000003.md",
+    "docs/04_Ontology/entities/EX-000002.md",
+    "docs/04_Ontology/entities/EX-000001.md",
+    "docs/04_Ontology/modules",
+    "docs/04_Ontology/entities/TRT-000004.md",
+    "docs/04_Ontology/entities/TRT-000003.md",
+    "docs/04_Ontology/entities/TRT-000002.md",
+    "docs/04_Ontology/entities/TRT-000001.md",
+    "docs/04_Ontology/entities/TEST-000002.md",
+    "docs/04_Ontology/entities/TEST-000001.md",
+    "docs/04_Ontology/entities/STR-000207.md",
+    "docs/04_Ontology/entities/STR-000205.md",
+    "docs/04_Ontology/entities/STR-000206.md",
+    "docs/04_Ontology/entities/STR-000204.md",
+    "docs/04_Ontology/entities/STR-000203.md",
+    "docs/04_Ontology/entities/STR-000202.md",
+    "docs/04_Ontology/entities/STR-000201.md",
+    "docs/04_Ontology/entities/STR-000106.md",
+    "docs/04_Ontology/entities/STR-000100.md",
+    "docs/04_Ontology/entities/PAT-000004.md",
+    "docs/04_Ontology/entities/PAT-000003.md",
+    "docs/04_Ontology/entities/PAT-000002.md",
+    "docs/04_Ontology/entities/PAT-000001.md",
+    "docs/04_Ontology/entities",
+    "docs/05_Cases/shoulder",
+    "docs/05_Cases",
     "corpus/exports/CAT-000_Diccionario_Maestro_FisioOS_v0.1.xlsx",
-    "docs/04_Ontology/CAT-000.md",
-    "knowledge/anatomy/upper_limb/wrist/STR-000140.md",
-    "knowledge/anatomy/upper_limb/hand/STR-000150.md",
-    "knowledge/anatomy/upper_limb/shoulder/STR-000109.md",
-    "knowledge/anatomy/upper_limb/shoulder/STR-000108.md",
-    "knowledge/anatomy/upper_limb/shoulder/STR-000107.md",
-    "knowledge/anatomy/upper_limb/shoulder/STR-000106.md",
-    "knowledge/anatomy/upper_limb/shoulder/STR-000105.md",
-    "knowledge/anatomy/upper_limb/shoulder/STR-000104.md",
-    "knowledge/anatomy/upper_limb/shoulder/STR-000103.md",
-    "knowledge/anatomy/upper_limb/shoulder/STR-000102.md",
-    "knowledge/anatomy/upper_limb/shoulder/STR-000101.md",
-    "knowledge/anatomy/upper_limb/shoulder/STR-000100.md",
-    "knowledge/anatomy/upper_limb/forearm/STR-000130.md",
-    "knowledge/anatomy/upper_limb/elbow/STR-000120.md",
-    "knowledge/anatomy/upper_limb/arm/STR-000110.md",
     "knowledge/anatomy/upper_limb/wrist",
     "knowledge/anatomy/upper_limb/shoulder",
     "knowledge/anatomy/upper_limb/hand",
     "knowledge/anatomy/upper_limb/forearm",
     "knowledge/anatomy/upper_limb/elbow",
-    "knowledge/anatomy/upper_limb/arm",
-    "knowledge/anatomy/upper_limb/REG-000005.md",
-    "knowledge/anatomy/upper_limb",
-    "docs/04_Ontology/MODULE-001.md",
-    "knowledge/regions/REG-000007.md",
-    "knowledge/regions/REG-000006.md",
-    "knowledge/regions/REG-000005.md",
-    "knowledge/regions/REG-000004.md",
-    "software/scripts",
-    "software/database",
     "Sin título.canvas"
   ]
 }
