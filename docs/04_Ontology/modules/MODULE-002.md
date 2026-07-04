@@ -1,9 +1,9 @@
 ---
 id: MODULE-002
 title: Hombro ecográfico - piloto
-status: Draft
-version: 0.1
-source: Hombro.zip
+status: Approved
+version: 1.0
+source: Airtable / Hombro.zip
 ---
 
 # MODULE-002 — Hombro ecográfico piloto
@@ -12,7 +12,7 @@ source: Hombro.zip
 
 Validar el flujo completo de FisioOS:
 
-ZIP → extracción → Airtable → Obsidian → revisión.
+ZIP → extracción → Airtable → knowledge → Obsidian → GitHub.
 
 ## Casos incluidos
 
@@ -33,7 +33,7 @@ ZIP → extracción → Airtable → Obsidian → revisión.
 - [[STR-000206]]
 - [[STR-000207]]
 
-### Hallazgos
+### Hallazgos ecográficos
 
 - [[FIND-000001]]
 - [[FIND-000002]]
@@ -54,12 +54,15 @@ ZIP → extracción → Airtable → Obsidian → revisión.
 - [[TEST-000001]]
 - [[TEST-000002]]
 
-### Tratamientos y ejercicios
+### Tratamientos
 
 - [[TRT-000001]]
 - [[TRT-000002]]
 - [[TRT-000003]]
 - [[TRT-000004]]
+
+### Ejercicios
+
 - [[EX-000001]]
 - [[EX-000002]]
 - [[EX-000003]]
@@ -67,4 +70,4 @@ ZIP → extracción → Airtable → Obsidian → revisión.
 
 ## Estado
 
-Piloto cargado en Airtable y preparado para revisión en Obsidian.
+Piloto aprobado en Airtable y migrado a estructura `knowledge/`.
