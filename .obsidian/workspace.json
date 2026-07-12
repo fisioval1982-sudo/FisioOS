@@ -150,12 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "2026-07-13.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema"
+              "title": "Esquema de 2026-07-13"
             }
           },
           {
@@ -163,7 +164,9 @@
             "type": "leaf",
             "state": {
               "type": "footnotes",
-              "state": {},
+              "state": {
+                "file": "2026-07-13.md"
+              },
               "icon": "lucide-file-signature",
               "title": "Notas al pie"
             }
@@ -192,8 +195,18 @@
       "publish:Publicar cambios...": false
     }
   },
-  "active": "49c481cda0122d82",
+  "active": "168ec838f1b023e8",
   "lastOpenFiles": [
+    "2026-07-13.md",
+    "KnowledgeGraph/06_Medios/MEDIA-000028.md",
+    "KnowledgeGraph/06_Medios/MEDIA-000027.md",
+    "KnowledgeGraph/04_Publicaciones/THESIS-000001.md",
+    "KnowledgeGraph/01_Personas/PERSON-004.md",
+    "KnowledgeGraph/01_Personas/PERSON-003.md",
+    "KnowledgeGraph/01_Personas/PERSON-002.md",
+    "KnowledgeGraph/00_Core/KG-MODULE-001_DOCTORADO.md",
+    "KnowledgeGraph/00_Core/GRAPH-DOCTORADO-001.md",
+    "KnowledgeGraph/00_Core/CHANGELOG-KG-004.md",
     "docs/00_Project/CHANGELOG-FISIOOS-003.md",
     "docs/04_Ontology/MAP-PATOLOGIAS-001.md",
     "docs/08_ADR/ADR-009.md",
@@ -214,16 +227,6 @@
     "KnowledgeGraph/02_Organizaciones/ORG-005.md",
     "KnowledgeGraph/02_Organizaciones/ORG-004.md",
     "KnowledgeGraph/04_Publicaciones/RESEARCH-005.md",
-    "KnowledgeGraph/04_Publicaciones/RESEARCH-004.md",
-    "KnowledgeGraph/04_Publicaciones/RESEARCH-003.md",
-    "KnowledgeGraph/04_Publicaciones/RESEARCH-002.md",
-    "KnowledgeGraph/04_Publicaciones/PUB-INDEX-001.md",
-    "KnowledgeGraph/04_Publicaciones/PUB-000009.md",
-    "KnowledgeGraph/04_Publicaciones/PUB-000008.md",
-    "KnowledgeGraph/04_Publicaciones/PUB-000007.md",
-    "KnowledgeGraph/04_Publicaciones/PUB-000006.md",
-    "KnowledgeGraph/04_Publicaciones/PUB-000005.md",
-    "KnowledgeGraph/04_Publicaciones/PUB-000004.md",
     "KnowledgeGraph/06_Medios",
     "KnowledgeGraph/04_Publicaciones",
     "KnowledgeGraph/14_Servicios",
