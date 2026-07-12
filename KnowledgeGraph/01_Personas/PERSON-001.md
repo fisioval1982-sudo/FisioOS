@@ -3,12 +3,13 @@ id: PERSON-001
 title: Pablo Salvador Coloma
 type: person
 status: Approved
-version: 1.0
+version: 1.1
+updated: 2026-07-13
 ---
 
 # PERSON-001 — Pablo Salvador Coloma
 
-Fisioterapeuta, fundador, CEO y director técnico de [[ORG-001]].
+Fisioterapeuta, investigador, docente, fundador, CEO y director técnico de [[ORG-001]].
 
 ## Perfiles
 
@@ -27,12 +28,23 @@ Fisioterapeuta, fundador, CEO y director técnico de [[ORG-001]].
 - 2022–actualidad: CEO y director de [[ORG-001]].
 - 2022–2024: actividad en [[ORG-004]] vinculada con IA aplicada a ecografía.
 
+## Doctorado
+
+- Autor de [[THESIS-000001]].
+- Directores: [[PERSON-002]], [[PERSON-003]] y [[PERSON-004]].
+- Línea principal: [[RESEARCH-001]] y [[RESEARCH-005]].
+- Publicación derivada principal: [[PUB-000001]].
+
 ## Áreas de autoridad
 
-- Ecografía musculoesquelética
-- Fisioterapia invasiva
-- Electrólisis
-- INDIBA
-- Ejercicio terapéutico
-- Rehabilitación domiciliaria
-- Fisioterapia para empresas
+- Ecografía musculoesquelética.
+- Fisioterapia invasiva.
+- Electrólisis.
+- INDIBA.
+- Ejercicio terapéutico.
+- Rehabilitación domiciliaria.
+- Fisioterapia para empresas.
+- Biomecánica de la marcha.
+- Electromiografía.
+- Acelerometría.
+- Dolor lumbar.
