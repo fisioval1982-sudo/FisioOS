@@ -74,7 +74,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "58c622fa207b8014",
@@ -150,13 +151,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2026-07-13.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de 2026-07-13"
+              "title": "Esquema"
             }
           },
           {
@@ -164,9 +164,7 @@
             "type": "leaf",
             "state": {
               "type": "footnotes",
-              "state": {
-                "file": "2026-07-13.md"
-              },
+              "state": {},
               "icon": "lucide-file-signature",
               "title": "Notas al pie"
             }
@@ -195,9 +193,13 @@
       "publish:Publicar cambios...": false
     }
   },
-  "active": "168ec838f1b023e8",
+  "active": "49c481cda0122d82",
   "lastOpenFiles": [
+    "KnowledgeGraph/02_Organizaciones/ORG-012.md",
     "2026-07-13.md",
+    "KnowledgeGraph/06_Medios/MEDIA-AUTHORITY-001.md",
+    "KnowledgeGraph/06_Medios/MEDIA-000029.md",
+    "KnowledgeGraph/00_Core/CHANGELOG-KG-005.md",
     "KnowledgeGraph/06_Medios/MEDIA-000028.md",
     "KnowledgeGraph/06_Medios/MEDIA-000027.md",
     "KnowledgeGraph/04_Publicaciones/THESIS-000001.md",
@@ -223,10 +225,6 @@
     "KnowledgeGraph/02_Organizaciones/ORG-009.md",
     "KnowledgeGraph/02_Organizaciones/ORG-008.md",
     "KnowledgeGraph/02_Organizaciones/ORG-007.md",
-    "KnowledgeGraph/02_Organizaciones/ORG-006.md",
-    "KnowledgeGraph/02_Organizaciones/ORG-005.md",
-    "KnowledgeGraph/02_Organizaciones/ORG-004.md",
-    "KnowledgeGraph/04_Publicaciones/RESEARCH-005.md",
     "KnowledgeGraph/06_Medios",
     "KnowledgeGraph/04_Publicaciones",
     "KnowledgeGraph/14_Servicios",
