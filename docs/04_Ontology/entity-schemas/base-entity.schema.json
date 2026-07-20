@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FisioOS Base Entity",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "type",
+    "status",
+    "version",
+    "created",
+    "updated",
+    "owner",
+    "source"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Z]+-[0-9]{6}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "type": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "Candidate",
+        "Draft",
+        "Review",
+        "Approved",
+        "Deprecated"
+      ]
+    },
+    "version": {
+      "type": [
+        "string",
+        "number"
+      ]
+    },
+    "created": {
+      "type": "string",
+      "format": "date"
+    },
+    "updated": {
+      "type": "string",
+      "format": "date"
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {}
+  },
+  "additionalProperties": true
+}
