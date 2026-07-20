@@ -1,196 +1,53 @@
 ---
 id: ONTO-000
-title: Especificación de la Ontología Clínica de FisioOS
+title: Ontology System v1 de FisioOS
+type: ontology-specification
+status: Approved
 version: 1.0
-status: Draft
+created: 2026-07-20
+updated: 2026-07-20
 owner: Pablo Salvador Coloma
-created: 2026-07-03
-updated: 2026-07-03
-related:
-  - SPEC-000
-  - SPEC-001
-  - DOC-016
-tags:
-  - ontology
-  - knowledge
-  - architecture
 ---
 
-# ONTO-000 — Especificación de la Ontología Clínica de FisioOS
+# ONTO-000 — Ontology System v1 de FisioOS
 
-## Estado del documento
+## Propósito
 
-- Código: ONTO-000
-- Versión: 1.0
-- Estado: Draft
-- Nivel: Arquitectura
+Definir las entidades, propiedades, relaciones, estados, reglas de identidad, procedencia y validación que gobiernan FisioOS.
 
-## 1. Objetivo
+## Capas
 
-Este documento define las reglas de construcción de la Ontología Clínica de FisioOS.
+### Ontología clínica
 
-La ontología constituye el vocabulario oficial del sistema y proporciona un lenguaje único para representar conocimiento fisioterapéutico.
+Persona, organización, patología, estructura anatómica, hallazgo, test, tratamiento, ejercicio, programa, protocolo, caso clínico, publicación, tesis, línea de investigación y servicio.
 
-Toda entidad clínica deberá existir previamente en esta ontología antes de poder utilizarse en:
+### Ontología operativa
 
-- Informes ecográficos
-- Casos clínicos
-- Biblioteca ecográfica
-- Publicaciones
-- Investigación
-- Inteligencia artificial
-- API
-- SaaS
+Perfil, medio, dosier, dataset, activo, proceso, workflow y capacidad.
 
-## 2. Principios
+### Sistema de archivos
 
-1. Un único concepto por entidad.
-2. Un único identificador permanente.
-3. Un único nombre oficial.
-4. Relaciones explícitas.
-5. Reutilización.
-6. Versionado.
-7. Trazabilidad.
-8. Evidencia documentada.
-9. Explicabilidad.
-10. Independencia tecnológica.
+Markdown, PDF, imagen, vídeo, HTML, CSS, JSON y script.
 
-## 3. Tipos de entidades
+## Documentos rectores
 
-| Código | Tipo |
-|--------|------|
-| STR | Anatomía |
-| REG | Región anatómica |
-| FIND | Hallazgo ecográfico |
-| PAT | Patología |
-| SYM | Síntoma |
-| EXAM | Exploración |
-| TEST | Test clínico |
-| MOD | Modalidad ecográfica |
-| TRT | Tratamiento |
-| EX | Ejercicio |
-| DOC | Documento |
-| BIB | Bibliografía |
+- [[ENTITY-TYPES]]
+- [[RELATIONSHIP-TYPES]]
+- [[METADATA-STANDARD]]
+- [[ID-STANDARD]]
+- [[STATUS-LIFECYCLE]]
+- [[PROVENANCE-STANDARD]]
+- [[VALIDATION-RULES]]
+- [[MIGRATION-POLICY]]
+- [[PROCESS-SYSTEM]]
+- [[CAPABILITY-SYSTEM]]
 
-## 4. Sistema de identificadores
+## Principios
 
-Formato:
-
-```
-PREFIJO-000001
-```
-
-Ejemplos:
-
-```
-STR-000001
-PAT-000001
-FIND-000001
-TRT-000001
-```
-
-Los identificadores nunca cambian ni se reutilizan.
-
-## 5. Relaciones permitidas
-
-- pertenece_a
-- es_un
-- puede_presentar
-- puede_mostrar
-- puede_tratarse_con
-- contraindicado_en
-- se_explora_con
-- se_localiza_en
-- deriva_de
-- requiere
-
-## 6. Atributos obligatorios
-
-- ID
-- Nombre oficial
-- Sinónimos
-- Tipo
-- Descripción
-- Relaciones
-- Bibliografía
-- Nivel de evidencia
-- Autor
-- Estado
-- Versión
-- Fecha de creación
-- Fecha de modificación
-
-## 7. Estados
-
-Draft → Review → Approved → Deprecated
-
-## 8. Reglas
-
-- Una estructura anatómica nunca será una patología.
-- Un hallazgo nunca será un tratamiento.
-- Una imagen nunca será un diagnóstico.
-- Nunca existirán entidades duplicadas.
-
-## 9. Jerarquía
-
-Sistema musculoesquelético → Región → Estructura → Subestructura.
-
-## 10. Relaciones anatómicas
-
-Ejemplo:
-
-Tendón rotuliano → se_inserta_en → Polo inferior de la rótula.
-
-## 11. Relaciones clínicas
-
-Ejemplo:
-
-Tendón rotuliano → puede_presentar → Tendinopatía.
-
-## 12. Relaciones ecográficas
-
-Ejemplo:
-
-Tendinopatía → puede_mostrar → Hipoecogenicidad.
-
-## 13. Relaciones terapéuticas
-
-Ejemplo:
-
-Tendinopatía → puede_tratarse_con → Heavy Slow Resistance.
-
-## 14. Relaciones documentales
-
-Las entidades podrán relacionarse con informes, casos clínicos, imágenes, publicaciones y vídeos docentes.
-
-## 15. Relación con SPEC-001
-
-SPEC-001 define cómo se construyen las entidades.
-
-## 16. Relación con SPEC-000
-
-El Knowledge Engine utiliza esta ontología para razonar.
-
-## 17. Compatibilidad
-
-Diseñada para exportarse a Neo4j, RDF, OWL, JSON, PostgreSQL y Airtable.
-
-## 18. Criterios de calidad
-
-- Sin duplicados.
-- Relaciones explícitas.
-- Evidencia documentada.
-- Identificadores permanentes.
-- Reutilización completa.
-
-## 19. Roadmap
-
-v1: Anatomía, Hallazgos, Patologías, Tratamientos.
-
-v2: Ejercicio, Imagen, Investigación.
-
-v3: Knowledge Graph, IA y Agentes.
-
-## 20. Declaración final
-
-La Ontología Clínica constituye el lenguaje oficial de FisioOS. Todo conocimiento del ecosistema deberá apoyarse en esta ontología.
+1. Un concepto, una entidad.
+2. Un identificador estable.
+3. Relaciones controladas.
+4. Hechos diferenciados de inferencias.
+5. Procedencia obligatoria.
+6. Validación humana para contenido clínico.
+7. Evolución mediante migraciones documentadas.
