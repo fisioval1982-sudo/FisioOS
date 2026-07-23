@@ -195,11 +195,12 @@
   },
   "active": "49c481cda0122d82",
   "lastOpenFiles": [
+    "library/anatomy/FOUNDATION-INDEX.md",
+    "docs/04_Ontology/CAPABILITY-SYSTEM.md",
     "templates/TEMPLATE-ANATOMY-QA.md",
     "templates/TEMPLATE-ANATOMY-PROMPT.md",
     "templates/TEMPLATE-ANATOMY-MASTER-BONE.md",
     "library/anatomy/README copia.md",
-    "library/anatomy/FOUNDATION-INDEX.md",
     "docs/00_Project/ANATOMY-VIEW-SPECIFICATIONS.md",
     "docs/00_Project/ANATOMY-GEOMETRY-LOCK.md",
     "docs/00_Project/ANATOMY-COMMON-AI-FAILURES.md",
@@ -240,7 +241,6 @@
     "assets/anatomy/upper-limb/shoulder/scapula/master",
     "assets/anatomy/upper-limb/shoulder/scapula/README.md",
     "assets/anatomy/upper-limb/shoulder/scapula",
-    "INSTALL.md",
     "Sin título.canvas"
   ]
 }
