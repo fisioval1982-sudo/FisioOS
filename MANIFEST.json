@@ -1,0 +1,138 @@
+[
+  {
+    "path": "INSTALL.md",
+    "size_bytes": 1125
+  },
+  {
+    "path": "assets/anatomy/upper-limb/shoulder/scapula/README.md",
+    "size_bytes": 539
+  },
+  {
+    "path": "assets/anatomy/upper-limb/shoulder/scapula/master/upper-limb_shoulder_scapula_right_anterior_master_v01.png",
+    "size_bytes": 1058439
+  },
+  {
+    "path": "assets/anatomy/upper-limb/shoulder/scapula/master/upper-limb_shoulder_scapula_right_lateral_master_v01.png",
+    "size_bytes": 687964
+  },
+  {
+    "path": "assets/anatomy/upper-limb/shoulder/scapula/master/upper-limb_shoulder_scapula_right_posterior_master_v01.png",
+    "size_bytes": 979942
+  },
+  {
+    "path": "assets/anatomy/upper-limb/shoulder/scapula/previews/upper-limb_shoulder_scapula_right_anterior_preview_v01.webp",
+    "size_bytes": 133588
+  },
+  {
+    "path": "assets/anatomy/upper-limb/shoulder/scapula/previews/upper-limb_shoulder_scapula_right_lateral_preview_v01.webp",
+    "size_bytes": 67758
+  },
+  {
+    "path": "assets/anatomy/upper-limb/shoulder/scapula/previews/upper-limb_shoulder_scapula_right_posterior_preview_v01.webp",
+    "size_bytes": 113006
+  },
+  {
+    "path": "assets/anatomy/upper-limb/shoulder/scapula/source/upper-limb_shoulder_scapula_right_anterior_source_v01.jpeg",
+    "size_bytes": 270634
+  },
+  {
+    "path": "assets/anatomy/upper-limb/shoulder/scapula/source/upper-limb_shoulder_scapula_right_lateral_source_v01.jpeg",
+    "size_bytes": 182455
+  },
+  {
+    "path": "assets/anatomy/upper-limb/shoulder/scapula/source/upper-limb_shoulder_scapula_right_posterior_source_v01.jpeg",
+    "size_bytes": 245901
+  },
+  {
+    "path": "assets/anatomy/upper-limb/shoulder/scapula/thumbnails/upper-limb_shoulder_scapula_right_anterior_thumbnail_v01.png",
+    "size_bytes": 256323
+  },
+  {
+    "path": "assets/anatomy/upper-limb/shoulder/scapula/thumbnails/upper-limb_shoulder_scapula_right_lateral_thumbnail_v01.png",
+    "size_bytes": 115018
+  },
+  {
+    "path": "assets/anatomy/upper-limb/shoulder/scapula/thumbnails/upper-limb_shoulder_scapula_right_posterior_thumbnail_v01.png",
+    "size_bytes": 224423
+  },
+  {
+    "path": "assets/anatomy/upper-limb/shoulder/scapula/web/upper-limb_shoulder_scapula_right_anterior_web_v01.png",
+    "size_bytes": 2059087
+  },
+  {
+    "path": "assets/anatomy/upper-limb/shoulder/scapula/web/upper-limb_shoulder_scapula_right_lateral_web_v01.png",
+    "size_bytes": 912736
+  },
+  {
+    "path": "assets/anatomy/upper-limb/shoulder/scapula/web/upper-limb_shoulder_scapula_right_posterior_web_v01.png",
+    "size_bytes": 1783897
+  },
+  {
+    "path": "docs/00_Project/CHANGELOG-FISIOOS-009.md",
+    "size_bytes": 550
+  },
+  {
+    "path": "docs/04_Ontology/ASSET-METADATA-STANDARD.md",
+    "size_bytes": 999
+  },
+  {
+    "path": "docs/04_Ontology/ASSET-NAMING-STANDARD.md",
+    "size_bytes": 937
+  },
+  {
+    "path": "docs/04_Ontology/ASSET-QUALITY-STANDARD.md",
+    "size_bytes": 1379
+  },
+  {
+    "path": "docs/04_Ontology/ASSET-REVIEW-WORKFLOW.md",
+    "size_bytes": 650
+  },
+  {
+    "path": "docs/04_Ontology/GENERATIVE-ASSET-STANDARD.md",
+    "size_bytes": 1350
+  },
+  {
+    "path": "docs/04_Ontology/LIBRARY-SYSTEM.md",
+    "size_bytes": 1324
+  },
+  {
+    "path": "library/anatomy/INDEX.md",
+    "size_bytes": 656
+  },
+  {
+    "path": "library/anatomy/LIBRARY-000001.md",
+    "size_bytes": 610
+  },
+  {
+    "path": "library/anatomy/README.md",
+    "size_bytes": 746
+  },
+  {
+    "path": "library/anatomy/assets/scapula/ASSET-000001.md",
+    "size_bytes": 2657
+  },
+  {
+    "path": "library/anatomy/assets/scapula/ASSET-000002.md",
+    "size_bytes": 2635
+  },
+  {
+    "path": "library/anatomy/assets/scapula/ASSET-000003.md",
+    "size_bytes": 2619
+  },
+  {
+    "path": "library/anatomy/prompts/scapula/PROMPT-SCAPULA-RIGHT-ANTERIOR-V01.md",
+    "size_bytes": 3624
+  },
+  {
+    "path": "library/anatomy/prompts/scapula/PROMPT-SCAPULA-RIGHT-LATERAL-V01.md",
+    "size_bytes": 3851
+  },
+  {
+    "path": "library/anatomy/prompts/scapula/PROMPT-SCAPULA-RIGHT-POSTERIOR-V01.md",
+    "size_bytes": 3723
+  },
+  {
+    "path": "templates/TEMPLATE-ASSET.md",
+    "size_bytes": 606
+  }
+]
