@@ -1,0 +1,38 @@
+---
+id: PROMPT-STRUCTURE-SIDE-VIEW-V01
+title:
+type: prompt
+status: Draft
+version: 1.0
+produces: []
+---
+
+# Prompt maestro
+
+## ROLE
+
+## OBJECTIVE
+
+## ANATOMICAL OBJECTIVE
+
+## VIEW
+
+## ORIENTATION
+
+## MASTER GEOMETRY
+
+## MANDATORY LANDMARKS
+
+## FORBIDDEN ERRORS
+
+## STRICT EXCLUSIONS
+
+## STYLE
+
+## BACKGROUND
+
+## COMPOSITION
+
+## FINAL VALIDATION
+
+## OUTPUT
