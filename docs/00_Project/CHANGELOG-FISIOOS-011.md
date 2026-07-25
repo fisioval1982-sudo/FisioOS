@@ -2,7 +2,7 @@
 id: CHANGELOG-FISIOOS-011
 title: Right Scapula Master Library
 status: Approved
-version: 1.0
+version: 1.1
 date: 2026-07-25
 ---
 
@@ -30,6 +30,15 @@ Se completa la colección maestra multivista de la escápula derecha adulta.
 ## Limitaciones
 
 Los cuatro masters suministrados tienen 1254 × 1254 px. No son nativos de 3000 × 3000 px y no se generaron derivados nuevos en esta actualización.
+
+## Normalización de metadatos
+
+- Metadata model normalized.
+- Approval state separated from technical limitations.
+- Geometry family added: `scapula_right_master_v1`.
+- Geometry unchanged.
+- Images unchanged.
+- No anatomical modifications performed.
 
 ## Arquitectura
 
