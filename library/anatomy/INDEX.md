@@ -2,11 +2,11 @@
 
 | ID | Estructura | Lado | Vista | Rol | Estado |
 |---|---|---|---|---|---|
-| [[ASSET-000001]] | Escápula | Derecho | Posterior | Master base | Approved with limitations |
-| [[ASSET-000002]] | Escápula | Derecho | Anterior | Master base | Approved with limitations |
-| [[ASSET-000003]] | Escápula | Derecho | Lateral | Master base | Approved with limitations |
-| [[ASSET-000004]] | Escápula | Derecho | Superior | Master base | Approved with limitations |
-| [[ASSET-000005]] | Escápula | Derecho | Multivista | Composite | Approved with limitations |
+| [[ASSET-000001]] | Escápula | Derecho | Posterior | Master base | Approved |
+| [[ASSET-000002]] | Escápula | Derecho | Anterior | Master base | Approved |
+| [[ASSET-000003]] | Escápula | Derecho | Lateral | Master base | Approved |
+| [[ASSET-000004]] | Escápula | Derecho | Superior | Master base | Approved |
+| [[ASSET-000005]] | Escápula | Derecho | Multivista | Composite | Approved |
 
 ## Limitación común
 
