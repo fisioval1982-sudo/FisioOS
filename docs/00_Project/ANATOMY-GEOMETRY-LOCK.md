@@ -2,7 +2,7 @@
 id: ANATOMY-GEOMETRY-LOCK
 title: Anatomy Geometry Lock
 status: Approved
-version: 1.0
+version: 1.1
 ---
 
 # Anatomy Geometry Lock
@@ -43,3 +43,14 @@ Todo activo derivado debe declarar:
 - elementos preservados;
 - versión;
 - prompt o instrucción de edición.
+
+## Familia bloqueada — escápula derecha
+
+La colección [[ASSET-000005]] queda bloqueada como una única familia formada por:
+
+- [[ASSET-000001]] — posterior;
+- [[ASSET-000002]] — anterior;
+- [[ASSET-000003]] — lateral;
+- [[ASSET-000004]] — superior.
+
+El bloqueo se aplica conjuntamente a las cuatro vistas. Ninguna vista puede regenerarse, redibujarse, reflejarse o corregirse anatómicamente de forma aislada. Toda sustitución futura requiere conservar la coherencia multivista y repetir la revisión clínica, visual y técnica.

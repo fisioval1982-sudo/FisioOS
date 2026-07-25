@@ -5,7 +5,14 @@
 | [[ASSET-000001]] | Escápula | Derecho | Posterior | Master base | Approved with limitations |
 | [[ASSET-000002]] | Escápula | Derecho | Anterior | Master base | Approved with limitations |
 | [[ASSET-000003]] | Escápula | Derecho | Lateral | Master base | Approved with limitations |
+| [[ASSET-000004]] | Escápula | Derecho | Superior | Master base | Approved with limitations |
+| [[ASSET-000005]] | Escápula | Derecho | Multivista | Composite | Approved with limitations |
 
 ## Limitación común
 
-La geometría y la anatomía han sido aprobadas, pero los archivos fuente disponibles tienen 1254 × 1254 px. Deben sustituirse por versiones de 3000 × 3000 px o superiores antes de considerarlos masters definitivos para impresión.
+La geometría y la anatomía de las cuatro vistas han sido aprobadas como una familia bloqueada, pero los masters suministrados tienen 1254 × 1254 px. Deben sustituirse por versiones nativas de 3000 × 3000 px o superiores antes de considerarlos masters definitivos para impresión.
+
+## Documentación compartida
+
+- [[QA-SCAPULA-RIGHT-MULTIVIEW-V01]]
+- [[SCAPULA-RIGHT-EXPORT-RESOLUTION-V01]]

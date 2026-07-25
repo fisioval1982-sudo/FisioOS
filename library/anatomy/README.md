@@ -24,7 +24,10 @@ La primera colección corresponde a la escápula derecha:
 
 - vista posterior;
 - vista anterior;
-- vista lateral.
+- vista lateral;
+- vista superior.
+
+Las cuatro vistas de la escápula derecha forman una única familia geométrica bloqueada en [[ASSET-000005]].
 
 ## Uso
 
