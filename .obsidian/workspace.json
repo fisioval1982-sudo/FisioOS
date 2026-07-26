@@ -195,6 +195,13 @@
   },
   "active": "49c481cda0122d82",
   "lastOpenFiles": [
+    "docs/05_Cases/shoulder/CASE-000002.md",
+    "docs/05_Cases/shoulder/CASE-000001.md",
+    "docs/05_Cases/shoulder",
+    "docs/05_Cases",
+    "corpus/cases/shoulder/CASE-000002.md",
+    "corpus/cases/shoulder/CASE-000001.md",
+    "corpus/cases/shoulder",
     "library/anatomy/prompts/scapula/PROMPT-SCAPULA-RIGHT-SUPERIOR-V01.md",
     "library/anatomy/assets/scapula/SCAPULA-RIGHT-EXPORT-RESOLUTION-V01.md",
     "library/anatomy/assets/scapula/QA-SCAPULA-RIGHT-MULTIVIEW-V01.md",
@@ -221,9 +228,6 @@
     "library/anatomy/LIBRARY-000001.md",
     "docs/04_Ontology/modules/MODULE-002.md",
     "KnowledgeGraph/06_Medios/DOSSIER-000002.md",
-    "KnowledgeGraph/01_Personas/PERSON-001.md",
-    "library/anatomy/assets/scapula/ASSET-000003.md",
-    "library/anatomy/assets/scapula/ASSET-000002.md",
     "library/anatomy/assets/scapula",
     "library/anatomy/assets",
     "library/anatomy/prompts/scapula",
@@ -237,9 +241,6 @@
     "assets/anatomy/upper-limb/shoulder/scapula/previews",
     "assets/anatomy/upper-limb/shoulder/scapula/web",
     "assets/anatomy/upper-limb/shoulder/scapula/thumbnails",
-    "assets/anatomy/upper-limb/shoulder/scapula/source",
-    "assets/anatomy/upper-limb/shoulder/scapula/master",
-    "assets/anatomy/upper-limb/shoulder/scapula",
     "Sin título.canvas"
   ]
 }
