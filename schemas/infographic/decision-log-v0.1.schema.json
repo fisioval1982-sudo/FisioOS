@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fisoos://schemas/infographic/decision-log-v0.1.schema.json",
+  "title": "FisioOS Infographic Decision Log",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "infographic_id",
+    "specification_version",
+    "decisions"
+  ],
+  "properties": {
+    "infographic_id": {
+      "type": "string",
+      "pattern": "^INFOGRAPHIC-[0-9]{6}$"
+    },
+    "specification_version": {
+      "type": "string"
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "decision_key",
+          "decision_class",
+          "status"
+        ],
+        "properties": {
+          "decision_key": {
+            "type": "string"
+          },
+          "decision_class": {
+            "enum": [
+              "fixed",
+              "controlled",
+              "bounded",
+              "approval_required",
+              "forbidden"
+            ]
+          },
+          "status": {
+            "enum": [
+              "resolved",
+              "unresolved",
+              "rejected"
+            ]
+          },
+          "value": {},
+          "allowed_values": {
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "source_decision_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reason": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

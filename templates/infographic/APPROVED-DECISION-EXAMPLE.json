@@ -1,0 +1,18 @@
+{
+  "id": "DECISION-INFOGRAPHIC-000001",
+  "category": "layout",
+  "scope": "infographic.global.grid",
+  "status": "proposed",
+  "value": {
+    "columns": 12
+  },
+  "constraints": {
+    "locked": true
+  },
+  "source": "manual_approval",
+  "approved_by": null,
+  "approved_at": null,
+  "version": "1.0",
+  "supersedes": null,
+  "notes": "Example only. Not yet an approved FisioForYou decision."
+}
