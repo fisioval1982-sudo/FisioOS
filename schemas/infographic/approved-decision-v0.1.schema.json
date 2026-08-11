@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fisoos://schemas/infographic/approved-decision-v0.1.schema.json",
+  "title": "FisioOS Approved Infographic Decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "category",
+    "scope",
+    "status",
+    "value",
+    "source",
+    "version"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^DECISION-INFOGRAPHIC-[0-9]{6}$"
+    },
+    "category": {
+      "enum": [
+        "brand",
+        "typography",
+        "color",
+        "spacing",
+        "grid",
+        "component",
+        "layout",
+        "anatomy_usage",
+        "asset_usage",
+        "content_formatting",
+        "renderer_behavior",
+        "qa_threshold"
+      ]
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "proposed",
+        "approved",
+        "deprecated",
+        "rejected"
+      ]
+    },
+    "value": {},
+    "constraints": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "source": {
+      "enum": [
+        "manual_approval",
+        "reference_analysis",
+        "system_default",
+        "migration"
+      ]
+    },
+    "approved_by": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "approved_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+$"
+    },
+    "supersedes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}
