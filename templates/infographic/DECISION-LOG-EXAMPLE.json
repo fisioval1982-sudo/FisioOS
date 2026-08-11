@@ -1,0 +1,29 @@
+{
+  "infographic_id": "INFOGRAPHIC-000001",
+  "specification_version": "0.1",
+  "decisions": [
+    {
+      "decision_key": "canvas.format",
+      "decision_class": "controlled",
+      "status": "resolved",
+      "value": "instagram_portrait",
+      "allowed_values": [
+        "instagram_portrait",
+        "instagram_square",
+        "a4_portrait",
+        "a4_landscape"
+      ],
+      "source_decision_id": null,
+      "reason": "Selected from an approved enumeration."
+    },
+    {
+      "decision_key": "brand.primary_color",
+      "decision_class": "approval_required",
+      "status": "unresolved",
+      "value": null,
+      "allowed_values": null,
+      "source_decision_id": null,
+      "reason": "No approved FisioForYou primary color exists yet."
+    }
+  ]
+}
