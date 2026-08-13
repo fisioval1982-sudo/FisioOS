@@ -1,0 +1,308 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fisoos://schemas/infographic/infographic-specification-v0.1.schema.json",
+  "title": "FisioOS Infographic Specification",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "infographic_id",
+    "specification_version",
+    "status",
+    "canvas",
+    "content",
+    "layout",
+    "assets",
+    "components",
+    "decisions",
+    "validation"
+  ],
+  "properties": {
+    "infographic_id": {
+      "type": "string",
+      "pattern": "^INFOGRAPHIC-[0-9]{6}$"
+    },
+    "specification_version": {
+      "type": "string",
+      "const": "0.1"
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "pending_approval",
+        "validated",
+        "blocked"
+      ]
+    },
+    "canvas": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "format",
+        "orientation"
+      ],
+      "properties": {
+        "format": {
+          "enum": [
+            "instagram_portrait",
+            "instagram_square",
+            "a4_portrait",
+            "a4_landscape"
+          ]
+        },
+        "orientation": {
+          "enum": [
+            "portrait",
+            "landscape",
+            "square"
+          ]
+        }
+      }
+    },
+    "content": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "sections"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subtitle": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sections": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "type",
+              "text"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "type": {
+                "enum": [
+                  "intro",
+                  "key_point",
+                  "list",
+                  "clinical_note",
+                  "warning",
+                  "summary",
+                  "references"
+                ]
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1
+              },
+              "order": {
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          }
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "layout": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "layout_family",
+        "regions"
+      ],
+      "properties": {
+        "layout_family": {
+          "type": "string"
+        },
+        "regions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "role",
+              "component_ids"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "role": {
+                "enum": [
+                  "header",
+                  "body",
+                  "aside",
+                  "visual",
+                  "footer"
+                ]
+              },
+              "component_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "asset_id",
+          "usage",
+          "status"
+        ],
+        "properties": {
+          "asset_id": {
+            "type": "string"
+          },
+          "usage": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "approved",
+              "pending",
+              "missing"
+            ]
+          }
+        }
+      }
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "component_id",
+          "component_type",
+          "region_id"
+        ],
+        "properties": {
+          "component_id": {
+            "type": "string"
+          },
+          "component_type": {
+            "type": "string"
+          },
+          "region_id": {
+            "type": "string"
+          },
+          "content_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "asset_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "decision_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "decision_key",
+          "decision_class",
+          "status"
+        ],
+        "properties": {
+          "decision_key": {
+            "type": "string"
+          },
+          "decision_class": {
+            "enum": [
+              "fixed",
+              "controlled",
+              "bounded",
+              "approval_required",
+              "forbidden"
+            ]
+          },
+          "status": {
+            "enum": [
+              "resolved",
+              "unresolved",
+              "rejected"
+            ]
+          },
+          "value": {},
+          "source_decision_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reason": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_valid",
+        "unresolved_decisions",
+        "errors"
+      ],
+      "properties": {
+        "schema_valid": {
+          "type": "boolean"
+        },
+        "unresolved_decisions": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "errors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

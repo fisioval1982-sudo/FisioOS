@@ -1,0 +1,10 @@
+{
+  "infographic_id": "INFOGRAPHIC-000001",
+  "specification_valid": true,
+  "all_required_decisions_resolved": false,
+  "all_assets_approved": true,
+  "render_allowed": false,
+  "blocking_reasons": [
+    "layout.layout_family is unresolved"
+  ]
+}
