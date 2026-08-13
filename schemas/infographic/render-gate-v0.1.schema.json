@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fisoos://schemas/infographic/render-gate-v0.1.schema.json",
+  "title": "FisioOS Infographic Render Gate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "infographic_id",
+    "specification_valid",
+    "all_required_decisions_resolved",
+    "all_assets_approved",
+    "render_allowed",
+    "blocking_reasons"
+  ],
+  "properties": {
+    "infographic_id": {
+      "type": "string"
+    },
+    "specification_valid": {
+      "type": "boolean"
+    },
+    "all_required_decisions_resolved": {
+      "type": "boolean"
+    },
+    "all_assets_approved": {
+      "type": "boolean"
+    },
+    "render_allowed": {
+      "type": "boolean"
+    },
+    "blocking_reasons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
