@@ -1,0 +1,60 @@
+{
+  "infographic_id": "INFOGRAPHIC-000001",
+  "specification_version": "0.1",
+  "status": "blocked",
+  "canvas": {
+    "format": "instagram_portrait",
+    "orientation": "portrait"
+  },
+  "content": {
+    "title": "Example infographic",
+    "subtitle": null,
+    "sections": [
+      {
+        "id": "section-001",
+        "type": "intro",
+        "text": "Example content only.",
+        "order": 0
+      }
+    ],
+    "source_refs": []
+  },
+  "layout": {
+    "layout_family": "UNRESOLVED",
+    "regions": [
+      {
+        "id": "region-header",
+        "role": "header",
+        "component_ids": [
+          "component-title"
+        ]
+      }
+    ]
+  },
+  "assets": [],
+  "components": [
+    {
+      "component_id": "component-title",
+      "component_type": "UNRESOLVED",
+      "region_id": "region-header",
+      "content_ref": "section-001",
+      "asset_ref": null,
+      "decision_refs": []
+    }
+  ],
+  "decisions": [
+    {
+      "decision_key": "layout.layout_family",
+      "decision_class": "approval_required",
+      "status": "unresolved",
+      "value": null,
+      "source_decision_id": null,
+      "reason": "No approved FisioForYou layout family exists yet."
+    }
+  ],
+  "validation": {
+    "schema_valid": true,
+    "unresolved_decisions": 1,
+    "errors": []
+  }
+}
