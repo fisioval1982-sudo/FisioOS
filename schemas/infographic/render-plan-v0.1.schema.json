@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fisoos://schemas/infographic/render-plan-v0.1.schema.json",
+  "title": "FisioOS Render Plan",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "infographic_id",
+    "renderer_version",
+    "canvas",
+    "regions",
+    "components",
+    "assets",
+    "tokens",
+    "validation"
+  ],
+  "properties": {
+    "infographic_id": {
+      "type": "string"
+    },
+    "renderer_version": {
+      "type": "string"
+    },
+    "canvas": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "width",
+        "height",
+        "unit"
+      ],
+      "properties": {
+        "width": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "height": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "unit": {
+          "enum": [
+            "px",
+            "mm"
+          ]
+        }
+      }
+    },
+    "regions": {
+      "type": "array"
+    },
+    "components": {
+      "type": "array"
+    },
+    "assets": {
+      "type": "array"
+    },
+    "tokens": {
+      "type": "object"
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "valid",
+        "errors"
+      ],
+      "properties": {
+        "valid": {
+          "const": true
+        },
+        "errors": {
+          "type": "array",
+          "maxItems": 0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "renderer_version": "0.1.0",
+  "strict_mode": true,
+  "allow_fallbacks": false,
+  "allow_freeform_css": false,
+  "allow_generated_assets": false,
+  "allow_unresolved_decisions": false
+}
