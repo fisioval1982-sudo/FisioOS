@@ -1,0 +1,14 @@
+{
+  "infographic_id": "INFOGRAPHIC-000001",
+  "specification_version": "0.1",
+  "renderer_version": "0.1.0",
+  "render_allowed": true,
+  "canvas": {
+    "format": "instagram_portrait",
+    "orientation": "portrait"
+  },
+  "regions": [],
+  "components": [],
+  "assets": [],
+  "decisions": []
+}

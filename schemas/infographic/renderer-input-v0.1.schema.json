@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fisoos://schemas/infographic/renderer-input-v0.1.schema.json",
+  "title": "FisioOS Renderer Input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "infographic_id",
+    "specification_version",
+    "renderer_version",
+    "render_allowed",
+    "canvas",
+    "regions",
+    "components",
+    "assets",
+    "decisions"
+  ],
+  "properties": {
+    "infographic_id": {
+      "type": "string"
+    },
+    "specification_version": {
+      "type": "string"
+    },
+    "renderer_version": {
+      "type": "string"
+    },
+    "render_allowed": {
+      "const": true
+    },
+    "canvas": {
+      "type": "object"
+    },
+    "regions": {
+      "type": "array"
+    },
+    "components": {
+      "type": "array"
+    },
+    "assets": {
+      "type": "array"
+    },
+    "decisions": {
+      "type": "array"
+    }
+  }
+}
