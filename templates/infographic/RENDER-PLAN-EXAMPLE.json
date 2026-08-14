@@ -1,0 +1,17 @@
+{
+  "infographic_id": "INFOGRAPHIC-000001",
+  "renderer_version": "0.1.0",
+  "canvas": {
+    "width": 1080,
+    "height": 1350,
+    "unit": "px"
+  },
+  "regions": [],
+  "components": [],
+  "assets": [],
+  "tokens": {},
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}
