@@ -1,0 +1,95 @@
+{
+  "reference_id": "REF-INFOGRAPHIC-000001",
+  "decisions": [
+    {
+      "decision_id": "REFDEC-000001",
+      "category": "layout",
+      "proposal": "Usar una composición vertical modular con secciones claramente delimitadas y orden de lectura de arriba abajo.",
+      "rationale": "La referencia mantiene una jerarquía comprensible pese a contener una cantidad elevada de información clínica.",
+      "confidence": "high",
+      "status": "proposed",
+      "approved_decision_id": null
+    },
+    {
+      "decision_id": "REFDEC-000002",
+      "category": "component",
+      "proposal": "Evaluar un componente reutilizable de cabecera de sección formado por número, título y señal cromática.",
+      "rationale": "La numeración y la cabecera diferenciada permiten localizar rápidamente cada bloque temático.",
+      "confidence": "high",
+      "status": "proposed",
+      "approved_decision_id": null
+    },
+    {
+      "decision_id": "REFDEC-000003",
+      "category": "component",
+      "proposal": "Evaluar componentes modulares de icono más texto para conceptos clínicos breves.",
+      "rationale": "La asociación consistente entre símbolo y contenido facilita el escaneo visual.",
+      "confidence": "high",
+      "status": "proposed",
+      "approved_decision_id": null
+    },
+    {
+      "decision_id": "REFDEC-000004",
+      "category": "color",
+      "proposal": "Usar el color con función semántica para diferenciar categorías o tipos de información, manteniendo una paleta global controlada.",
+      "rationale": "La referencia demuestra que el color puede ayudar a identificar secciones, aunque un número excesivo de colores puede fragmentar la identidad.",
+      "confidence": "high",
+      "status": "proposed",
+      "approved_decision_id": null
+    },
+    {
+      "decision_id": "REFDEC-000005",
+      "category": "typography",
+      "proposal": "Definir una jerarquía tipográfica explícita para título principal, título de sección, concepto destacado y texto de cuerpo.",
+      "rationale": "La diferenciación tipográfica es uno de los mecanismos principales que permite gestionar la elevada densidad informativa.",
+      "confidence": "high",
+      "status": "proposed",
+      "approved_decision_id": null
+    },
+    {
+      "decision_id": "REFDEC-000006",
+      "category": "layout",
+      "proposal": "Permitir rejillas de dos columnas en zonas de alta densidad cuando los módulos mantengan independencia semántica.",
+      "rationale": "La referencia aprovecha el ancho disponible mediante dos columnas sin perder completamente la secuencia vertical.",
+      "confidence": "medium",
+      "status": "proposed",
+      "approved_decision_id": null
+    },
+    {
+      "decision_id": "REFDEC-000007",
+      "category": "illustration",
+      "proposal": "Priorizar ilustraciones anatómicas o de ejercicio con función explicativa sobre elementos puramente decorativos.",
+      "rationale": "Las figuras de la referencia ayudan a contextualizar actividad física y contenido clínico.",
+      "confidence": "high",
+      "status": "proposed",
+      "approved_decision_id": null
+    },
+    {
+      "decision_id": "REFDEC-000008",
+      "category": "iconography",
+      "proposal": "Mantener un lenguaje iconográfico consistente y utilizar los iconos como marcadores semánticos, no como decoración.",
+      "rationale": "La consistencia de los iconos permite reconocer rápidamente tipos de información.",
+      "confidence": "high",
+      "status": "proposed",
+      "approved_decision_id": null
+    },
+    {
+      "decision_id": "REFDEC-000009",
+      "category": "spacing",
+      "proposal": "Separar visualmente los módulos mediante espacio y padding consistente antes de recurrir a efectos decorativos.",
+      "rationale": "La referencia consigue gran parte de su separación estructural mediante cajas, márgenes y espacio interno, con poco uso de sombras.",
+      "confidence": "high",
+      "status": "proposed",
+      "approved_decision_id": null
+    },
+    {
+      "decision_id": "REFDEC-000010",
+      "category": "qa",
+      "proposal": "Establecer controles de densidad y tamaño mínimo de texto para evitar que una infografía exhaustiva pierda legibilidad en móvil.",
+      "rationale": "La principal debilidad observada en la referencia es la elevada densidad y el pequeño tamaño de algunos textos.",
+      "confidence": "high",
+      "status": "proposed",
+      "approved_decision_id": null
+    }
+  ]
+}
