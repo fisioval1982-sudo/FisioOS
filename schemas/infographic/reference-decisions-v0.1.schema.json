@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fisoos://schemas/infographic/reference-decisions-v0.1.schema.json",
+  "title": "FisioOS Reference Candidate Decisions",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "reference_id",
+    "decisions"
+  ],
+  "properties": {
+    "reference_id": {
+      "type": "string",
+      "pattern": "^REF-INFOGRAPHIC-[0-9]{6}$"
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "decision_id",
+          "category",
+          "proposal",
+          "rationale",
+          "confidence",
+          "status"
+        ],
+        "properties": {
+          "decision_id": {
+            "type": "string",
+            "pattern": "^REFDEC-[0-9]{6}$"
+          },
+          "category": {
+            "enum": [
+              "layout",
+              "typography",
+              "color",
+              "spacing",
+              "component",
+              "illustration",
+              "iconography",
+              "content_formatting",
+              "qa"
+            ]
+          },
+          "proposal": {
+            "type": "string"
+          },
+          "rationale": {
+            "type": "string"
+          },
+          "confidence": {
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "status": {
+            "enum": [
+              "proposed",
+              "approved",
+              "rejected",
+              "deferred"
+            ]
+          },
+          "approved_decision_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
