@@ -1,0 +1,95 @@
+{
+  "reference_id": "REF-INFOGRAPHIC-000002",
+  "decisions": [
+    {
+      "decision_id": "REFDEC-000011",
+      "category": "layout",
+      "proposal": "Incorporar una composición comparativa bilateral cuando el contenido clínico enfrente dos estados, condiciones o alternativas claramente diferenciables.",
+      "rationale": "La disposición lado a lado permite comprender de forma inmediata las diferencias entre tendón sano y tendinopatía.",
+      "confidence": "high",
+      "status": "proposed",
+      "approved_decision_id": null
+    },
+    {
+      "decision_id": "REFDEC-000012",
+      "category": "illustration",
+      "proposal": "Permitir que una representación anatómica clínicamente relevante actúe como anclaje visual principal cuando aporte información que sería menos clara mediante texto.",
+      "rationale": "La referencia utiliza la anatomía para mostrar directamente diferencias estructurales entre tejido sano y patológico.",
+      "confidence": "high",
+      "status": "proposed",
+      "approved_decision_id": null
+    },
+    {
+      "decision_id": "REFDEC-000013",
+      "category": "component",
+      "proposal": "Evaluar un componente reutilizable de comparación compuesto por marcador semántico, característica breve y asociación espacial con el estado correspondiente.",
+      "rationale": "Los elementos laterales permiten relacionar rápidamente cada característica con el estado sano o patológico.",
+      "confidence": "high",
+      "status": "proposed",
+      "approved_decision_id": null
+    },
+    {
+      "decision_id": "REFDEC-000014",
+      "category": "iconography",
+      "proposal": "Utilizar símbolos visualmente diferenciados para estados favorables y estados de alerta sin depender exclusivamente del color.",
+      "rationale": "La referencia combina checks y signos de advertencia, haciendo reconocible la polaridad incluso por la forma del símbolo.",
+      "confidence": "high",
+      "status": "proposed",
+      "approved_decision_id": null
+    },
+    {
+      "decision_id": "REFDEC-000015",
+      "category": "color",
+      "proposal": "Priorizar una paleta restringida con un color de énfasis dominante cuando la ilustración clínica ya aporta elevada complejidad visual.",
+      "rationale": "La combinación de negro, blanco y naranja mantiene cohesión mientras los tonos anatómicos contienen gran parte del detalle visual.",
+      "confidence": "high",
+      "status": "proposed",
+      "approved_decision_id": null
+    },
+    {
+      "decision_id": "REFDEC-000016",
+      "category": "component",
+      "proposal": "Evaluar un callout clínico de síntesis situado después de la explicación visual y antes de las recomendaciones prácticas.",
+      "rationale": "La referencia introduce una afirmación central sobre la dosificación de carga que conecta la explicación anatómica con el abordaje terapéutico.",
+      "confidence": "high",
+      "status": "proposed",
+      "approved_decision_id": null
+    },
+    {
+      "decision_id": "REFDEC-000017",
+      "category": "layout",
+      "proposal": "Estructurar determinadas infografías educativas mediante la secuencia explicación visual, interpretación clínica y aplicación práctica.",
+      "rationale": "La referencia pasa de la comparación anatómica a una interpretación sobre la carga y posteriormente a estrategias terapéuticas.",
+      "confidence": "high",
+      "status": "proposed",
+      "approved_decision_id": null
+    },
+    {
+      "decision_id": "REFDEC-000018",
+      "category": "component",
+      "proposal": "Evaluar una fila modular de estrategias o intervenciones formada por icono, etiqueta breve y explicación de una línea.",
+      "rationale": "El panel inferior permite presentar varias estrategias terapéuticas de forma compacta y comparable.",
+      "confidence": "high",
+      "status": "proposed",
+      "approved_decision_id": null
+    },
+    {
+      "decision_id": "REFDEC-000019",
+      "category": "qa",
+      "proposal": "Evitar fondos fotográficos o elementos ambientales detrás del contenido cuando reduzcan contraste o introduzcan información visual irrelevante.",
+      "rationale": "El fondo visible de la referencia compite parcialmente con textos, anatomía y marcadores.",
+      "confidence": "high",
+      "status": "proposed",
+      "approved_decision_id": null
+    },
+    {
+      "decision_id": "REFDEC-000020",
+      "category": "qa",
+      "proposal": "Exigir trazabilidad científica específica para ilustraciones anatómicas o fisiopatológicas que representen cambios estructurales o mecanismos clínicos.",
+      "rationale": "Una representación anatómica realista puede ser interpretada por el lector como evidencia directa y requiere control de fidelidad científica.",
+      "confidence": "high",
+      "status": "proposed",
+      "approved_decision_id": null
+    }
+  ]
+}
