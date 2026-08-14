@@ -1,0 +1,173 @@
+{
+  "reference_id": "REF-INFOGRAPHIC-000001",
+  "source_file": "REF-INFOGRAPHIC-000001_source.jpg",
+  "study_reason": "Analizar una infografía clínica de alta densidad informativa con estructura modular, jerarquía fuerte, codificación cromática por secciones e integración de iconografía para extraer patrones potencialmente reutilizables en FisioForYou.",
+  "canvas": {
+    "orientation": "portrait",
+    "aspect_ratio_observation": "Formato vertical alargado, cercano a una proporción aproximada 2:3, diseñado para lectura secuencial de arriba abajo."
+  },
+  "structure": {
+    "reading_order": [
+      "Título principal y subtítulo",
+      "Bloque introductorio con objetivo clínico",
+      "Sección 1: Evaluación inicial",
+      "Sección 2: Principios clave",
+      "Sección 3: Tipo de ejercicio recomendado",
+      "Sección 4: Intensidad recomendada",
+      "Sección 5: Progresión del programa",
+      "Sección 6: Beneficios comprobados",
+      "Sección 7: Precauciones importantes",
+      "Bloque final de mensaje clave",
+      "Franja de cierre"
+    ],
+    "regions": [
+      "Cabecera superior con título y figura humana",
+      "Caja introductoria de mensaje central",
+      "Módulo azul de evaluación inicial",
+      "Módulo naranja de principios clave",
+      "Módulo verde de tipo de ejercicio",
+      "Módulo amarillo de intensidad",
+      "Módulo rojo de progresión",
+      "Módulo azul de beneficios",
+      "Módulo rojo de precauciones",
+      "Caja final de conclusión",
+      "Footer azul de cierre"
+    ],
+    "alignment": [
+      "Predominio de alineación izquierda en textos",
+      "Uso de rejilla modular de dos columnas en la zona central",
+      "Secciones alineadas mediante cajas con bordes y cabeceras coloreadas",
+      "Elementos internos organizados en columnas verticales y subbloques repetibles"
+    ],
+    "visual_anchor": "El título principal en azul oscuro y la gran figura humana situada en la esquina superior derecha actúan como anclajes visuales dominantes.",
+    "density": "Alta densidad informativa, pero distribuida en módulos claramente separados. La densidad aumenta en las secciones de progresión, beneficios y recomendaciones.",
+    "whitespace": "Uso moderado de espacio en blanco entre módulos y dentro de las cajas. El blanco funciona principalmente como fondo de separación, no como elemento protagonista."
+  },
+  "components": [
+    {
+      "observed_role": "title_block",
+      "description": "Título principal de gran tamaño en mayúsculas, acompañado de subtítulo cromático en naranja.",
+      "repeat_count": 1
+    },
+    {
+      "observed_role": "introductory_callout",
+      "description": "Caja horizontal con icono de diana y mensaje clínico principal destacado.",
+      "repeat_count": 1
+    },
+    {
+      "observed_role": "numbered_section_header",
+      "description": "Cabecera de sección con círculo numerado y banda de color que identifica cada módulo.",
+      "repeat_count": 7
+    },
+    {
+      "observed_role": "icon_text_item",
+      "description": "Patrón repetido de icono simple acompañado de etiqueta o explicación breve.",
+      "repeat_count": 20
+    },
+    {
+      "observed_role": "multi_column_principles",
+      "description": "Bloque de principios organizado en cinco columnas con icono, título y breve explicación.",
+      "repeat_count": 1
+    },
+    {
+      "observed_role": "exercise_category_panel",
+      "description": "Panel que combina subtítulo, iconos de actividad física y recomendaciones textuales.",
+      "repeat_count": 1
+    },
+    {
+      "observed_role": "intensity_scale",
+      "description": "Escala visual graduada con segmentos coloreados para representar intensidad percibida.",
+      "repeat_count": 1
+    },
+    {
+      "observed_role": "progression_timeline",
+      "description": "Secuencia horizontal de fases conectadas mediante flechas, con iconos y parámetros de progresión.",
+      "repeat_count": 1
+    },
+    {
+      "observed_role": "benefit_list",
+      "description": "Lista vertical de beneficios clínicos, cada uno acompañado de icono específico.",
+      "repeat_count": 1
+    },
+    {
+      "observed_role": "precaution_grid",
+      "description": "Fila de precauciones con iconos rojos y texto breve.",
+      "repeat_count": 1
+    },
+    {
+      "observed_role": "final_message_callout",
+      "description": "Caja final con mensaje de síntesis y figura de ejercicio.",
+      "repeat_count": 1
+    },
+    {
+      "observed_role": "footer_statement",
+      "description": "Franja azul inferior con mensaje institucional y lema final.",
+      "repeat_count": 1
+    }
+  ],
+  "visual_behavior": {
+    "typography": [
+      "Título principal en sans serif, mayúsculas, peso alto y gran tamaño.",
+      "Subtítulos de sección en mayúsculas y peso fuerte.",
+      "Texto de cuerpo en sans serif de tamaño reducido pero legible.",
+      "Uso sistemático de negrita para enfatizar conceptos clínicos clave."
+    ],
+    "color": [
+      "Azul oscuro como color principal de autoridad clínica y estructura.",
+      "Naranja para principios y énfasis.",
+      "Verde para recomendaciones de ejercicio.",
+      "Amarillo para intensidad.",
+      "Rojo para progresión y precauciones.",
+      "El color funciona como codificación semántica de secciones."
+    ],
+    "spacing": [
+      "Espaciado compacto dentro de cada módulo.",
+      "Separación visible entre secciones mediante márgenes blancos.",
+      "Uso de padding interno consistente en cajas y cabeceras.",
+      "Mayor compactación en bloques con listas y múltiples iconos."
+    ],
+    "borders": [
+      "Cajas con bordes finos y esquinas redondeadas.",
+      "Separadores verticales internos en módulos multicolumna.",
+      "Uso de bandas superiores coloreadas como borde estructural principal."
+    ],
+    "shadows": [
+      "No se observa uso relevante de sombras profundas.",
+      "La jerarquía se construye principalmente mediante color, borde y tamaño."
+    ],
+    "illustration": [
+      "Figura humana estilizada en la cabecera como ilustración principal.",
+      "Ilustraciones secundarias simplificadas para representar actividades físicas.",
+      "Las ilustraciones tienen función explicativa, no decorativa."
+    ],
+    "iconography": [
+      "Iconografía lineal o sólida de estilo uniforme.",
+      "Uso intensivo de iconos como marcadores semánticos.",
+      "Los iconos permiten escanear rápidamente el contenido.",
+      "La iconografía se adapta cromáticamente a cada sección."
+    ]
+  },
+  "strengths": [
+    "Jerarquía visual muy clara pese a la elevada cantidad de contenido.",
+    "Sistema modular fácil de escanear.",
+    "Codificación cromática consistente por sección.",
+    "Iconografía con alta utilidad informativa.",
+    "Secuencia narrativa lógica desde evaluación hasta beneficios y precauciones.",
+    "Buen equilibrio entre contenido clínico, iconos y elementos gráficos.",
+    "La numeración de secciones favorece la orientación del lector."
+  ],
+  "weaknesses": [
+    "La densidad informativa es elevada y puede resultar exigente en pantallas pequeñas.",
+    "Algunos textos de cuerpo son relativamente pequeños.",
+    "El uso de muchos colores distintos puede fragmentar visualmente la identidad global.",
+    "Algunos módulos contienen demasiados elementos simultáneos.",
+    "La composición prioriza exhaustividad sobre simplicidad."
+  ],
+  "uncertainties": [
+    "No puede determinarse la familia tipográfica exacta a partir de la imagen.",
+    "No puede determinarse con precisión la retícula base ni las medidas de espaciado.",
+    "No puede determinarse si los iconos pertenecen a una librería concreta.",
+    "La proporción exacta del lienzo debe medirse desde el archivo fuente.",
+    "No puede inferirse todavía qué elementos son parte de una identidad de marca propia y cuáles son decisiones aisladas de esta pieza."
+  ]
+}

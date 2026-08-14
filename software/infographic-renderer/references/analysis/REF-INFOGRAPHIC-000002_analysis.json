@@ -1,0 +1,145 @@
+{
+  "reference_id": "REF-INFOGRAPHIC-000002",
+  "source_file": "REF-INFOGRAPHIC-000002_source.jpg",
+  "study_reason": "Analizar una infografía clínica comparativa en la que la anatomía constituye el principal vehículo explicativo, con contraste sano-patológico, anotaciones laterales y una síntesis terapéutica inferior, para extraer patrones potencialmente reutilizables en FisioForYou.",
+  "canvas": {
+    "orientation": "landscape",
+    "aspect_ratio_observation": "Formato horizontal, cercano a una proporción 4:3, organizado principalmente mediante una comparación bilateral."
+  },
+  "structure": {
+    "reading_order": [
+      "Título comparativo: tendón sano versus tendinopatía",
+      "Representación anatómica central del tendón sano",
+      "Características del tendón sano en la columna izquierda",
+      "Representación anatómica central de la tendinopatía",
+      "Características patológicas en la columna derecha",
+      "Mensaje clínico central sobre carga",
+      "Bloque inferior de estrategias terapéuticas",
+      "Mensaje final de síntesis"
+    ],
+    "regions": [
+      "Cabecera comparativa superior",
+      "Columna izquierda de características del tendón sano",
+      "Anatomía central izquierda",
+      "Anatomía central derecha",
+      "Columna derecha de características de tendinopatía",
+      "Callout horizontal de interpretación clínica",
+      "Panel inferior de estrategias terapéuticas",
+      "Franja final de conclusión"
+    ],
+    "alignment": [
+      "Composición bilateral aproximadamente simétrica alrededor de las dos representaciones anatómicas",
+      "Textos laterales alineados verticalmente con marcadores iconográficos",
+      "Título superior dividido conceptualmente en dos estados enfrentados",
+      "Bloque terapéutico inferior organizado en cinco columnas",
+      "Mensajes de síntesis centrados horizontalmente"
+    ],
+    "visual_anchor": "Las dos representaciones anatómicas de gran tamaño del tendón sano y del tendón patológico constituyen el anclaje visual dominante.",
+    "density": "Densidad informativa media. La mayor parte de la información se concentra alrededor de la comparación anatómica y en el panel terapéutico inferior.",
+    "whitespace": "Espacio en blanco limitado alrededor de la anatomía, pero suficiente separación entre las anotaciones laterales. La composición utiliza grandes áreas anatómicas en lugar de amplias zonas vacías."
+  },
+  "components": [
+    {
+      "observed_role": "comparison_title",
+      "description": "Título superior que presenta explícitamente dos estados enfrentados mediante la fórmula sano versus patológico.",
+      "repeat_count": 1
+    },
+    {
+      "observed_role": "anatomical_comparison",
+      "description": "Dos representaciones anatómicas paralelas que muestran visualmente diferencias estructurales entre tejido sano y patológico.",
+      "repeat_count": 1
+    },
+    {
+      "observed_role": "positive_feature_item",
+      "description": "Característica del estado sano acompañada de marcador circular con símbolo de validación.",
+      "repeat_count": 5
+    },
+    {
+      "observed_role": "pathology_feature_item",
+      "description": "Característica del estado patológico acompañada de marcador circular de advertencia.",
+      "repeat_count": 5
+    },
+    {
+      "observed_role": "clinical_interpretation_callout",
+      "description": "Mensaje horizontal destacado que sintetiza la interpretación clínica principal sobre la dosificación de carga.",
+      "repeat_count": 1
+    },
+    {
+      "observed_role": "treatment_strategy_item",
+      "description": "Elemento terapéutico compuesto por icono, nombre de estrategia y explicación breve.",
+      "repeat_count": 5
+    },
+    {
+      "observed_role": "closing_statement",
+      "description": "Mensaje final breve que funciona como conclusión conceptual de la infografía.",
+      "repeat_count": 1
+    }
+  ],
+  "visual_behavior": {
+    "typography": [
+      "Título principal en sans serif, mayúsculas, gran tamaño y peso elevado.",
+      "Contraste tipográfico y cromático entre el estado sano y la tendinopatía.",
+      "Etiquetas terapéuticas inferiores en mayúsculas y negrita.",
+      "Texto explicativo secundario de menor tamaño.",
+      "Uso selectivo de color naranja para enfatizar conceptos clave."
+    ],
+    "color": [
+      "Paleta global restringida basada principalmente en negro, blanco, naranja y tonos anatómicos.",
+      "Naranja utilizado como color de énfasis y señalización.",
+      "Negro utilizado para texto principal y marcadores de advertencia.",
+      "Los tonos naturales del tejido aportan gran parte de la información visual.",
+      "El contraste cromático es más contenido que en la referencia 000001."
+    ],
+    "spacing": [
+      "Separación vertical regular entre las características laterales.",
+      "Gran parte del espacio central se reserva a las representaciones anatómicas.",
+      "Panel terapéutico inferior compacto y dividido regularmente.",
+      "Separación mediante líneas verticales entre estrategias terapéuticas."
+    ],
+    "borders": [
+      "Uso de contenedores de borde fino y esquinas redondeadas en los mensajes inferiores.",
+      "Líneas verticales como separadores del bloque terapéutico.",
+      "Línea horizontal fina bajo la cabecera."
+    ],
+    "shadows": [
+      "No se observan sombras como recurso jerárquico principal.",
+      "La profundidad procede principalmente del render anatómico."
+    ],
+    "illustration": [
+      "Representación anatómica detallada y de apariencia tridimensional como elemento explicativo principal.",
+      "Contraste visual directo entre organización fibrilar normal y alterada.",
+      "Iconos terapéuticos lineales simplificados en contraste con la anatomía detallada.",
+      "La ilustración anatómica tiene función diagnóstica y educativa, no decorativa."
+    ],
+    "iconography": [
+      "Checks naranjas para atributos del estado sano.",
+      "Símbolos de advertencia para atributos patológicos.",
+      "Iconos lineales para representar estrategias terapéuticas.",
+      "Sistema iconográfico simple que refuerza la polaridad sano-patológico."
+    ]
+  },
+  "strengths": [
+    "La comparación sano versus patológico se comprende casi inmediatamente.",
+    "La anatomía funciona como evidencia visual y no como mero elemento decorativo.",
+    "Existe una correspondencia clara entre imagen anatómica y anotaciones laterales.",
+    "La paleta restringida produce mayor cohesión visual.",
+    "La estructura bilateral es adecuada para explicar diferencias clínicas.",
+    "El mensaje clínico principal está claramente separado de la descripción anatómica.",
+    "El bloque terapéutico transforma la explicación patológica en información accionable.",
+    "La pieza mantiene una narrativa compacta: comparación, interpretación y abordaje."
+  ],
+  "weaknesses": [
+    "El fondo fotográfico visible reduce el contraste y añade ruido visual.",
+    "La anatomía ocupa gran parte del lienzo y limita el espacio disponible para explicaciones más desarrolladas.",
+    "Algunos textos laterales se aproximan mucho a los bordes del lienzo.",
+    "La representación anatómica puede transmitir una precisión mayor de la que el formato divulgativo permite justificar por sí solo.",
+    "La estructura bilateral es muy eficaz para comparaciones, pero poco transferible a contenidos sin dos estados claramente enfrentados."
+  ],
+  "uncertainties": [
+    "No puede determinarse la procedencia ni el grado de fidelidad científica del render anatómico únicamente a partir de la imagen.",
+    "No puede determinarse la familia tipográfica exacta.",
+    "No puede determinarse si el fondo fotográfico forma parte intencionada del diseño original o procede de una composición previa.",
+    "No pueden inferirse las dimensiones exactas de la retícula ni los espaciados.",
+    "No puede determinarse si el naranja pertenece a una identidad visual estable o es específico de esta pieza."
+  ]
+}
