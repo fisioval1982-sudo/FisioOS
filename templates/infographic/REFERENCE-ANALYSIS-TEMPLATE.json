@@ -1,0 +1,30 @@
+{
+  "reference_id": "REF-INFOGRAPHIC-000001",
+  "source_file": "REF-INFOGRAPHIC-000001__source.png",
+  "study_reason": "",
+  "canvas": {
+    "orientation": "unknown",
+    "aspect_ratio_observation": ""
+  },
+  "structure": {
+    "reading_order": [],
+    "regions": [],
+    "alignment": [],
+    "visual_anchor": "",
+    "density": "",
+    "whitespace": ""
+  },
+  "components": [],
+  "visual_behavior": {
+    "typography": [],
+    "color": [],
+    "spacing": [],
+    "borders": [],
+    "shadows": [],
+    "illustration": [],
+    "iconography": []
+  },
+  "strengths": [],
+  "weaknesses": [],
+  "uncertainties": []
+}

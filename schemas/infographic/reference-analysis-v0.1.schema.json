@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fisoos://schemas/infographic/reference-analysis-v0.1.schema.json",
+  "title": "FisioOS Reference Infographic Analysis",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "reference_id",
+    "source_file",
+    "study_reason",
+    "canvas",
+    "structure",
+    "components",
+    "visual_behavior",
+    "strengths",
+    "weaknesses",
+    "uncertainties"
+  ],
+  "properties": {
+    "reference_id": {
+      "type": "string",
+      "pattern": "^REF-INFOGRAPHIC-[0-9]{6}$"
+    },
+    "source_file": {
+      "type": "string"
+    },
+    "study_reason": {
+      "type": "string"
+    },
+    "canvas": {
+      "type": "object"
+    },
+    "structure": {
+      "type": "object"
+    },
+    "components": {
+      "type": "array"
+    },
+    "visual_behavior": {
+      "type": "object"
+    },
+    "strengths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "weaknesses": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
