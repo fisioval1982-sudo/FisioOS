@@ -1,32 +1,67 @@
 {
   "suite": "reference-set-001-render-constraints",
+  "version": "1.1",
+  "output_language": "es-ES",
   "cases": [
     {
       "id": "REG-000001-LEGIBILITY",
       "reference_id": "REF-INFOGRAPHIC-000001",
+      "purpose": "Prevent reconstruction of dense layouts by shrinking or losing text.",
       "expected_language": "es-ES",
+      "requirements": {
+        "all_visible_text_complete": true,
+        "allow_text_clipping": false,
+        "allow_silent_content_removal": false,
+        "allow_font_shrink_below_approved_minimum": false
+      },
       "must_block": [
         "font_below_approved_minimum",
         "text_clipping",
-        "silent_content_removal"
+        "text_overlap",
+        "silent_content_removal",
+        "unresolved_legibility_profile"
       ]
     },
     {
       "id": "REG-000002-ANATOMY",
       "reference_id": "REF-INFOGRAPHIC-000002",
+      "purpose": "Prevent plausible-looking but clinically inaccurate anatomical reconstruction.",
       "expected_language": "es-ES",
+      "requirements": {
+        "clinically_meaningful_anatomy": true,
+        "approved_anatomical_asset_required": true,
+        "allow_free_generated_anatomy": false,
+        "geometry_lock_required": true,
+        "anatomical_view_required": true,
+        "orientation_required": true,
+        "laterality_required_when_applicable": true,
+        "clinical_anatomy_qa_required": true
+      },
       "must_block": [
         "free_generated_clinical_anatomy",
         "unapproved_anatomical_asset",
+        "missing_anatomical_view",
+        "missing_orientation",
+        "incorrect_laterality",
+        "geometry_modified",
         "unsupported_visual_claim"
       ]
     },
     {
       "id": "REG-000003-LANGUAGE",
+      "purpose": "Prevent the language of a visual reference from leaking into FisioForYou output.",
       "expected_language": "es-ES",
+      "requirements": {
+        "all_authored_visible_text_language": "es-ES",
+        "reference_text_is_content_source": false,
+        "renderer_translation_allowed": false,
+        "renderer_rewrite_allowed": false
+      },
       "must_block": [
         "wrong_output_language",
-        "reference_text_used_as_content_source"
+        "reference_text_used_as_content_source",
+        "renderer_generated_translation",
+        "unapproved_visible_copy"
       ]
     }
   ]
