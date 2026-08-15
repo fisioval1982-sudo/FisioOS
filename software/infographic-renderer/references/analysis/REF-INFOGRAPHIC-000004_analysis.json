@@ -1,0 +1,149 @@
+{
+  "reference_id": "REF-INFOGRAPHIC-000004",
+  "source_file": "REF-INFOGRAPHIC-000004_source.jpg",
+  "media_type": "image",
+  "content_family": "exercise-program",
+  "study_reason": "Analizar una lámina de ejercicios avanzados de estabilidad de rodilla para identificar patrones útiles en la representación visual de ejercicios, organización por tareas, relación imagen-texto y comunicación de programas terapéuticos.",
+  "source_language": "en",
+  "canvas": {
+    "orientation": "portrait",
+    "aspect_ratio_observation": "Formato vertical organizado como una colección de ejercicios distribuidos secuencialmente sobre un lienzo único."
+  },
+  "structure": {
+    "reading_order": [
+      "Título del programa",
+      "Identificación general del objetivo",
+      "Secuencia de ejercicios",
+      "Nombre o identificación de cada ejercicio",
+      "Representación visual de posición o ejecución",
+      "Indicaciones breves asociadas"
+    ],
+    "regions": [
+      "Cabecera",
+      "Zona principal de ejercicios",
+      "Módulos individuales de ejercicio",
+      "Zona inferior de cierre"
+    ],
+    "alignment": [
+      "Organización mediante módulos repetidos",
+      "Representaciones corporales asociadas espacialmente a cada ejercicio",
+      "Jerarquía repetitiva que permite recorrer la lámina ejercicio por ejercicio"
+    ],
+    "visual_anchor": "Las figuras humanas realizando los ejercicios constituyen los principales anclajes visuales.",
+    "density": "Media-alta debido a la presencia simultánea de múltiples ejercicios.",
+    "whitespace": "El espacio libre se utiliza principalmente para separar ejercicios y evitar que las diferentes posiciones corporales se confundan entre sí."
+  },
+  "components": [
+    {
+      "observed_role": "exercise_program_header",
+      "description": "Cabecera que identifica el objetivo general o nivel del programa."
+    },
+    {
+      "observed_role": "exercise_card",
+      "description": "Unidad repetible que agrupa identificación del ejercicio, representación corporal e instrucciones."
+    },
+    {
+      "observed_role": "exercise_illustration",
+      "description": "Representación visual de la posición o movimiento requerido."
+    },
+    {
+      "observed_role": "exercise_label",
+      "description": "Nombre breve que permite identificar cada tarea."
+    },
+    {
+      "observed_role": "exercise_instruction",
+      "description": "Texto asociado a la ejecución o propósito del ejercicio."
+    }
+  ],
+  "visual_behavior": {
+    "typography": [
+      "Jerarquía clara entre título general, nombres de ejercicios e indicaciones.",
+      "Texto subordinado visualmente a las demostraciones corporales.",
+      "Las instrucciones requieren tamaños suficientemente grandes para consulta durante el ejercicio."
+    ],
+    "color": [
+      "Paleta contenida que evita competir excesivamente con las representaciones corporales.",
+      "El color se utiliza para organizar y destacar, no como principal transmisor del movimiento."
+    ],
+    "spacing": [
+      "Separación entre ejercicios para mantener independencia visual.",
+      "Necesidad de espacio suficiente alrededor de extremidades y posiciones corporales.",
+      "La repetición modular favorece una cadencia visual regular."
+    ],
+    "borders": [
+      "La separación entre ejercicios depende principalmente de composición y espacio, con uso limitado de contenedores pesados."
+    ],
+    "shadows": [
+      "Las sombras no constituyen un mecanismo jerárquico relevante."
+    ],
+    "illustration": [
+      "La figura humana es el recurso explicativo principal.",
+      "La postura corporal comunica información que sería difícil transmitir únicamente mediante texto.",
+      "La utilidad depende de que las posiciones articulares relevantes sean visibles."
+    ],
+    "iconography": [
+      "La iconografía secundaria tiene menor importancia que la demostración corporal."
+    ]
+  },
+  "strengths": [
+    "Permite consultar varios ejercicios dentro de una misma pieza.",
+    "La representación corporal reduce la dependencia de descripciones textuales extensas.",
+    "La repetición de una estructura común facilita aprender cómo leer cada ejercicio.",
+    "El formato funciona como biblioteca visual o recordatorio de tareas.",
+    "La separación modular permite comparar ejercicios rápidamente."
+  ],
+  "weaknesses": [
+    "Mostrar muchos ejercicios simultáneamente puede reducir el tamaño útil de cada demostración.",
+    "Una imagen estática puede ser insuficiente para explicar movimientos complejos.",
+    "La postura final por sí sola puede ocultar trayectoria, velocidad, control o compensaciones.",
+    "Existe riesgo de que el usuario interprete la lámina como una prescripción individualizada.",
+    "Las instrucciones pueden resultar demasiado pequeñas cuando aumenta el número de ejercicios."
+  ],
+  "uncertainties": [
+    "No puede determinarse únicamente desde la referencia la dosis clínica adecuada de los ejercicios.",
+    "No puede establecerse si el orden mostrado representa una progresión terapéutica real.",
+    "No puede asumirse que las posiciones representadas sean técnicamente óptimas para todos los pacientes.",
+    "No se dispone de información suficiente para validar indicaciones, contraindicaciones o criterios de progresión."
+  ],
+  "knowledge_candidates": [
+    {
+      "candidate": "Representar cada ejercicio mediante un componente repetible que separe claramente nombre, demostración, instrucciones y dosis.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "La demostración corporal debe mantener tamaño suficiente para reconocer las articulaciones y segmentos relevantes.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "No reducir las demostraciones de ejercicio para introducir más ejercicios en una misma pieza; dividir el contenido cuando sea necesario.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Los movimientos cuya trayectoria sea clínicamente relevante deberían utilizar secuencia de posiciones o vídeo en lugar de una única imagen estática.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Separar visualmente la técnica del ejercicio de su dosificación.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "La dosis, progresión, regresión y criterios clínicos deben proceder de contenido validado y no inferirse de una referencia visual.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Las fichas de ejercicio deben evitar parecer una prescripción universal cuando el contenido requiera individualización clínica.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Las colecciones extensas de ejercicios deberían poder dividirse en varias páginas, tarjetas o escenas antes que sacrificar legibilidad.",
+      "confidence": "high"
+    }
+  ],
+  "render_authority": {
+    "reference_is_render_spec": false,
+    "reference_text_is_content_source": false,
+    "reference_exercise_dosage_is_clinical_authority": false,
+    "reference_exercise_technique_is_canonical": false,
+    "reference_assets_are_production_assets": false
+  }
+}

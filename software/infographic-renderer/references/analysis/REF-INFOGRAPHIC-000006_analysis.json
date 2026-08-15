@@ -1,0 +1,160 @@
+{
+  "reference_id": "REF-INFOGRAPHIC-000006",
+  "source_file": "REF-INFOGRAPHIC-000006_source.jpg",
+  "media_type": "image",
+  "content_family": "study-reference",
+  "study_reason": "Analizar una ficha educativa sobre nervios relevantes del miembro superior que combina organización mnemotécnica, anatomía esquemática, territorios funcionales y bloques de información para extraer patrones aplicables a materiales de estudio y consulta rápida de FisioForYou.",
+  "source_language": "en",
+  "canvas": {
+    "orientation": "portrait",
+    "aspect_ratio_observation": "Formato vertical compacto orientado a consulta rápida y memorización de información neuroanatómica."
+  },
+  "structure": {
+    "reading_order": [
+      "Título principal",
+      "Organización de los nervios o conceptos principales",
+      "Representaciones anatómicas o esquemáticas",
+      "Información funcional asociada",
+      "Elementos mnemotécnicos",
+      "Información complementaria"
+    ],
+    "regions": [
+      "Cabecera",
+      "Bloques principales de nervios",
+      "Representaciones anatómicas",
+      "Información funcional",
+      "Elementos de memorización",
+      "Zona inferior complementaria"
+    ],
+    "alignment": [
+      "Organización modular por concepto",
+      "Asociación espacial entre nombre, representación y función",
+      "Repetición de una estructura visual similar para diferentes nervios",
+      "Uso de agrupación para facilitar comparación y recuerdo"
+    ],
+    "visual_anchor": "Las representaciones del miembro superior y los elementos gráficos asociados a cada nervio actúan como anclajes de memoria.",
+    "density": "Alta; se concentra una cantidad considerable de información anatómica y funcional en una sola pieza.",
+    "whitespace": "Reducido debido al carácter de ficha de estudio y consulta."
+  },
+  "components": [
+    {
+      "observed_role": "knowledge_module",
+      "description": "Bloque repetible dedicado a un nervio o concepto concreto."
+    },
+    {
+      "observed_role": "anatomical_scheme",
+      "description": "Representación simplificada utilizada para situar espacialmente el conocimiento."
+    },
+    {
+      "observed_role": "functional_summary",
+      "description": "Información breve que relaciona la estructura con funciones o territorios relevantes."
+    },
+    {
+      "observed_role": "mnemonic_device",
+      "description": "Recurso textual o visual diseñado para favorecer recuerdo y recuperación de información."
+    },
+    {
+      "observed_role": "comparison_structure",
+      "description": "Repetición de campos equivalentes que facilita comparar diferentes nervios."
+    }
+  ],
+  "visual_behavior": {
+    "typography": [
+      "Jerarquía entre nombre del nervio, información principal y detalles secundarios.",
+      "Uso de texto compacto para condensar conocimiento.",
+      "Variaciones de peso o énfasis para facilitar escaneo."
+    ],
+    "color": [
+      "Color utilizado para distinguir bloques o conceptos.",
+      "La codificación cromática ayuda a separar información, aunque no debería constituir el único mecanismo identificador.",
+      "Paleta educativa con varios acentos visuales."
+    ],
+    "spacing": [
+      "Espaciado compacto.",
+      "Agrupación estrecha de información relacionada.",
+      "Separación modular entre conceptos."
+    ],
+    "borders": [
+      "Los bloques o agrupaciones contribuyen a segmentar la información."
+    ],
+    "shadows": [
+      "Papel secundario frente a color, agrupación y jerarquía tipográfica."
+    ],
+    "illustration": [
+      "Representaciones anatómicas simplificadas.",
+      "La ilustración se utiliza principalmente para apoyar localización y memoria.",
+      "El grado de simplificación puede mejorar comprensión pero también introducir imprecisión."
+    ],
+    "iconography": [
+      "Recursos gráficos y asociaciones visuales empleados como apoyo mnemotécnico."
+    ]
+  },
+  "strengths": [
+    "La estructura modular facilita consulta rápida.",
+    "Permite comparar conceptos relacionados dentro de una misma pieza.",
+    "Combina información verbal y espacial para favorecer aprendizaje.",
+    "La repetición de una estructura común reduce el esfuerzo necesario para interpretar cada bloque.",
+    "Los recursos mnemotécnicos pueden favorecer recuperación de información.",
+    "La síntesis obliga a priorizar información esencial."
+  ],
+  "weaknesses": [
+    "La elevada densidad puede comprometer legibilidad en dispositivos móviles.",
+    "La simplificación anatómica puede generar asociaciones espaciales imprecisas.",
+    "Una mnemotecnia eficaz no garantiza exactitud conceptual.",
+    "La condensación puede eliminar excepciones o matices clínicamente relevantes.",
+    "Demasiados códigos visuales simultáneos pueden aumentar la carga cognitiva.",
+    "Existe riesgo de mezclar conocimiento anatómico, funcional y clínico sin distinguir su naturaleza."
+  ],
+  "uncertainties": [
+    "No se ha validado la exactitud neuroanatómica de las representaciones.",
+    "No se ha comprobado la precisión de todas las asociaciones funcionales.",
+    "No puede determinarse si las mnemotecnias representan reglas generales o simplificaciones docentes.",
+    "No se conoce la procedencia científica del contenido.",
+    "No puede asumirse que toda la información incluida tenga la misma relevancia clínica."
+  ],
+  "knowledge_candidates": [
+    {
+      "candidate": "Las fichas de estudio deberían utilizar módulos repetibles con campos equivalentes para facilitar comparación entre conceptos.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Separar explícitamente información anatómica, funcional, clínica y mnemotécnica aunque aparezcan dentro del mismo módulo.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Una mnemotecnia debe considerarse una ayuda de recuperación de conocimiento y nunca una fuente de autoridad clínica.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Las representaciones anatómicas simplificadas deben conservar las relaciones espaciales necesarias para el objetivo educativo.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "La simplificación visual no debe eliminar excepciones o matices cuando estos cambien la interpretación clínica.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Las fichas densas deberían disponer de versiones divididas o progresivas para pantallas pequeñas.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "No utilizar exclusivamente el color para distinguir nervios, estructuras o categorías.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Priorizar información según el objetivo de la pieza en lugar de intentar condensar todo el conocimiento disponible.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "La estructura de una ficha de estudio debe permitir recuperar rápidamente una respuesta concreta sin obligar a leer toda la pieza.",
+      "confidence": "high"
+    }
+  ],
+  "render_authority": {
+    "reference_is_render_spec": false,
+    "reference_text_is_content_source": false,
+    "reference_anatomy_is_canonical": false,
+    "reference_mnemonics_are_clinical_authority": false,
+    "reference_assets_are_production_assets": false
+  }
+}

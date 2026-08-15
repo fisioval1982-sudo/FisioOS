@@ -1,0 +1,254 @@
+{
+  "synthesis_id": "REFERENCE-SET-001",
+  "version": "1.0",
+  "reference_ids": [
+    "REF-INFOGRAPHIC-000001",
+    "REF-INFOGRAPHIC-000002"
+  ],
+  "media_type": "image",
+  "families_represented": [
+    "clinical-education"
+  ],
+  "purpose": "Sintetizar el conocimiento visual extraído de las dos primeras referencias de infografía y separar patrones observados, antipatrones, componentes candidatos y restricciones que requieren validación posterior.",
+  "evidence_summary": {
+    "reference_count": 2,
+    "family_count": 1,
+    "notes": [
+      "La evidencia visual todavía es limitada y no permite definir un lenguaje visual general de FisioForYou.",
+      "Las dos referencias permiten identificar hipótesis iniciales sobre jerarquía, secuencia educativa, comparación clínica y uso de anatomía.",
+      "Los fallos observados durante pruebas de reconstrucción posteriores aportan evidencia adicional sobre legibilidad, idioma y fidelidad anatómica.",
+      "Ningún patrón estilístico de este set debe considerarse aprobado únicamente por aparecer en estas referencias."
+    ]
+  },
+  "cross_reference_patterns": [
+    {
+      "pattern_id": "CRP-001",
+      "pattern": "Organizar la información clínica mediante una jerarquía visual explícita en lugar de presentar todos los elementos con el mismo peso.",
+      "evidence_count": 2,
+      "supported_by": [
+        "REF-INFOGRAPHIC-000001",
+        "REF-INFOGRAPHIC-000002"
+      ],
+      "confidence": "medium",
+      "status": "candidate"
+    },
+    {
+      "pattern_id": "CRP-002",
+      "pattern": "Utilizar recursos visuales para reducir la dependencia de explicaciones textuales extensas.",
+      "evidence_count": 2,
+      "supported_by": [
+        "REF-INFOGRAPHIC-000001",
+        "REF-INFOGRAPHIC-000002"
+      ],
+      "confidence": "medium",
+      "status": "candidate"
+    },
+    {
+      "pattern_id": "CRP-003",
+      "pattern": "Separar el contenido en unidades visuales reconocibles que permitan escaneo rápido.",
+      "evidence_count": 2,
+      "supported_by": [
+        "REF-INFOGRAPHIC-000001",
+        "REF-INFOGRAPHIC-000002"
+      ],
+      "confidence": "medium",
+      "status": "candidate"
+    }
+  ],
+  "family_specific_patterns": [
+    {
+      "family": "clinical-education",
+      "patterns": [
+        {
+          "pattern": "La secuencia explicación visual -> interpretación clínica -> aplicación práctica puede ser útil para determinados contenidos educativos.",
+          "supported_by": [
+            "REF-INFOGRAPHIC-000002"
+          ],
+          "confidence": "low",
+          "status": "candidate"
+        },
+        {
+          "pattern": "La comparación bilateral puede facilitar contenidos que contrasten dos estados o condiciones.",
+          "supported_by": [
+            "REF-INFOGRAPHIC-000002"
+          ],
+          "confidence": "low",
+          "status": "candidate"
+        }
+      ]
+    }
+  ],
+  "anti_patterns": [
+    {
+      "anti_pattern_id": "ANTI-001",
+      "description": "Reducir el tamaño del texto para introducir más contenido en el lienzo.",
+      "observed_or_discovered_in": [
+        "REF-INFOGRAPHIC-000001"
+      ],
+      "severity": "high",
+      "status": "supported"
+    },
+    {
+      "anti_pattern_id": "ANTI-002",
+      "description": "Permitir que una IA reconstruya libremente anatomía clínicamente significativa a partir de una descripción textual.",
+      "observed_or_discovered_in": [
+        "REF-INFOGRAPHIC-000002"
+      ],
+      "severity": "critical",
+      "status": "supported"
+    },
+    {
+      "anti_pattern_id": "ANTI-003",
+      "description": "Permitir que el idioma presente en una referencia determine el idioma del producto generado.",
+      "observed_or_discovered_in": [
+        "REF-INFOGRAPHIC-000001",
+        "REF-INFOGRAPHIC-000002"
+      ],
+      "severity": "high",
+      "status": "supported"
+    },
+    {
+      "anti_pattern_id": "ANTI-004",
+      "description": "Utilizar fondos o elementos ambientales que compitan con el contenido clínico principal.",
+      "observed_or_discovered_in": [
+        "REF-INFOGRAPHIC-000002"
+      ],
+      "severity": "medium",
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "topic": "visual_complexity",
+      "description": "Las referencias utilizan estrategias visuales distintas y no aportan evidencia suficiente para fijar un único nivel de complejidad, densidad o estilo de ilustración.",
+      "references": [
+        "REF-INFOGRAPHIC-000001",
+        "REF-INFOGRAPHIC-000002"
+      ],
+      "resolution": "unresolved"
+    }
+  ],
+  "component_candidates": [
+    {
+      "component": "clinical-callout",
+      "supported_by": [
+        "REF-INFOGRAPHIC-000002"
+      ],
+      "confidence": "low",
+      "status": "candidate"
+    },
+    {
+      "component": "comparative-clinical-panel",
+      "supported_by": [
+        "REF-INFOGRAPHIC-000002"
+      ],
+      "confidence": "low",
+      "status": "candidate"
+    },
+    {
+      "component": "icon-text-item",
+      "supported_by": [
+        "REF-INFOGRAPHIC-000001",
+        "REF-INFOGRAPHIC-000002"
+      ],
+      "confidence": "medium",
+      "status": "candidate"
+    },
+    {
+      "component": "treatment-strategy-row",
+      "supported_by": [
+        "REF-INFOGRAPHIC-000002"
+      ],
+      "confidence": "low",
+      "status": "candidate"
+    }
+  ],
+  "design_rule_candidates": [
+    {
+      "rule": "Mantener una jerarquía visual claramente reconocible entre título, contenido principal y contenido secundario.",
+      "supported_by": [
+        "REF-INFOGRAPHIC-000001",
+        "REF-INFOGRAPHIC-000002"
+      ],
+      "confidence": "medium",
+      "status": "candidate"
+    },
+    {
+      "rule": "Cuando la ilustración sea compleja, limitar otros elementos visuales que compitan por atención.",
+      "supported_by": [
+        "REF-INFOGRAPHIC-000002"
+      ],
+      "confidence": "low",
+      "status": "candidate"
+    }
+  ],
+  "qa_constraint_candidates": [
+    {
+      "constraint": "El texto visible no puede reducirse por debajo de los mínimos de legibilidad aprobados para hacer caber contenido.",
+      "evidence_source": "reconstruction-test",
+      "related_references": [
+        "REF-INFOGRAPHIC-000001"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint": "La salida debe utilizar es-ES salvo que una especificación aprobada solicite explícitamente otro idioma.",
+      "evidence_source": "reconstruction-test",
+      "related_references": [
+        "REF-INFOGRAPHIC-000001",
+        "REF-INFOGRAPHIC-000002"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint": "La anatomía clínicamente significativa no puede reconstruirse libremente mediante generación visual.",
+      "evidence_source": "reconstruction-test",
+      "related_references": [
+        "REF-INFOGRAPHIC-000002"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint": "El texto de una referencia visual no constituye contenido clínico autorizado para la pieza final.",
+      "evidence_source": "architecture",
+      "related_references": [
+        "REF-INFOGRAPHIC-000001",
+        "REF-INFOGRAPHIC-000002"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    }
+  ],
+  "knowledge_gaps": [
+    {
+      "gap": "No existe evidencia suficiente para establecer una paleta cromática propia de FisioForYou.",
+      "priority": "medium"
+    },
+    {
+      "gap": "No existe evidencia suficiente para establecer una escala tipográfica definitiva.",
+      "priority": "high"
+    },
+    {
+      "gap": "No existe evidencia suficiente para definir un sistema de layouts.",
+      "priority": "high"
+    },
+    {
+      "gap": "Faltan referencias de otras familias comunicativas.",
+      "priority": "high"
+    },
+    {
+      "gap": "No se dispone todavía de un registro aprobado de assets anatómicos.",
+      "priority": "high"
+    }
+  ],
+  "open_questions": [
+    "¿Qué patrones sobreviven cuando se incorporan referencias de anatomía, ejercicios, educación clínica y fichas de estudio?",
+    "¿Qué componentes aparecen repetidamente en distintas familias?",
+    "¿Qué nivel de densidad resulta compatible con lectura móvil?",
+    "¿Qué decisiones deben pertenecer al design system y cuáles deben depender de la familia de contenido?"
+  ],
+  "synthesis_status": "draft"
+}
