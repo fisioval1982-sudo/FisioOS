@@ -1,0 +1,179 @@
+{
+  "reference_id": "REF-VIDEO-000001",
+  "source_file": "REF-VIDEO-000001_source.mp4",
+  "media_type": "video",
+  "study_reason": "Analizar una pieza audiovisual vertical de divulgación musculoesquelética basada en anatomía 3D, movimiento de cámara, texto cinético y representación visual del tejido para extraer patrones narrativos y audiovisuales potencialmente útiles para FisioForYou.",
+  "source_language": "es",
+  "duration_seconds": 49.3,
+  "canvas": {
+    "orientation": "portrait",
+    "width_px": 720,
+    "height_px": 1280,
+    "aspect_ratio": "9:16"
+  },
+  "temporal_structure": {
+    "reading_model": "sequential",
+    "observed_flow": [
+      "Presentación anatómica de la región musculotendinosa",
+      "Aproximación progresiva hacia estructuras de interés",
+      "Cambio de escala desde anatomía macroscópica hacia representación tisular o fibrilar",
+      "Representación visual de alteración o pérdida de continuidad tisular",
+      "Retorno a anatomía macroscópica",
+      "Uso de resaltado visual para focalizar una región",
+      "Ampliación final del contexto corporal"
+    ],
+    "narrative_pattern": "macro anatomy -> zoom/detail -> tissue visualization -> altered tissue -> return to anatomy -> highlighted clinical focus -> contextual closing",
+    "pace": "continuous_medium",
+    "scene_dependency": "Cada escena obtiene parte de su significado de la anterior; la pieza funciona mejor como secuencia que como colección de fotogramas independientes."
+  },
+  "composition": {
+    "primary_anchor": "Representación anatómica 3D",
+    "subject_position": "Predominio de sujeto anatómico centrado o próximo al eje central.",
+    "background": "Fondos oscuros y poco saturados que aumentan el contraste con músculos, tendones y hueso.",
+    "depth": "Uso intenso de profundidad tridimensional y cambios de escala.",
+    "camera_behavior": [
+      "zoom",
+      "push-in",
+      "reframing",
+      "change_of_scale",
+      "anatomical_detail_transition"
+    ],
+    "visual_density": "Baja a media; normalmente existe un único foco anatómico dominante."
+  },
+  "text_behavior": {
+    "observed_language": "Spanish",
+    "style": "Palabras o fragmentos muy breves superpuestos sobre la imagen.",
+    "placement": "Principalmente zona central o inferior-central, evitando cubrir completamente la estructura anatómica relevante.",
+    "contrast": "Texto blanco de alto peso con contorno o sombra oscura para mantener legibilidad.",
+    "density": "Muy baja por pantalla.",
+    "temporal_role": "El texto aparece asociado al momento narrativo correspondiente en lugar de permanecer estático durante toda la pieza.",
+    "observed_examples": [
+      "pantorrilla",
+      "pierde",
+      "puede"
+    ],
+    "limitations": "El muestreo visual no constituye una transcripción completa del texto ni del audio."
+  },
+  "motion": {
+    "anatomical_motion": "Se utilizan cambios de posición, escala y perspectiva para revelar estructuras.",
+    "camera_motion": "El movimiento de cámara virtual guía la atención hacia zonas anatómicas concretas.",
+    "tissue_motion": "Se observan representaciones animadas de estructuras fibrilares y de alteración de continuidad.",
+    "attention_guidance": "El movimiento sustituye parcialmente a flechas, etiquetas y diagramas estáticos.",
+    "motion_function": "Principalmente explicativa y atencional, aunque algunos efectos pueden tener función dramática."
+  },
+  "transitions": {
+    "style": [
+      "continuous anatomical zoom",
+      "scale transition",
+      "scene cut",
+      "macro-to-micro transition",
+      "micro-to-macro transition"
+    ],
+    "behavior": "Las transiciones mantienen una continuidad conceptual entre anatomía macroscópica y representación tisular.",
+    "strength": "Permiten explicar diferentes escalas biológicas sin cargar una única pantalla con información."
+  },
+  "anatomy_and_clinical_visualization": {
+    "role": "La anatomía es el elemento narrativo principal.",
+    "observed_subjects": [
+      "región posterior de la pierna",
+      "musculatura de la pantorrilla",
+      "complejo musculotendinoso distal",
+      "representaciones fibrilares",
+      "extremidad inferior",
+      "modelo corporal musculoesquelético"
+    ],
+    "visual_fidelity_status": "unverified",
+    "clinical_authority": false,
+    "important_constraint": "La apariencia realista de las estructuras no demuestra exactitud anatómica, histológica, biomecánica ni fisiopatológica.",
+    "reuse_rule": "FisioForYou puede aprender del lenguaje audiovisual, escala y dirección de atención, pero no debe reutilizar estas representaciones como fuente anatómica canónica."
+  },
+  "visual_behavior": {
+    "color": [
+      "Fondos oscuros de alto contraste.",
+      "Tonos musculares rojizos y tendinosos claros.",
+      "Resaltados cálidos o luminosos para señalar zonas de interés.",
+      "Paleta relativamente restringida."
+    ],
+    "typography": [
+      "Sans serif de peso alto.",
+      "Muy pocas palabras simultáneas.",
+      "Alto contraste frente al fondo.",
+      "Texto subordinado a la imagen."
+    ],
+    "illustration": [
+      "Anatomía 3D de apariencia realista.",
+      "Representación a diferentes escalas.",
+      "Visualización de estructuras internas.",
+      "Efectos de iluminación para dirigir la atención."
+    ],
+    "branding": [
+      "Marca de agua social visible durante diferentes momentos del vídeo.",
+      "El branding permanece secundario respecto al contenido anatómico."
+    ]
+  },
+  "strengths": [
+    "El formato 9:16 está bien adaptado a consumo móvil.",
+    "Existe un foco visual dominante y fácil de seguir.",
+    "La anatomía funciona como protagonista narrativa.",
+    "El cambio macro-micro permite explicar conceptos difíciles de representar en una imagen estática.",
+    "El movimiento dirige la atención sin necesitar gran cantidad de elementos gráficos.",
+    "La cantidad de texto simultáneo es muy reducida.",
+    "El contraste entre sujeto anatómico y fondo favorece la comprensión visual.",
+    "La secuencia audiovisual permite distribuir información en el tiempo en lugar de saturar una única composición."
+  ],
+  "weaknesses": [
+    "El realismo visual puede hacer que el espectador atribuya precisión científica a representaciones no verificadas.",
+    "Algunas representaciones tisulares parecen ilustrativas y no deben interpretarse automáticamente como histología real.",
+    "Los efectos de lesión o discontinuidad pueden transmitir mecanismos clínicos más específicos de lo que el contenido validado permita afirmar.",
+    "Una pieza basada principalmente en imágenes puede depender excesivamente del audio o del texto temporal para comprender el mensaje completo.",
+    "El contenido textual aislado de algunos fotogramas carece de significado suficiente fuera de la secuencia."
+  ],
+  "uncertainties": [
+    "No se ha establecido la procedencia científica de los modelos anatómicos.",
+    "No se ha verificado la fidelidad de las representaciones tisulares.",
+    "No se ha realizado una transcripción completa del audio.",
+    "No se puede determinar a partir del vídeo si todas las transiciones representan fenómenos fisiológicos o son recursos puramente narrativos.",
+    "No se puede asumir que las deformaciones o discontinuidades visualizadas representen literalmente un mecanismo clínico real."
+  ],
+  "knowledge_candidates": [
+    {
+      "candidate": "Diseñar vídeos educativos verticales mediante una narrativa secuencial en lugar de intentar mostrar toda la información simultáneamente.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Utilizar el patrón macro -> micro -> macro para explicar relaciones entre anatomía regional y estructuras tisulares.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Mantener un único foco visual dominante por escena.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Mantener el texto superpuesto breve, altamente legible y sincronizado con el concepto visual mostrado.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Utilizar movimiento de cámara y escala como mecanismos de dirección atencional.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Separar explícitamente realismo visual de fidelidad científica.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Las animaciones anatómicas clínicamente significativas deben utilizar assets y modelos previamente aprobados, no anatomía generada libremente.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Evitar que efectos dramáticos de rotura, degeneración, inflamación o daño introduzcan afirmaciones clínicas no respaldadas.",
+      "confidence": "high"
+    }
+  ],
+  "render_authority": {
+    "reference_is_render_spec": false,
+    "reference_text_is_content_source": false,
+    "reference_anatomy_is_canonical": false,
+    "reference_assets_are_production_assets": false,
+    "reference_motion_is_automatically_approved": false
+  }
+}
