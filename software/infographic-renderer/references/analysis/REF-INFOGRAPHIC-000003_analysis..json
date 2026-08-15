@@ -1,0 +1,149 @@
+{
+  "reference_id": "REF-INFOGRAPHIC-000003",
+  "source_file": "REF-INFOGRAPHIC-000003_source.jpg",
+  "media_type": "image",
+  "content_family": "clinical-education",
+  "study_reason": "Analizar una guía visual de localización del dolor de rodilla que combina mapa corporal, zonas numeradas, causas frecuentes, síntomas típicos y señales para buscar atención sanitaria.",
+  "source_language": "en",
+  "canvas": {
+    "orientation": "portrait",
+    "aspect_ratio_observation": "Formato vertical largo, diseñado para lectura de arriba abajo y distribución simétrica alrededor de una figura anatómica central."
+  },
+  "structure": {
+    "reading_order": [
+      "Título principal",
+      "Subtítulo explicativo",
+      "Mapa central de localización del dolor",
+      "Bloques laterales 1 a 6 con causas y síntomas",
+      "Nota clínica de interpretación",
+      "Bloque de señales para buscar atención sanitaria",
+      "Footer y llamada profesional"
+    ],
+    "regions": [
+      "Cabecera",
+      "Columna clínica izquierda",
+      "Mapa corporal central",
+      "Columna clínica derecha",
+      "Nota de seguridad",
+      "Franja de red flags",
+      "Footer"
+    ],
+    "alignment": [
+      "Figura anatómica centrada",
+      "Tres tarjetas informativas a cada lado",
+      "Conectores visuales entre zonas del cuerpo y tarjetas",
+      "Numeración compartida entre mapa y explicación"
+    ],
+    "visual_anchor": "La rodilla central con seis zonas de dolor codificadas por color y número.",
+    "density": "Alta densidad informativa, con abundante texto en tarjetas laterales y un segundo bloque inferior de seguridad.",
+    "whitespace": "Limitado; la mayor parte del lienzo está ocupada por contenido clínico o ilustración."
+  },
+  "components": [
+    {
+      "observed_role": "body_location_map",
+      "description": "Figura corporal central con regiones coloreadas y numeradas asociadas a distintas localizaciones del dolor."
+    },
+    {
+      "observed_role": "linked_clinical_card",
+      "description": "Tarjeta asociada a una zona anatómica que contiene causas frecuentes, síntomas típicos e ilustración secundaria."
+    },
+    {
+      "observed_role": "location_marker",
+      "description": "Marcador numérico y cromático que relaciona el mapa corporal con su explicación."
+    },
+    {
+      "observed_role": "clinical_caution",
+      "description": "Nota que recuerda que la localización del dolor no sustituye una valoración clínica."
+    },
+    {
+      "observed_role": "red_flag_strip",
+      "description": "Fila inferior de señales de alarma con icono y texto breve."
+    }
+  ],
+  "visual_behavior": {
+    "typography": [
+      "Título en mayúsculas, gran tamaño y peso alto.",
+      "Subtítulos de tarjetas en negrita.",
+      "Texto de cuerpo pequeño debido a la elevada cantidad de información."
+    ],
+    "color": [
+      "Verde oscuro como color de identidad dominante.",
+      "Múltiples colores brillantes en el mapa para separar regiones.",
+      "Fondos blancos o crema para tarjetas.",
+      "Color utilizado tanto como identidad como para codificación regional."
+    ],
+    "spacing": [
+      "Tarjetas compactas.",
+      "Separación regular entre regiones.",
+      "Poco espacio libre alrededor de textos extensos."
+    ],
+    "borders": [
+      "Tarjetas con esquinas redondeadas y borde fino.",
+      "Contenedores diferenciados para nota clínica y red flags."
+    ],
+    "shadows": [
+      "Uso mínimo; la jerarquía depende principalmente de contenedores, color y tamaño."
+    ],
+    "illustration": [
+      "Representación frontal de rodilla y pierna.",
+      "Mini-ilustraciones anatómicas en tarjetas.",
+      "Zonas dolorosas representadas mediante manchas de color."
+    ],
+    "iconography": [
+      "Iconos para síntomas y señales de alarma.",
+      "Numeración circular para relacionar áreas y tarjetas."
+    ]
+  },
+  "strengths": [
+    "La relación entre localización corporal y explicación clínica es inmediata.",
+    "La numeración permite conectar mapa y tarjetas sin depender únicamente del color.",
+    "Separa causas, síntomas y señales de alarma.",
+    "Incluye una advertencia explícita contra la interpretación diagnóstica simplista.",
+    "La figura central funciona bien como índice espacial del contenido."
+  ],
+  "weaknesses": [
+    "El texto es demasiado pequeño para ciertos contextos móviles.",
+    "Existe riesgo de interpretar una localización del dolor como diagnóstico.",
+    "Algunas asociaciones entre zona dolorosa y causa clínica pueden parecer más específicas de lo que permite la clínica real.",
+    "La combinación de múltiples colores, tarjetas, iconos y mini-ilustraciones aumenta la carga visual.",
+    "La cantidad de información compite con la claridad del mapa principal."
+  ],
+  "uncertainties": [
+    "No se ha verificado la evidencia de las asociaciones entre localización, causas y síntomas.",
+    "No se ha validado la exactitud anatómica de las mini-ilustraciones.",
+    "No puede determinarse la escala tipográfica exacta.",
+    "No puede asumirse que la codificación cromática tenga significado clínico."
+  ],
+  "knowledge_candidates": [
+    {
+      "candidate": "Utilizar mapas corporales como índice espacial cuando el contenido dependa de localización anatómica.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Relacionar mapa y explicación mediante identificadores redundantes como número más posición, evitando depender solo del color.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Separar explícitamente localización, síntomas, posibles causas y red flags.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Toda guía de localización del dolor debe advertir que la localización por sí sola no establece un diagnóstico.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Aplicar límites estrictos de densidad y tamaño mínimo de texto en infografías con múltiples tarjetas clínicas.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Evitar que colores o zonas corporales impliquen relaciones diagnósticas más fuertes que la evidencia disponible.",
+      "confidence": "high"
+    }
+  ],
+  "render_authority": {
+    "reference_is_render_spec": false,
+    "reference_text_is_content_source": false,
+    "reference_anatomy_is_canonical": false,
+    "reference_assets_are_production_assets": false
+  }
+}
