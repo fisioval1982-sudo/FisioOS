@@ -1,0 +1,458 @@
+{
+  "synthesis_id": "REFERENCE-SET-002",
+  "version": "1.0",
+  "reference_ids": [
+    "REF-INFOGRAPHIC-000003",
+    "REF-INFOGRAPHIC-000004",
+    "REF-INFOGRAPHIC-000005",
+    "REF-INFOGRAPHIC-000006"
+  ],
+  "media_type": "image",
+  "families_represented": [
+    "clinical-education",
+    "exercise-program",
+    "anatomy-map",
+    "study-reference"
+  ],
+  "purpose": "Comparar cuatro familias comunicativas diferentes para identificar principios transversales, necesidades específicas por familia, antipatrones y candidatos de conocimiento reutilizable para FisioForYou.",
+  "evidence_summary": {
+    "reference_count": 4,
+    "family_count": 4,
+    "notes": [
+      "Cada referencia representa una familia comunicativa distinta, por lo que la recurrencia entre referencias tiene especial valor como evidencia transversal.",
+      "La diversidad del set permite distinguir principios generales de FisioForYou de decisiones que deberían permanecer específicas de cada tipo de contenido.",
+      "La anatomía aparece con diferentes funciones: mapa espacial, demostración de ejercicio, contenido anatómico primario y apoyo mnemotécnico.",
+      "La evidencia todavía no es suficiente para aprobar un sistema visual definitivo."
+    ]
+  },
+  "cross_reference_patterns": [
+    {
+      "pattern_id": "CRP-004",
+      "pattern": "La representación visual principal debe funcionar como portadora de información y no únicamente como decoración.",
+      "evidence_count": 4,
+      "supported_by": [
+        "REF-INFOGRAPHIC-000003",
+        "REF-INFOGRAPHIC-000004",
+        "REF-INFOGRAPHIC-000005",
+        "REF-INFOGRAPHIC-000006"
+      ],
+      "confidence": "high",
+      "status": "candidate"
+    },
+    {
+      "pattern_id": "CRP-005",
+      "pattern": "La información compleja se beneficia de una estructura modular con unidades visuales reconocibles.",
+      "evidence_count": 4,
+      "supported_by": [
+        "REF-INFOGRAPHIC-000003",
+        "REF-INFOGRAPHIC-000004",
+        "REF-INFOGRAPHIC-000005",
+        "REF-INFOGRAPHIC-000006"
+      ],
+      "confidence": "high",
+      "status": "candidate"
+    },
+    {
+      "pattern_id": "CRP-006",
+      "pattern": "Las asociaciones visuales clínicamente relevantes deben utilizar más de una señal identificadora cuando sea posible y no depender exclusivamente del color.",
+      "evidence_count": 3,
+      "supported_by": [
+        "REF-INFOGRAPHIC-000003",
+        "REF-INFOGRAPHIC-000005",
+        "REF-INFOGRAPHIC-000006"
+      ],
+      "confidence": "high",
+      "status": "candidate"
+    },
+    {
+      "pattern_id": "CRP-007",
+      "pattern": "Aumentar la cantidad de información dentro de una única pieza introduce riesgo recurrente de pérdida de legibilidad y claridad visual.",
+      "evidence_count": 4,
+      "supported_by": [
+        "REF-INFOGRAPHIC-000003",
+        "REF-INFOGRAPHIC-000004",
+        "REF-INFOGRAPHIC-000005",
+        "REF-INFOGRAPHIC-000006"
+      ],
+      "confidence": "high",
+      "status": "candidate"
+    },
+    {
+      "pattern_id": "CRP-008",
+      "pattern": "La organización espacial debe corresponder con la naturaleza del conocimiento: localización corporal, ejecución motora, relaciones anatómicas o comparación conceptual.",
+      "evidence_count": 4,
+      "supported_by": [
+        "REF-INFOGRAPHIC-000003",
+        "REF-INFOGRAPHIC-000004",
+        "REF-INFOGRAPHIC-000005",
+        "REF-INFOGRAPHIC-000006"
+      ],
+      "confidence": "high",
+      "status": "candidate"
+    }
+  ],
+  "family_specific_patterns": [
+    {
+      "family": "clinical-education",
+      "patterns": [
+        {
+          "pattern": "Los mapas corporales pueden actuar como índice espacial para navegar información relacionada con localización clínica.",
+          "supported_by": [
+            "REF-INFOGRAPHIC-000003"
+          ],
+          "confidence": "medium",
+          "status": "candidate"
+        },
+        {
+          "pattern": "Las piezas sobre localización de síntomas deben diferenciar explícitamente localización, posibles causas, síntomas asociados y señales de alarma.",
+          "supported_by": [
+            "REF-INFOGRAPHIC-000003"
+          ],
+          "confidence": "medium",
+          "status": "candidate"
+        }
+      ]
+    },
+    {
+      "family": "exercise-program",
+      "patterns": [
+        {
+          "pattern": "Cada ejercicio debería representarse mediante una unidad que diferencie demostración, técnica y dosificación.",
+          "supported_by": [
+            "REF-INFOGRAPHIC-000004"
+          ],
+          "confidence": "medium",
+          "status": "candidate"
+        },
+        {
+          "pattern": "Cuando la trayectoria del movimiento sea relevante, una única imagen estática puede ser insuficiente.",
+          "supported_by": [
+            "REF-INFOGRAPHIC-000004"
+          ],
+          "confidence": "medium",
+          "status": "candidate"
+        }
+      ]
+    },
+    {
+      "family": "anatomy-map",
+      "patterns": [
+        {
+          "pattern": "La vista anatómica debe seleccionarse en función de las estructuras que necesitan mostrarse.",
+          "supported_by": [
+            "REF-INFOGRAPHIC-000005"
+          ],
+          "confidence": "medium",
+          "status": "candidate"
+        },
+        {
+          "pattern": "Cuando una vista no resuelve adecuadamente todas las estructuras, deben utilizarse múltiples vistas.",
+          "supported_by": [
+            "REF-INFOGRAPHIC-000005"
+          ],
+          "confidence": "medium",
+          "status": "candidate"
+        }
+      ]
+    },
+    {
+      "family": "study-reference",
+      "patterns": [
+        {
+          "pattern": "Los módulos con campos equivalentes facilitan comparar y recuperar conocimiento.",
+          "supported_by": [
+            "REF-INFOGRAPHIC-000006"
+          ],
+          "confidence": "medium",
+          "status": "candidate"
+        },
+        {
+          "pattern": "La información anatómica, funcional, clínica y mnemotécnica debe distinguirse semánticamente aunque comparta un mismo módulo.",
+          "supported_by": [
+            "REF-INFOGRAPHIC-000006"
+          ],
+          "confidence": "medium",
+          "status": "candidate"
+        }
+      ]
+    }
+  ],
+  "anti_patterns": [
+    {
+      "anti_pattern_id": "ANTI-005",
+      "description": "Condensar más información reduciendo texto, anatomía o demostraciones por debajo del tamaño necesario para comprenderlas.",
+      "observed_or_discovered_in": [
+        "REF-INFOGRAPHIC-000003",
+        "REF-INFOGRAPHIC-000004",
+        "REF-INFOGRAPHIC-000005",
+        "REF-INFOGRAPHIC-000006"
+      ],
+      "severity": "high",
+      "status": "supported"
+    },
+    {
+      "anti_pattern_id": "ANTI-006",
+      "description": "Utilizar exclusivamente el color para identificar una región, estructura o categoría clínicamente relevante.",
+      "observed_or_discovered_in": [
+        "REF-INFOGRAPHIC-000003",
+        "REF-INFOGRAPHIC-000005",
+        "REF-INFOGRAPHIC-000006"
+      ],
+      "severity": "high",
+      "status": "supported"
+    },
+    {
+      "anti_pattern_id": "ANTI-007",
+      "description": "Presentar una asociación entre localización del dolor y diagnóstico como si fuera determinista.",
+      "observed_or_discovered_in": [
+        "REF-INFOGRAPHIC-000003"
+      ],
+      "severity": "critical",
+      "status": "supported"
+    },
+    {
+      "anti_pattern_id": "ANTI-008",
+      "description": "Presentar una colección de ejercicios como prescripción universal sin contexto de individualización clínica.",
+      "observed_or_discovered_in": [
+        "REF-INFOGRAPHIC-000004"
+      ],
+      "severity": "high",
+      "status": "candidate"
+    },
+    {
+      "anti_pattern_id": "ANTI-009",
+      "description": "Tratar una representación anatómica visualmente convincente como evidencia de exactitud científica.",
+      "observed_or_discovered_in": [
+        "REF-INFOGRAPHIC-000003",
+        "REF-INFOGRAPHIC-000005",
+        "REF-INFOGRAPHIC-000006"
+      ],
+      "severity": "critical",
+      "status": "supported"
+    },
+    {
+      "anti_pattern_id": "ANTI-010",
+      "description": "Utilizar una mnemotecnia como sustituto de conocimiento anatómico, funcional o clínico validado.",
+      "observed_or_discovered_in": [
+        "REF-INFOGRAPHIC-000006"
+      ],
+      "severity": "high",
+      "status": "supported"
+    }
+  ],
+  "contradictions": [
+    {
+      "topic": "information_density",
+      "description": "Las fichas de estudio favorecen densidad y consulta rápida, mientras que las demostraciones de ejercicio y anatomía necesitan mayor superficie visual. No debe existir una única densidad objetivo para todas las familias.",
+      "references": [
+        "REF-INFOGRAPHIC-000004",
+        "REF-INFOGRAPHIC-000005",
+        "REF-INFOGRAPHIC-000006"
+      ],
+      "resolution": "family-dependent"
+    },
+    {
+      "topic": "anatomical_realism",
+      "description": "El grado de realismo necesario depende del propósito. Una anatomía-map requiere mayor fidelidad espacial que un recurso mnemotécnico, aunque ambos necesitan preservar las relaciones relevantes para su objetivo.",
+      "references": [
+        "REF-INFOGRAPHIC-000005",
+        "REF-INFOGRAPHIC-000006"
+      ],
+      "resolution": "purpose-dependent"
+    },
+    {
+      "topic": "single_canvas",
+      "description": "Algunas referencias intentan concentrar numerosos conceptos en una sola pieza, pero la legibilidad sugiere que FisioForYou debería permitir división en páginas, tarjetas o escenas.",
+      "references": [
+        "REF-INFOGRAPHIC-000003",
+        "REF-INFOGRAPHIC-000004",
+        "REF-INFOGRAPHIC-000006"
+      ],
+      "resolution": "prefer-adaptive-pagination"
+    }
+  ],
+  "component_candidates": [
+    {
+      "component": "body-location-map",
+      "supported_by": [
+        "REF-INFOGRAPHIC-000003"
+      ],
+      "confidence": "medium",
+      "status": "candidate"
+    },
+    {
+      "component": "linked-clinical-card",
+      "supported_by": [
+        "REF-INFOGRAPHIC-000003"
+      ],
+      "confidence": "medium",
+      "status": "candidate"
+    },
+    {
+      "component": "red-flag-strip",
+      "supported_by": [
+        "REF-INFOGRAPHIC-000003"
+      ],
+      "confidence": "medium",
+      "status": "candidate"
+    },
+    {
+      "component": "exercise-card",
+      "supported_by": [
+        "REF-INFOGRAPHIC-000004"
+      ],
+      "confidence": "medium",
+      "status": "candidate"
+    },
+    {
+      "component": "exercise-demonstration",
+      "supported_by": [
+        "REF-INFOGRAPHIC-000004"
+      ],
+      "confidence": "medium",
+      "status": "candidate"
+    },
+    {
+      "component": "anatomical-figure-with-labels",
+      "supported_by": [
+        "REF-INFOGRAPHIC-000005"
+      ],
+      "confidence": "medium",
+      "status": "candidate"
+    },
+    {
+      "component": "knowledge-module",
+      "supported_by": [
+        "REF-INFOGRAPHIC-000006"
+      ],
+      "confidence": "medium",
+      "status": "candidate"
+    }
+  ],
+  "design_rule_candidates": [
+    {
+      "rule": "Elegir la arquitectura de información según la función comunicativa de la pieza y no aplicar un layout universal.",
+      "supported_by": [
+        "REF-INFOGRAPHIC-000003",
+        "REF-INFOGRAPHIC-000004",
+        "REF-INFOGRAPHIC-000005",
+        "REF-INFOGRAPHIC-000006"
+      ],
+      "confidence": "high",
+      "status": "candidate"
+    },
+    {
+      "rule": "Mantener un anclaje visual principal claramente relacionado con el objetivo educativo.",
+      "supported_by": [
+        "REF-INFOGRAPHIC-000003",
+        "REF-INFOGRAPHIC-000004",
+        "REF-INFOGRAPHIC-000005",
+        "REF-INFOGRAPHIC-000006"
+      ],
+      "confidence": "high",
+      "status": "candidate"
+    },
+    {
+      "rule": "Cuando el contenido exceda la capacidad legible del lienzo, dividirlo antes que reducir indiscriminadamente sus elementos.",
+      "supported_by": [
+        "REF-INFOGRAPHIC-000003",
+        "REF-INFOGRAPHIC-000004",
+        "REF-INFOGRAPHIC-000005",
+        "REF-INFOGRAPHIC-000006"
+      ],
+      "confidence": "high",
+      "status": "candidate"
+    },
+    {
+      "rule": "Utilizar identificación redundante para relaciones clínicas importantes: posición, etiqueta, número, forma o conector además del color.",
+      "supported_by": [
+        "REF-INFOGRAPHIC-000003",
+        "REF-INFOGRAPHIC-000005",
+        "REF-INFOGRAPHIC-000006"
+      ],
+      "confidence": "high",
+      "status": "candidate"
+    }
+  ],
+  "qa_constraint_candidates": [
+    {
+      "constraint": "Toda anatomía clínicamente significativa debe ser verificable y trazable a un asset aprobado.",
+      "related_references": [
+        "REF-INFOGRAPHIC-000003",
+        "REF-INFOGRAPHIC-000005",
+        "REF-INFOGRAPHIC-000006"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint": "La localización visual del dolor no puede presentarse como diagnóstico.",
+      "related_references": [
+        "REF-INFOGRAPHIC-000003"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint": "La dosificación y progresión de ejercicios deben proceder de contenido clínico validado.",
+      "related_references": [
+        "REF-INFOGRAPHIC-000004"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint": "Una mnemotecnia no puede constituir autoridad clínica ni modificar el contenido validado.",
+      "related_references": [
+        "REF-INFOGRAPHIC-000006"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint": "El sistema debe detectar overflow, clipping, texto ilegible y reducción excesiva de representaciones visuales.",
+      "related_references": [
+        "REF-INFOGRAPHIC-000003",
+        "REF-INFOGRAPHIC-000004",
+        "REF-INFOGRAPHIC-000005",
+        "REF-INFOGRAPHIC-000006"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    }
+  ],
+  "knowledge_gaps": [
+    {
+      "gap": "Cada familia está representada por una única referencia dentro de este set.",
+      "priority": "high"
+    },
+    {
+      "gap": "Faltan referencias específicas sobre progresiones y regresiones de ejercicio.",
+      "priority": "high"
+    },
+    {
+      "gap": "Faltan referencias de educación al paciente con baja densidad informativa.",
+      "priority": "medium"
+    },
+    {
+      "gap": "Faltan ejemplos de anatomía esquemática frente a anatomía realista para determinar qué grado de detalle es óptimo según el objetivo.",
+      "priority": "high"
+    },
+    {
+      "gap": "No existe todavía evidencia suficiente para definir paleta, tipografía, espaciado o estilo de ilustración propios de FisioForYou.",
+      "priority": "high"
+    },
+    {
+      "gap": "No se han definido todavía perfiles de salida para móvil, impresión, redes sociales o material clínico.",
+      "priority": "high"
+    }
+  ],
+  "open_questions": [
+    "¿Qué principios del Set 001 y Set 002 aparecen de forma recurrente y pueden ascender a conocimiento transversal?",
+    "¿Qué componentes deben ser universales y cuáles específicos de cada familia?",
+    "¿Cuándo debe una infografía convertirse en carrusel, secuencia o vídeo por exceso de información?",
+    "¿Qué nivel de fidelidad anatómica necesita cada familia?",
+    "¿Cómo debe representar FisioForYou incertidumbre clínica sin perder claridad visual?"
+  ],
+  "synthesis_status": "draft"
+}

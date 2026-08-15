@@ -1,0 +1,151 @@
+{
+  "reference_id": "REF-INFOGRAPHIC-000005",
+  "source_file": "REF-INFOGRAPHIC-000005_source.jpg",
+  "media_type": "image",
+  "content_family": "anatomy-map",
+  "study_reason": "Analizar una lámina anatómica del miembro inferior que combina representación corporal, identificación muscular y organización espacial para extraer patrones útiles para materiales anatómicos de FisioForYou.",
+  "source_language": "en",
+  "canvas": {
+    "orientation": "portrait",
+    "aspect_ratio_observation": "Formato vertical orientado a consulta anatómica, con figuras corporales como elemento dominante y etiquetas distribuidas alrededor de ellas."
+  },
+  "structure": {
+    "reading_order": [
+      "Título anatómico",
+      "Identificación de la región corporal",
+      "Representaciones anatómicas principales",
+      "Etiquetas musculares",
+      "Conectores entre etiquetas y estructuras",
+      "Información complementaria"
+    ],
+    "regions": [
+      "Cabecera",
+      "Área anatómica principal",
+      "Zonas laterales de etiquetado",
+      "Área complementaria inferior"
+    ],
+    "alignment": [
+      "Figuras anatómicas organizadas verticalmente",
+      "Etiquetas distribuidas alrededor de las estructuras",
+      "Líneas o conectores que relacionan nombre y localización anatómica",
+      "Composición condicionada por la geometría corporal más que por una retícula convencional"
+    ],
+    "visual_anchor": "Las representaciones anatómicas del miembro inferior constituyen el foco visual principal.",
+    "density": "Media-alta debido al número de estructuras identificadas y a la necesidad de mantener simultáneamente anatomía y etiquetado.",
+    "whitespace": "El espacio libre se utiliza principalmente para alojar etiquetas y evitar cruces excesivos entre conectores."
+  },
+  "components": [
+    {
+      "observed_role": "anatomical_figure",
+      "description": "Representación del miembro inferior utilizada como mapa espacial principal."
+    },
+    {
+      "observed_role": "anatomical_label",
+      "description": "Nombre de una estructura asociado visualmente a su localización."
+    },
+    {
+      "observed_role": "leader_line",
+      "description": "Conector que relaciona una etiqueta con una estructura anatómica concreta."
+    },
+    {
+      "observed_role": "anatomical_view",
+      "description": "Vista corporal seleccionada para hacer visibles determinados músculos y relaciones."
+    }
+  ],
+  "visual_behavior": {
+    "typography": [
+      "Texto secundario respecto a la anatomía.",
+      "Etiquetas breves y repetidas.",
+      "Necesidad de alta legibilidad incluso con tamaños relativamente reducidos."
+    ],
+    "color": [
+      "Los tonos anatómicos permiten diferenciar tejido muscular y otras estructuras.",
+      "El fondo mantiene bajo protagonismo.",
+      "El color puede contribuir a separar estructuras, pero no debería ser el único identificador."
+    ],
+    "spacing": [
+      "Espaciado condicionado por la posición de las etiquetas.",
+      "Necesidad de evitar cruces y acumulación de líneas guía.",
+      "Separación suficiente entre nombres anatómicos próximos."
+    ],
+    "borders": [
+      "Los contenedores tienen poca importancia frente a la relación directa entre figura, etiqueta y línea guía."
+    ],
+    "shadows": [
+      "La profundidad procede principalmente del modelado anatómico y no de sombras de interfaz."
+    ],
+    "illustration": [
+      "La anatomía es contenido principal, no decoración.",
+      "La utilidad depende de la correcta representación de forma, posición y relaciones entre estructuras.",
+      "La elección de la vista determina qué estructuras pueden comunicarse correctamente."
+    ],
+    "iconography": [
+      "La iconografía convencional tiene un papel secundario frente al etiquetado anatómico directo."
+    ]
+  },
+  "strengths": [
+    "La organización espacial permite aprender estructuras en relación con el cuerpo.",
+    "La anatomía funciona simultáneamente como contenido y sistema de navegación.",
+    "Las etiquetas breves reducen carga textual.",
+    "La asociación directa entre nombre y estructura favorece la consulta rápida.",
+    "La representación visual puede comunicar relaciones que serían difíciles de aprender mediante una lista textual."
+  ],
+  "weaknesses": [
+    "Una gran cantidad de etiquetas puede producir saturación visual.",
+    "Los conectores pueden cruzarse o resultar ambiguos.",
+    "Una única vista anatómica no permite mostrar correctamente todas las estructuras.",
+    "El realismo visual puede ocultar errores anatómicos difíciles de detectar para usuarios no expertos.",
+    "Reducir demasiado la figura para introducir más etiquetas disminuye el valor educativo."
+  ],
+  "uncertainties": [
+    "No se ha validado la exactitud anatómica de cada estructura representada.",
+    "No puede determinarse si todas las inserciones, límites y relaciones espaciales son científicamente precisos.",
+    "No se conoce la procedencia del modelo anatómico.",
+    "No puede determinarse si la selección de músculos responde a un criterio anatómico, funcional o editorial."
+  ],
+  "knowledge_candidates": [
+    {
+      "candidate": "En materiales anatómicos, la anatomía debe considerarse contenido clínico primario y no un asset decorativo.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Toda etiqueta anatómica debe resolver de forma inequívoca a una estructura concreta.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "La vista anatómica debe seleccionarse en función de las estructuras que se necesitan comunicar.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Cuando una única vista no permita representar correctamente todas las estructuras, deben utilizarse múltiples vistas en lugar de forzar una sola composición.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Los conectores anatómicos deben evitar cruces y ambigüedad espacial.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Las estructuras no deberían diferenciarse exclusivamente mediante color; nombre, posición y conectores deben aportar identificación redundante.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "No debe reducirse la escala anatómica por debajo del nivel necesario para reconocer las estructuras relevantes.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Toda anatomía destinada a producción debe proceder de assets anatómicos aprobados y trazables.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "La precisión visual percibida no debe utilizarse como sustituto de la validación anatómica.",
+      "confidence": "high"
+    }
+  ],
+  "render_authority": {
+    "reference_is_render_spec": false,
+    "reference_text_is_content_source": false,
+    "reference_anatomy_is_canonical": false,
+    "reference_labels_are_clinical_authority": false,
+    "reference_assets_are_production_assets": false
+  }
+}
