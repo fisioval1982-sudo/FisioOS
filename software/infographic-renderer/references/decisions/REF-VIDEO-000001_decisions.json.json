@@ -1,0 +1,102 @@
+{
+  "reference_id": "REF-VIDEO-000001",
+  "media_type": "video",
+  "decisions": [
+    {
+      "decision_id": "VIDEODEC-000001",
+      "category": "narrative",
+      "proposal": "Construir vídeos educativos como secuencias de conceptos, evitando concentrar toda la información en una única escena.",
+      "rationale": "La distribución temporal permite mantener un foco visual claro y reducir la densidad simultánea.",
+      "confidence": "high",
+      "status": "proposed"
+    },
+    {
+      "decision_id": "VIDEODEC-000002",
+      "category": "format",
+      "proposal": "Evaluar 9:16 como formato principal para piezas audiovisuales destinadas a consumo móvil y redes sociales.",
+      "rationale": "La referencia utiliza eficazmente todo el lienzo vertical para mantener la anatomía como protagonista.",
+      "confidence": "medium",
+      "status": "proposed"
+    },
+    {
+      "decision_id": "VIDEODEC-000003",
+      "category": "scene",
+      "proposal": "Mantener preferentemente un único concepto y un único foco visual dominante por escena.",
+      "rationale": "La referencia facilita el seguimiento al evitar múltiples focos simultáneos.",
+      "confidence": "high",
+      "status": "proposed"
+    },
+    {
+      "decision_id": "VIDEODEC-000004",
+      "category": "anatomical_narrative",
+      "proposal": "Evaluar el patrón macro -> micro -> macro para explicar la relación entre región corporal, estructura anatómica y tejido.",
+      "rationale": "El cambio de escala permite contextualizar primero la anatomía y posteriormente profundizar sin perder completamente la referencia corporal.",
+      "confidence": "high",
+      "status": "proposed"
+    },
+    {
+      "decision_id": "VIDEODEC-000005",
+      "category": "motion",
+      "proposal": "Utilizar movimiento de cámara, zoom y cambios de escala principalmente para dirigir la atención y explicar relaciones espaciales.",
+      "rationale": "El movimiento puede sustituir parcialmente a flechas y anotaciones estáticas.",
+      "confidence": "high",
+      "status": "proposed"
+    },
+    {
+      "decision_id": "VIDEODEC-000006",
+      "category": "text",
+      "proposal": "Mantener el texto superpuesto breve, de alto contraste y sincronizado temporalmente con el concepto mostrado.",
+      "rationale": "En vídeo el espectador dispone de un tiempo limitado para leer mientras procesa simultáneamente movimiento e imagen.",
+      "confidence": "high",
+      "status": "proposed"
+    },
+    {
+      "decision_id": "VIDEODEC-000007",
+      "category": "content",
+      "proposal": "Mantener el contenido visible de FisioForYou en castellano es-ES salvo especificación explícita de otra versión lingüística.",
+      "rationale": "El idioma de una referencia audiovisual no debe determinar el idioma del producto final.",
+      "confidence": "high",
+      "status": "proposed"
+    },
+    {
+      "decision_id": "VIDEODEC-000008",
+      "category": "anatomical_fidelity",
+      "proposal": "Utilizar exclusivamente modelos o assets aprobados cuando una animación anatómica tenga significado clínico.",
+      "rationale": "El realismo de una animación generativa puede producir una falsa percepción de exactitud anatómica.",
+      "confidence": "high",
+      "status": "proposed"
+    },
+    {
+      "decision_id": "VIDEODEC-000009",
+      "category": "clinical_safety",
+      "proposal": "Prohibir efectos visuales de rotura, degeneración, inflamación, compresión o daño cuando introduzcan mecanismos no respaldados por contenido clínico validado.",
+      "rationale": "Una animación puede convertir implícitamente un recurso dramático en una afirmación fisiopatológica.",
+      "confidence": "high",
+      "status": "proposed"
+    },
+    {
+      "decision_id": "VIDEODEC-000010",
+      "category": "visual_style",
+      "proposal": "Evaluar fondos visualmente simples y de bajo protagonismo cuando exista anatomía compleja en primer plano.",
+      "rationale": "Reducir la competencia visual facilita que la estructura anatómica mantenga el protagonismo.",
+      "confidence": "high",
+      "status": "proposed"
+    },
+    {
+      "decision_id": "VIDEODEC-000011",
+      "category": "transition",
+      "proposal": "Las transiciones deben conservar continuidad conceptual entre escenas y no utilizarse únicamente como efecto decorativo.",
+      "rationale": "Los cambios de escala de la referencia conectan diferentes niveles anatómicos manteniendo una narrativa reconocible.",
+      "confidence": "high",
+      "status": "proposed"
+    },
+    {
+      "decision_id": "VIDEODEC-000012",
+      "category": "qa",
+      "proposal": "Separar explícitamente calidad cinematográfica, realismo visual y fidelidad científica durante la evaluación de un vídeo.",
+      "rationale": "Una secuencia puede resultar visualmente convincente y ser clínicamente incorrecta.",
+      "confidence": "high",
+      "status": "proposed"
+    }
+  ]
+}
