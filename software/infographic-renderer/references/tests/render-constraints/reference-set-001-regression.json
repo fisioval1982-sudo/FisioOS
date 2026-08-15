@@ -1,0 +1,33 @@
+{
+  "suite": "reference-set-001-render-constraints",
+  "cases": [
+    {
+      "id": "REG-000001-LEGIBILITY",
+      "reference_id": "REF-INFOGRAPHIC-000001",
+      "expected_language": "es-ES",
+      "must_block": [
+        "font_below_approved_minimum",
+        "text_clipping",
+        "silent_content_removal"
+      ]
+    },
+    {
+      "id": "REG-000002-ANATOMY",
+      "reference_id": "REF-INFOGRAPHIC-000002",
+      "expected_language": "es-ES",
+      "must_block": [
+        "free_generated_clinical_anatomy",
+        "unapproved_anatomical_asset",
+        "unsupported_visual_claim"
+      ]
+    },
+    {
+      "id": "REG-000003-LANGUAGE",
+      "expected_language": "es-ES",
+      "must_block": [
+        "wrong_output_language",
+        "reference_text_used_as_content_source"
+      ]
+    }
+  ]
+}

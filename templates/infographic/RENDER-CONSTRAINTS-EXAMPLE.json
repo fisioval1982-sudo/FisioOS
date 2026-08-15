@@ -1,0 +1,39 @@
+{
+  "output_language": "es-ES",
+  "content": {
+    "approved_content_only": true,
+    "allow_renderer_rewrite": false
+  },
+  "legibility": {
+    "profile_id": "REQUIRED_APPROVED_PROFILE",
+    "allow_font_shrink_to_fit": false,
+    "allow_text_clipping": false,
+    "overflow_policy": "fail"
+  },
+  "anatomy": {
+    "clinically_meaningful": true,
+    "allow_free_generation": false,
+    "approved_asset_id": "REQUIRED_APPROVED_ASSET_ID",
+    "structure": "REQUIRED",
+    "view": "REQUIRED",
+    "orientation": "REQUIRED",
+    "laterality": null,
+    "geometry_lock": true,
+    "qa_level": "clinical"
+  },
+  "layout": {
+    "layout_id": "REQUIRED_APPROVED_LAYOUT",
+    "allow_invented_geometry": false
+  },
+  "assets": {
+    "approved_registry_only": true,
+    "allow_silent_substitution": false
+  },
+  "clinical_semantics": {
+    "visual_claims_must_be_supported": true
+  },
+  "qa": {
+    "automated_required": true,
+    "human_review_when_required": true
+  }
+}

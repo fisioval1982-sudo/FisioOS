@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fisoos://schemas/infographic/render-constraints-v1.schema.json",
+  "title": "FisioOS Render Constraints v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "output_language",
+    "content",
+    "legibility",
+    "anatomy",
+    "layout",
+    "assets",
+    "clinical_semantics",
+    "qa"
+  ],
+  "properties": {
+    "output_language": {
+      "type": "string",
+      "default": "es-ES"
+    },
+    "content": {
+      "type": "object",
+      "required": [
+        "approved_content_only",
+        "allow_renderer_rewrite"
+      ],
+      "properties": {
+        "approved_content_only": {
+          "const": true
+        },
+        "allow_renderer_rewrite": {
+          "const": false
+        }
+      }
+    },
+    "legibility": {
+      "type": "object",
+      "required": [
+        "profile_id",
+        "allow_font_shrink_to_fit",
+        "allow_text_clipping",
+        "overflow_policy"
+      ],
+      "properties": {
+        "profile_id": {
+          "type": "string"
+        },
+        "allow_font_shrink_to_fit": {
+          "const": false
+        },
+        "allow_text_clipping": {
+          "const": false
+        },
+        "overflow_policy": {
+          "enum": [
+            "fail",
+            "approved_alternate_layout"
+          ]
+        }
+      }
+    },
+    "anatomy": {
+      "type": "object",
+      "required": [
+        "clinically_meaningful",
+        "allow_free_generation"
+      ],
+      "properties": {
+        "clinically_meaningful": {
+          "type": "boolean"
+        },
+        "allow_free_generation": {
+          "const": false
+        },
+        "approved_asset_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "structure": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "view": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "orientation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "laterality": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "geometry_lock": {
+          "type": "boolean"
+        },
+        "qa_level": {
+          "enum": [
+            "none",
+            "standard",
+            "clinical"
+          ]
+        }
+      }
+    },
+    "layout": {
+      "type": "object",
+      "required": [
+        "layout_id",
+        "allow_invented_geometry"
+      ],
+      "properties": {
+        "layout_id": {
+          "type": "string"
+        },
+        "allow_invented_geometry": {
+          "const": false
+        }
+      }
+    },
+    "assets": {
+      "type": "object",
+      "required": [
+        "approved_registry_only",
+        "allow_silent_substitution"
+      ],
+      "properties": {
+        "approved_registry_only": {
+          "const": true
+        },
+        "allow_silent_substitution": {
+          "const": false
+        }
+      }
+    },
+    "clinical_semantics": {
+      "type": "object",
+      "required": [
+        "visual_claims_must_be_supported"
+      ],
+      "properties": {
+        "visual_claims_must_be_supported": {
+          "const": true
+        }
+      }
+    },
+    "qa": {
+      "type": "object",
+      "required": [
+        "automated_required",
+        "human_review_when_required"
+      ],
+      "properties": {
+        "automated_required": {
+          "const": true
+        },
+        "human_review_when_required": {
+          "const": true
+        }
+      }
+    }
+  }
+}
