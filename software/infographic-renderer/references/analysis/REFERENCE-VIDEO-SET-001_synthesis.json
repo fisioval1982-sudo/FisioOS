@@ -1,0 +1,556 @@
+{
+  "synthesis_id": "REFERENCE-VIDEO-SET-001",
+  "version": "1.0",
+  "reference_ids": [
+    "REF-VIDEO-000001",
+    "REF-VIDEO-000002"
+  ],
+  "media_type": "video",
+  "families_represented": [
+    "clinical-education-short"
+  ],
+  "purpose": "Sintetizar el conocimiento audiovisual extraído de las dos primeras referencias de vídeo para identificar principios temporales, narrativos, visuales y de QA que puedan orientar el futuro sistema de vídeo educativo de FisioForYou sin convertir las decisiones estilísticas de las referencias en especificaciones de producción.",
+  "evidence_summary": {
+    "reference_count": 2,
+    "family_count": 1,
+    "notes": [
+      "La evidencia audiovisual todavía es limitada y no permite definir un lenguaje audiovisual definitivo de FisioForYou.",
+      "Las dos referencias permiten comenzar a distinguir principios propios del medio audiovisual frente a decisiones estilísticas particulares de cada vídeo.",
+      "El vídeo introduce dimensiones inexistentes en una infografía estática: tiempo, ritmo, persistencia, movimiento, continuidad y relación audio-imagen.",
+      "La distribución temporal de información puede reducir densidad por escena, pero introduce nuevas restricciones de comprensión y QA.",
+      "Los patrones clínicos, anatómicos y de seguridad mantienen prioridad sobre las decisiones narrativas o de entretenimiento."
+    ]
+  },
+  "cross_reference_patterns": [
+    {
+      "pattern_id": "VIDEO-CRP-001",
+      "pattern": "La arquitectura de información audiovisual debe diseñarse como una secuencia temporal de unidades comunicativas y no como una infografía estática puesta en movimiento.",
+      "evidence_count": 2,
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "pattern_id": "VIDEO-CRP-002",
+      "pattern": "Cada escena o unidad temporal debería tener una función comunicativa principal reconocible.",
+      "evidence_count": 2,
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "pattern_id": "VIDEO-CRP-003",
+      "pattern": "La información compleja puede distribuirse temporalmente para evitar mostrar demasiados elementos simultáneamente.",
+      "evidence_count": 2,
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "pattern_id": "VIDEO-CRP-004",
+      "pattern": "El foco visual de cada escena debe ser suficientemente claro para que el usuario identifique rápidamente dónde dirigir la atención.",
+      "evidence_count": 2,
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "pattern_id": "VIDEO-CRP-005",
+      "pattern": "El movimiento debe contribuir a explicar, narrar, dirigir atención o mantener continuidad y no utilizarse únicamente como decoración.",
+      "evidence_count": 2,
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "pattern_id": "VIDEO-CRP-006",
+      "pattern": "La legibilidad audiovisual depende simultáneamente del tamaño del texto, cantidad de información y tiempo efectivo de exposición.",
+      "evidence_count": 2,
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "pattern_id": "VIDEO-CRP-007",
+      "pattern": "La continuidad visual entre escenas reduce el esfuerzo necesario para reconocer conceptos, actores o elementos recurrentes.",
+      "evidence_count": 2,
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "medium",
+      "status": "candidate"
+    },
+    {
+      "pattern_id": "VIDEO-CRP-008",
+      "pattern": "El vídeo educativo debe repartir funciones entre imagen, movimiento, texto y audio en lugar de duplicar necesariamente toda la información en todos los canales.",
+      "evidence_count": 2,
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "medium",
+      "status": "candidate"
+    },
+    {
+      "pattern_id": "VIDEO-CRP-009",
+      "pattern": "La información esencial debería seguir siendo recuperable cuando el vídeo se consume sin audio.",
+      "evidence_count": 2,
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    }
+  ],
+  "family_specific_patterns": [
+    {
+      "family": "clinical-education-short",
+      "patterns": [
+        {
+          "pattern": "Las microescenas permiten introducir conceptos clínicos progresivamente dentro de formatos breves.",
+          "supported_by": [
+            "REF-VIDEO-000001",
+            "REF-VIDEO-000002"
+          ],
+          "confidence": "high",
+          "status": "strong_candidate"
+        },
+        {
+          "pattern": "Un vídeo educativo corto necesita priorización explícita del contenido porque el tiempo disponible constituye un límite estructural.",
+          "supported_by": [
+            "REF-VIDEO-000001",
+            "REF-VIDEO-000002"
+          ],
+          "confidence": "high",
+          "status": "strong_candidate"
+        },
+        {
+          "pattern": "La introducción debe establecer rápidamente el concepto o contexto necesario para interpretar las escenas posteriores.",
+          "supported_by": [
+            "REF-VIDEO-000001",
+            "REF-VIDEO-000002"
+          ],
+          "confidence": "medium",
+          "status": "candidate"
+        },
+        {
+          "pattern": "La personificación puede utilizarse como estrategia narrativa para conceptos abstractos siempre que no convierta atributos ficticios del personaje en propiedades científicas del concepto.",
+          "supported_by": [
+            "REF-VIDEO-000002"
+          ],
+          "confidence": "medium",
+          "status": "candidate"
+        }
+      ]
+    }
+  ],
+  "anti_patterns": [
+    {
+      "anti_pattern_id": "VIDEO-ANTI-001",
+      "description": "Tratar el vídeo como una única composición estática y añadir movimiento posteriormente sin diseñar una arquitectura temporal.",
+      "observed_or_discovered_in": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "severity": "high",
+      "status": "supported"
+    },
+    {
+      "anti_pattern_id": "VIDEO-ANTI-002",
+      "description": "Mostrar texto durante un tiempo insuficiente para que pueda ser leído y comprendido.",
+      "observed_or_discovered_in": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "severity": "critical",
+      "status": "supported"
+    },
+    {
+      "anti_pattern_id": "VIDEO-ANTI-003",
+      "description": "Utilizar movimiento o transiciones que compitan con la información principal.",
+      "observed_or_discovered_in": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "severity": "high",
+      "status": "supported"
+    },
+    {
+      "anti_pattern_id": "VIDEO-ANTI-004",
+      "description": "Introducir demasiadas ideas dentro de una misma escena únicamente para reducir la duración total del vídeo.",
+      "observed_or_discovered_in": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "severity": "high",
+      "status": "supported"
+    },
+    {
+      "anti_pattern_id": "VIDEO-ANTI-005",
+      "description": "Depender exclusivamente del audio para comunicar información clínica esencial.",
+      "observed_or_discovered_in": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "severity": "high",
+      "status": "supported"
+    },
+    {
+      "anti_pattern_id": "VIDEO-ANTI-006",
+      "description": "Permitir que una animación introduzca relaciones anatómicas, biomecánicas o clínicas no presentes en el contenido validado.",
+      "observed_or_discovered_in": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "severity": "critical",
+      "status": "supported"
+    },
+    {
+      "anti_pattern_id": "VIDEO-ANTI-007",
+      "description": "Confundir atributos narrativos de personajes antropomorfizados con propiedades reales del tejido o concepto representado.",
+      "observed_or_discovered_in": [
+        "REF-VIDEO-000002"
+      ],
+      "severity": "critical",
+      "status": "supported"
+    },
+    {
+      "anti_pattern_id": "VIDEO-ANTI-008",
+      "description": "Cambiar la identidad visual o conceptual de un elemento recurrente sin una razón narrativa explícita.",
+      "observed_or_discovered_in": [
+        "REF-VIDEO-000002"
+      ],
+      "severity": "high",
+      "status": "candidate"
+    }
+  ],
+  "contradictions": [
+    {
+      "topic": "narrative_strategy",
+      "description": "Las referencias utilizan estrategias narrativas diferentes. La evidencia no respalda que FisioForYou deba adoptar una única fórmula narrativa para todos los vídeos educativos.",
+      "references": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "resolution": "purpose-dependent"
+    },
+    {
+      "topic": "character_usage",
+      "description": "La personificación tiene valor en REF-VIDEO-000002, pero no existe evidencia suficiente para convertir los personajes antropomorfizados en requisito general del sistema audiovisual.",
+      "references": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "resolution": "optional-narrative-pattern"
+    },
+    {
+      "topic": "information_density",
+      "description": "La densidad audiovisual no puede evaluarse únicamente por cantidad total de contenido; debe evaluarse por escena, tiempo de exposición y carga acumulada de la secuencia.",
+      "references": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "resolution": "temporal-density-model"
+    }
+  ],
+  "component_candidates": [
+    {
+      "component": "video-scene",
+      "evidence_count": 2,
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "scene-text-overlay",
+      "evidence_count": 2,
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "visual-focus-anchor",
+      "evidence_count": 2,
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "transition",
+      "evidence_count": 2,
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "medium",
+      "status": "candidate"
+    },
+    {
+      "component": "concept-character",
+      "evidence_count": 1,
+      "supported_by": [
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "medium",
+      "status": "candidate"
+    },
+    {
+      "component": "character-state",
+      "evidence_count": 1,
+      "supported_by": [
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "medium",
+      "status": "candidate"
+    },
+    {
+      "component": "micro-scene",
+      "evidence_count": 2,
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    }
+  ],
+  "design_rule_candidates": [
+    {
+      "rule_id": "VIDEO-DESIGN-001",
+      "rule": "Diseñar primero la secuencia de ideas y después la composición de cada escena.",
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "rule_id": "VIDEO-DESIGN-002",
+      "rule": "Asignar una función comunicativa principal a cada escena.",
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "rule_id": "VIDEO-DESIGN-003",
+      "rule": "Mantener un foco visual dominante por escena.",
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "rule_id": "VIDEO-DESIGN-004",
+      "rule": "Distribuir contenido entre escenas antes que aumentar excesivamente la densidad de una escena individual.",
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "rule_id": "VIDEO-DESIGN-005",
+      "rule": "Utilizar movimiento únicamente cuando tenga función narrativa, explicativa, orientadora o de continuidad.",
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "rule_id": "VIDEO-DESIGN-006",
+      "rule": "Diseñar el texto considerando conjuntamente longitud, tamaño y duración de exposición.",
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "rule_id": "VIDEO-DESIGN-007",
+      "rule": "Mantener continuidad visual de elementos conceptuales recurrentes entre escenas.",
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "medium",
+      "status": "candidate"
+    }
+  ],
+  "qa_constraint_candidates": [
+    {
+      "constraint_id": "VIDEO-QA-001",
+      "constraint": "Cada texto visible debe permanecer en pantalla durante un tiempo suficiente para su lectura.",
+      "related_references": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint_id": "VIDEO-QA-002",
+      "constraint": "El sistema debe detectar escenas con exceso de texto o elementos simultáneos respecto al tiempo disponible.",
+      "related_references": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint_id": "VIDEO-QA-003",
+      "constraint": "La animación no puede introducir afirmaciones anatómicas, biomecánicas o clínicas que no existan en contenido aprobado.",
+      "related_references": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint_id": "VIDEO-QA-004",
+      "constraint": "La información esencial debe seguir siendo accesible cuando el vídeo se reproduce sin audio.",
+      "related_references": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint_id": "VIDEO-QA-005",
+      "constraint": "El idioma visible debe proceder de la especificación aprobada y no heredarse de la referencia.",
+      "related_references": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint_id": "VIDEO-QA-006",
+      "constraint": "Los elementos conceptuales recurrentes deben mantener identidad visual y significado entre escenas.",
+      "related_references": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint_id": "VIDEO-QA-007",
+      "constraint": "Los personajes clínicos no pueden adquirir mediante animación propiedades científicas no respaldadas por contenido validado.",
+      "related_references": [
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint_id": "VIDEO-QA-008",
+      "constraint": "Los assets clínicos, anatómicos o conceptuales reutilizables deben ser aprobados y trazables.",
+      "related_references": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    }
+  ],
+  "knowledge_gaps": [
+    {
+      "gap": "Solo existen dos referencias audiovisuales analizadas.",
+      "priority": "critical"
+    },
+    {
+      "gap": "No existe evidencia suficiente para establecer una duración óptima de vídeo.",
+      "priority": "high"
+    },
+    {
+      "gap": "No existe evidencia suficiente para establecer una duración mínima o máxima de escena.",
+      "priority": "high"
+    },
+    {
+      "gap": "No se ha definido todavía una métrica de velocidad de lectura para texto audiovisual.",
+      "priority": "critical"
+    },
+    {
+      "gap": "Faltan referencias de vídeos de demostración de ejercicios.",
+      "priority": "high"
+    },
+    {
+      "gap": "Faltan referencias de animación anatómica.",
+      "priority": "high"
+    },
+    {
+      "gap": "Faltan referencias de razonamiento clínico narrado.",
+      "priority": "high"
+    },
+    {
+      "gap": "Faltan referencias que utilicen subtítulos como mecanismo principal de accesibilidad.",
+      "priority": "high"
+    },
+    {
+      "gap": "No se ha definido todavía una política de voz, narración, música y efectos sonoros.",
+      "priority": "medium"
+    },
+    {
+      "gap": "No existe todavía una biblioteca aprobada de personajes, estados, gestos o assets audiovisuales.",
+      "priority": "medium"
+    },
+    {
+      "gap": "No sabemos todavía qué patrones deben compartirse entre infografía y vídeo y cuáles deben permanecer específicos de cada medio.",
+      "priority": "high"
+    }
+  ],
+  "open_questions": [
+    "¿Cuánto tiempo necesita permanecer visible un texto según su longitud y complejidad?",
+    "¿Cuántas ideas puede contener una escena antes de aumentar excesivamente la carga cognitiva?",
+    "¿Qué tipos de contenido se benefician realmente de personajes y cuáles requieren representación clínica directa?",
+    "¿Cuándo debe utilizarse animación frente a vídeo real, ilustración secuencial o infografía?",
+    "¿Qué elementos deben mantenerse constantes para construir identidad audiovisual de FisioForYou?",
+    "¿Cómo debe validarse automáticamente el significado clínico introducido por el movimiento?",
+    "¿Qué reglas de accesibilidad audiovisual deben convertirse en restricciones bloqueantes?",
+    "¿Qué conocimiento transversal puede compartirse entre el renderer de infografías y el futuro pipeline de vídeo?"
+  ],
+  "synthesis_status": "draft"
+}
