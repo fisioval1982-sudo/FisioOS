@@ -1,0 +1,246 @@
+{
+  "reference_id": "REF-VIDEO-000002",
+  "source_file": "REF-VIDEO-000002_source.mp4",
+  "media_type": "video",
+  "content_family": "clinical-education-short",
+  "study_reason": "Analizar un vídeo educativo vertical de corta duración que utiliza personajes antropomorfizados para representar diferentes tejidos musculoesqueléticos y extraer patrones reutilizables sobre narrativa audiovisual, personificación, diferenciación visual, ritmo y comunicación de conceptos clínicos.",
+  "source_language": "en",
+  "duration_observation": {
+    "approx_seconds": 32,
+    "format": "short-form",
+    "orientation": "portrait",
+    "aspect_ratio": "9:16",
+    "distribution_fit": [
+      "short-form social video",
+      "mobile-first educational content"
+    ]
+  },
+  "communicative_model": {
+    "primary_strategy": "personified-concept-explanation",
+    "description": "Los conceptos musculoesqueléticos se representan mediante personajes diferenciados que permiten convertir categorías anatómicas abstractas en entidades visualmente reconocibles.",
+    "primary_visual_anchor": "Los personajes que representan músculo, hueso, tendón y ligamento.",
+    "primary_learning_mechanism": [
+      "personificación",
+      "diferenciación visual",
+      "asociación concepto-personaje",
+      "microescenas",
+      "interacción narrativa"
+    ]
+  },
+  "temporal_structure": {
+    "overall_pattern": [
+      "introducción visual rápida",
+      "presentación o reconocimiento de personajes",
+      "interacción entre conceptos",
+      "desarrollo mediante microescenas",
+      "cierre breve"
+    ],
+    "scene_behavior": [
+      "Las escenas son cortas y orientadas a mantener continuidad de atención.",
+      "El significado se construye mediante la presencia y comportamiento de los personajes.",
+      "La pieza evita depender de bloques largos de texto explicativo.",
+      "La progresión temporal permite distribuir información que sería más densa en una infografía estática."
+    ],
+    "pacing": "fast",
+    "continuity": "La continuidad depende principalmente de mantener reconocibles los personajes y sus roles entre escenas."
+  },
+  "scene_components": [
+    {
+      "observed_role": "concept_character",
+      "description": "Personaje visual que representa un tejido o concepto musculoesquelético concreto."
+    },
+    {
+      "observed_role": "micro_scene",
+      "description": "Unidad narrativa breve en la que uno o varios personajes comunican una idea mediante presencia, interacción o comportamiento."
+    },
+    {
+      "observed_role": "character_interaction",
+      "description": "Relación entre personajes utilizada para explicar diferencias o relaciones entre conceptos."
+    },
+    {
+      "observed_role": "visual_identity_marker",
+      "description": "Características visuales que permiten reconocer rápidamente qué concepto representa cada personaje."
+    },
+    {
+      "observed_role": "short_text_support",
+      "description": "Texto breve utilizado como apoyo y no como principal portador de toda la explicación."
+    }
+  ],
+  "characters": [
+    {
+      "concept": "muscle",
+      "representation": "anthropomorphized_character",
+      "role": "Representar visualmente el tejido muscular como una entidad diferenciada."
+    },
+    {
+      "concept": "bone",
+      "representation": "anthropomorphized_character",
+      "role": "Representar visualmente el tejido óseo como una entidad diferenciada."
+    },
+    {
+      "concept": "tendon",
+      "representation": "anthropomorphized_character",
+      "role": "Representar visualmente el tendón como una entidad diferenciada."
+    },
+    {
+      "concept": "ligament",
+      "representation": "anthropomorphized_character",
+      "role": "Representar visualmente el ligamento como una entidad diferenciada."
+    }
+  ],
+  "visual_behavior": {
+    "typography": [
+      "El texto tiene un papel secundario frente a personajes y acción.",
+      "Los mensajes textuales deben ser suficientemente breves para procesarse durante una escena corta.",
+      "La legibilidad debe evaluarse considerando el tiempo disponible en pantalla y no únicamente el tamaño tipográfico."
+    ],
+    "color": [
+      "La diferenciación visual entre personajes contribuye a reconocer conceptos rápidamente.",
+      "El color puede reforzar identidad, pero no debería constituir el único mecanismo para distinguir personajes o tejidos."
+    ],
+    "composition": [
+      "Composición vertical diseñada para consumo móvil.",
+      "El foco de cada escena se concentra en pocos elementos.",
+      "Los personajes ocupan una proporción importante del encuadre.",
+      "La composición cambia temporalmente en lugar de intentar mostrar toda la información simultáneamente."
+    ],
+    "motion": [
+      "El movimiento mantiene atención y contribuye a la caracterización.",
+      "La animación funciona como parte de la explicación narrativa.",
+      "El movimiento decorativo debe permanecer subordinado al significado de la escena."
+    ],
+    "transitions": [
+      "Las transiciones permiten cambiar de idea sin aumentar la densidad de una única escena.",
+      "La continuidad conceptual es más importante que la espectacularidad de la transición."
+    ],
+    "character_design": [
+      "Cada personaje necesita rasgos persistentes que permitan reconocer su concepto entre escenas.",
+      "La personificación simplifica conceptos pero puede introducir asociaciones no científicas si el diseño implica propiedades inexistentes.",
+      "La diferenciación debe mantenerse incluso sin depender exclusivamente del color."
+    ]
+  },
+  "audio_visual_relationship": {
+    "observation": "La estructura audiovisual permite repartir la carga informativa entre imagen, acción, posible diálogo o narración y texto breve.",
+    "design_implication": "No debe duplicarse necesariamente toda la información en todos los canales; cada canal debe tener una función definida.",
+    "accessibility_implication": "La información esencial no debería depender exclusivamente del audio si la pieza necesita funcionar sin sonido."
+  },
+  "strengths": [
+    "La personificación convierte conceptos abstractos en entidades fáciles de reconocer.",
+    "Los cuatro tejidos pueden diferenciarse rápidamente mediante identidad visual.",
+    "El formato temporal evita concentrar toda la información en un único lienzo.",
+    "Las microescenas permiten introducir conceptos progresivamente.",
+    "La interacción entre personajes puede explicar relaciones de manera más memorable que una lista textual.",
+    "El formato vertical resulta adecuado para consumo móvil.",
+    "El uso limitado de texto reduce la sobrecarga visual."
+  ],
+  "weaknesses": [
+    "La personificación puede simplificar excesivamente conceptos anatómicos o biomecánicos.",
+    "Un personaje memorable puede provocar que rasgos puramente narrativos se recuerden como propiedades reales del tejido.",
+    "El ritmo rápido puede reducir el tiempo disponible para comprender conceptos nuevos.",
+    "La dependencia excesiva de diálogo o audio perjudicaría el consumo sin sonido.",
+    "La estética de entretenimiento puede aumentar la percepción de autoridad de afirmaciones que sigan necesitando validación clínica.",
+    "Mantener consistencia visual de los personajes entre múltiples vídeos puede convertirse en un requisito técnico importante."
+  ],
+  "uncertainties": [
+    "La referencia no constituye autoridad científica sobre las propiedades de músculo, hueso, tendón o ligamento.",
+    "No puede asumirse que los comportamientos asignados a los personajes representen literalmente propiedades biológicas.",
+    "No se ha validado el contenido clínico o anatómico comunicado por la pieza.",
+    "No puede determinarse a partir de una sola referencia si este estilo narrativo funciona igual de bien para conceptos clínicos más complejos.",
+    "No se dispone todavía de evidencia suficiente para establecer una duración óptima de escena."
+  ],
+  "knowledge_candidates": [
+    {
+      "candidate": "La personificación puede utilizarse para hacer reconocibles conceptos clínicos abstractos cuando se mantiene una separación clara entre recurso narrativo y propiedad científica.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Cada concepto personificado debe mantener una identidad visual persistente entre escenas y piezas.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Los personajes conceptuales deben diferenciarse mediante múltiples señales visuales y no exclusivamente mediante color.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Los vídeos educativos cortos deberían dividir conocimiento complejo en microescenas en lugar de condensarlo en una única composición.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Cada escena debería comunicar una idea principal reconocible.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "El texto en pantalla debe diseñarse según tamaño, cantidad y tiempo efectivo de exposición.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "El movimiento debe tener función narrativa, explicativa o atencional y no competir con el contenido principal.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "La información esencial debería poder recuperarse sin depender exclusivamente del audio.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Las propiedades narrativas asignadas a un personaje no deben introducir afirmaciones clínicas o biomecánicas no presentes en contenido validado.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "El vídeo permite resolver problemas de densidad mediante distribución temporal, pero introduce nuevas restricciones de ritmo, persistencia visual y tiempo de lectura.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Los personajes reutilizables pueden convertirse en componentes audiovisuales persistentes del sistema si existe un registro controlado de identidad, significado y usos permitidos.",
+      "confidence": "medium"
+    }
+  ],
+  "video_specific_qa_candidates": [
+    {
+      "constraint": "Cada escena debe mantener el texto visible durante tiempo suficiente para su lectura.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "Ningún personaje puede cambiar de identidad conceptual entre escenas.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "La animación no puede introducir una relación anatómica, biomecánica o clínica no respaldada por contenido aprobado.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "La información esencial no puede desaparecer únicamente por reproducir el vídeo sin audio.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "Los personajes clínicos reutilizables deben proceder de assets aprobados y mantener continuidad visual.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "El idioma visible de la salida debe respetar la especificación del producto y no heredarse de la referencia.",
+      "confidence": "high"
+    }
+  ],
+  "cross_media_observations": [
+    {
+      "observation": "A diferencia de una infografía estática, el vídeo puede distribuir información en el tiempo.",
+      "implication": "La densidad debe evaluarse por escena y también sobre la secuencia completa."
+    },
+    {
+      "observation": "Los personajes pueden funcionar como equivalentes temporales de componentes visuales reutilizables.",
+      "implication": "El sistema audiovisual puede necesitar una biblioteca de personajes y estados, además de componentes de layout."
+    },
+    {
+      "observation": "El movimiento añade una dimensión semántica inexistente en una imagen estática.",
+      "implication": "El QA audiovisual debe validar no solo qué elementos aparecen, sino también qué relaciones comunica su movimiento."
+    }
+  ],
+  "render_authority": {
+    "reference_is_render_spec": false,
+    "reference_text_is_content_source": false,
+    "reference_audio_is_content_source": false,
+    "reference_clinical_claims_are_authority": false,
+    "reference_character_behavior_is_scientific_authority": false,
+    "reference_character_design_is_canonical": false,
+    "reference_assets_are_production_assets": false
+  }
+}
