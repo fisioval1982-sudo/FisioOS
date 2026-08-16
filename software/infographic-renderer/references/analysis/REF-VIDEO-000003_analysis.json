@@ -1,0 +1,279 @@
+{
+  "reference_id": "REF-VIDEO-000003",
+  "source_file": "REF-VIDEO-000003_source.mp4",
+  "media_type": "video",
+  "content_family": "clinical-education",
+  "subfamily": "patient-clinician-anatomy-explanation",
+  "study_reason": "Analizar una referencia audiovisual breve que combina interacción profesional-paciente, localización corporal del síntoma y apoyo anatómico para extraer patrones sobre comunicación clínica, transición entre cuerpo real y representación anatómica, foco visual, narrativa temporal y seguridad semántica.",
+  "source_language": "unknown_or_mixed",
+  "duration_observation": {
+    "approx_seconds": 18,
+    "format": "short-form",
+    "orientation": "portrait",
+    "distribution_fit": [
+      "mobile-first educational content",
+      "short-form social video",
+      "clinical education"
+    ]
+  },
+  "communicative_model": {
+    "primary_strategy": "patient-clinician-context-with-anatomical-support",
+    "description": "La pieza parte de una situación clínica reconocible y utiliza el cuerpo del paciente, la interacción con el profesional y una representación anatómica como capas complementarias de comunicación.",
+    "primary_visual_anchor": "La región del hombro señalada o contextualizada durante la interacción clínica.",
+    "primary_learning_mechanisms": [
+      "contextualización clínica",
+      "localización corporal",
+      "demostración interpersonal",
+      "apoyo anatómico",
+      "transición entre representación externa e interna"
+    ]
+  },
+  "temporal_structure": {
+    "overall_pattern": [
+      "presentación rápida del contexto clínico",
+      "identificación o señalización de la región corporal",
+      "interacción profesional-paciente",
+      "introducción de apoyo anatómico",
+      "cierre breve"
+    ],
+    "scene_behavior": [
+      "La información aparece progresivamente en lugar de presentarse simultáneamente.",
+      "La región corporal actúa como punto de continuidad entre la escena clínica y la representación anatómica.",
+      "La transición hacia anatomía añade una segunda capa explicativa al contexto humano inicial.",
+      "La duración breve obliga a priorizar pocas ideas por escena."
+    ],
+    "pacing": "fast",
+    "continuity": "La continuidad conceptual depende de mantener estable la relación entre región corporal, gesto o señalización y representación anatómica."
+  },
+  "scene_components": [
+    {
+      "observed_role": "patient",
+      "description": "Persona utilizada para contextualizar el problema o región clínica."
+    },
+    {
+      "observed_role": "clinician",
+      "description": "Profesional que orienta la atención, interactúa con el paciente o estructura la explicación."
+    },
+    {
+      "observed_role": "body-location-cue",
+      "description": "Gesto, contacto o señalización que dirige la atención hacia una región corporal concreta."
+    },
+    {
+      "observed_role": "anatomical-support",
+      "description": "Representación anatómica utilizada para complementar la información visible externamente."
+    },
+    {
+      "observed_role": "clinical-micro-scene",
+      "description": "Unidad temporal breve centrada en una acción o idea clínica reconocible."
+    },
+    {
+      "observed_role": "text-support",
+      "description": "Texto visible que puede reforzar o contextualizar la información audiovisual sin constituir por sí solo toda la explicación."
+    }
+  ],
+  "visual_behavior": {
+    "composition": [
+      "El formato vertical favorece primeros planos o encuadres relativamente cerrados.",
+      "La región del hombro funciona como foco visual clínico.",
+      "La presencia humana aporta contexto antes de introducir abstracción anatómica.",
+      "La composición evita mostrar simultáneamente todas las capas informativas."
+    ],
+    "body_signaling": [
+      "La señalización corporal permite localizar rápidamente la región relevante.",
+      "El gesto puede funcionar como mecanismo de atención antes de introducir texto o anatomía.",
+      "La localización señalada no debe interpretarse automáticamente como identificación de una estructura causal."
+    ],
+    "anatomy": [
+      "La anatomía se utiliza como apoyo explicativo y no únicamente como decoración.",
+      "La correspondencia entre región corporal y anatomía debe ser espacialmente coherente.",
+      "Una transición visual hacia anatomía puede sugerir relaciones causales incluso cuando solo pretende contextualizar estructuras.",
+      "La exactitud anatómica debe validarse independientemente de la calidad estética de la representación."
+    ],
+    "motion": [
+      "El movimiento corporal contribuye a dirigir la atención.",
+      "Las transiciones pueden conectar contexto clínico y explicación anatómica.",
+      "El movimiento no debe crear relaciones biomecánicas o diagnósticas que no estén presentes en contenido validado."
+    ],
+    "typography": [
+      "El texto audiovisual debe ser breve por la corta duración de las escenas.",
+      "La legibilidad depende de tamaño, contraste y tiempo efectivo de exposición.",
+      "El texto no debería competir con la observación del gesto clínico o de la anatomía."
+    ],
+    "transitions": [
+      "La transición entre cuerpo real y representación anatómica puede actuar como mecanismo explicativo.",
+      "La continuidad espacial debe preservarse para evitar que el usuario atribuya una estructura a una localización incorrecta.",
+      "Una transición visualmente convincente no constituye evidencia clínica."
+    ]
+  },
+  "clinical_semantic_layers": [
+    {
+      "layer": "symptom_location",
+      "description": "Dónde señala o refiere el paciente una molestia o región de interés.",
+      "authority": "contextual_only"
+    },
+    {
+      "layer": "clinical_interaction",
+      "description": "Acciones observables entre profesional y paciente.",
+      "authority": "reference_behavior_only"
+    },
+    {
+      "layer": "anatomical_context",
+      "description": "Estructuras anatómicas mostradas para contextualizar la región.",
+      "authority": "requires_validation"
+    },
+    {
+      "layer": "diagnostic_or_causal_interpretation",
+      "description": "Cualquier inferencia que relacione directamente síntoma, gesto o localización con una estructura causal o diagnóstico.",
+      "authority": "not_authorized_from_reference"
+    }
+  ],
+  "strengths": [
+    "Parte de un contexto humano reconocible antes de introducir anatomía.",
+    "La señalización corporal dirige rápidamente la atención hacia la región relevante.",
+    "La anatomía puede conectar lo que el usuario ve externamente con estructuras internas.",
+    "La distribución temporal reduce la necesidad de mostrar contexto clínico y anatomía simultáneamente.",
+    "La presencia del profesional puede proporcionar estructura narrativa.",
+    "La región corporal funciona como elemento de continuidad entre escenas.",
+    "El formato corto favorece una explicación muy focalizada."
+  ],
+  "weaknesses": [
+    "La transición desde una zona dolorosa hacia una estructura anatómica puede interpretarse como afirmación causal.",
+    "La presencia de un profesional puede aumentar la autoridad percibida del contenido aunque la afirmación no esté validada.",
+    "La duración breve limita la posibilidad de comunicar incertidumbre clínica.",
+    "Una anatomía visualmente realista puede percibirse erróneamente como científicamente exacta.",
+    "El ritmo rápido puede dificultar distinguir entre localización del síntoma, anatomía regional y diagnóstico.",
+    "El gesto clínico puede ser ambiguo si se presenta sin suficiente contexto."
+  ],
+  "uncertainties": [
+    "La referencia no permite asumir que la estructura anatómica mostrada sea la causa del dolor.",
+    "La señalización de una región corporal no constituye diagnóstico.",
+    "Las acciones del profesional no deben interpretarse automáticamente como maniobras clínicas validadas.",
+    "La representación anatómica requiere validación independiente.",
+    "No puede inferirse eficacia diagnóstica o terapéutica a partir de la puesta en escena.",
+    "Una sola referencia no permite establecer una fórmula audiovisual universal para educación clínica."
+  ],
+  "knowledge_candidates": [
+    {
+      "candidate": "Un vídeo clínico puede comenzar con contexto humano y posteriormente introducir anatomía para aumentar progresivamente el nivel de abstracción.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "La región corporal puede utilizarse como ancla de continuidad entre paciente, gesto, texto y anatomía.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "La señalización corporal es un mecanismo eficiente de orientación visual, pero debe separarse semánticamente de diagnóstico y causalidad.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Las transiciones entre cuerpo real y anatomía deben preservar correspondencia espacial suficiente para evitar asociaciones incorrectas.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Una transición audiovisual puede introducir significado clínico implícito incluso cuando no existe una afirmación textual explícita.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "El QA audiovisual debe validar asociaciones creadas por montaje, transición, proximidad temporal y movimiento, no únicamente texto e imágenes individuales.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "La presencia de un profesional funciona como señal visual de autoridad y aumenta la necesidad de controlar afirmaciones clínicas implícitas.",
+      "confidence": "medium"
+    },
+    {
+      "candidate": "La anatomía contextualizada puede ser más comprensible cuando se introduce después de establecer primero la región corporal externa.",
+      "confidence": "medium"
+    },
+    {
+      "candidate": "La narrativa clínica breve necesita distinguir explícitamente entre síntoma, localización, estructura anatómica, hipótesis y diagnóstico cuando más de una de estas capas esté presente.",
+      "confidence": "high"
+    }
+  ],
+  "video_specific_qa_candidates": [
+    {
+      "constraint": "La localización corporal de dolor o síntomas no puede convertirse visualmente en diagnóstico.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "Una transición desde una región sintomática hacia una estructura anatómica no puede implicar causalidad salvo que esa relación exista en contenido clínico aprobado.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "Toda anatomía clínicamente significativa debe proceder de un asset aprobado y trazable.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "La correspondencia espacial entre cuerpo externo y anatomía interna debe ser validada cuando la transición dependa de esa relación.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "El montaje no puede crear una afirmación clínica no presente en el contenido aprobado.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "Los gestos o maniobras del profesional no pueden etiquetarse como pruebas diagnósticas, tratamiento o recomendación clínica sin contenido validado que lo autorice.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "El texto debe permanecer visible durante tiempo suficiente y no competir con una acción clínica esencial que el usuario necesite observar.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "El idioma visible debe proceder de la especificación de salida y no heredarse automáticamente de la referencia.",
+      "confidence": "high"
+    }
+  ],
+  "cross_media_observations": [
+    {
+      "observation": "El body-location-map identificado en las infografías puede tener un equivalente audiovisual mediante señalización directa sobre el cuerpo.",
+      "implication": "El sistema podría compartir un modelo semántico de localización corporal entre infografía y vídeo aunque la representación visual sea diferente."
+    },
+    {
+      "observation": "La anatomía estática puede transformarse en una transición temporal desde contexto externo hacia estructura interna.",
+      "implication": "El vídeo necesita reglas adicionales para controlar el significado introducido por el orden y la transición."
+    },
+    {
+      "observation": "La proximidad espacial de una infografía se convierte también en proximidad temporal dentro del vídeo.",
+      "implication": "Dos elementos mostrados consecutivamente pueden percibirse como relacionados incluso sin una conexión textual explícita."
+    }
+  ],
+  "component_candidates": [
+    {
+      "component": "patient-clinician-scene",
+      "confidence": "medium",
+      "status": "candidate"
+    },
+    {
+      "component": "body-location-cue",
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "body-to-anatomy-transition",
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "anatomical-context-overlay",
+      "confidence": "medium",
+      "status": "candidate"
+    },
+    {
+      "component": "clinical-text-overlay",
+      "confidence": "medium",
+      "status": "candidate"
+    }
+  ],
+  "render_authority": {
+    "reference_is_render_spec": false,
+    "reference_text_is_content_source": false,
+    "reference_audio_is_content_source": false,
+    "reference_clinical_claims_are_authority": false,
+    "reference_patient_behavior_is_clinical_authority": false,
+    "reference_clinician_behavior_is_clinical_authority": false,
+    "reference_anatomy_is_approved_asset": false,
+    "reference_transitions_are_clinical_authority": false
+  },
+  "analysis_status": "draft"
+}
