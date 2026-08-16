@@ -1,0 +1,303 @@
+{
+  "reference_id": "REF-VIDEO-000004",
+  "source_file": "REF-VIDEO-000004_source.mp4",
+  "media_type": "video",
+  "content_family": "anatomy-animation",
+  "subfamily": "layered-3d-shoulder-anatomy",
+  "study_reason": "Analizar una animación anatómica 3D del hombro construida mediante aparición progresiva de capas y cambios de cámara para extraer patrones sobre orientación espacial, visibilidad de estructuras, continuidad anatómica, profundidad, secuenciación de capas y seguridad de la representación clínica.",
+  "source_language": "unknown_or_mixed",
+  "communicative_model": {
+    "primary_strategy": "layered-anatomical-reveal",
+    "description": "La pieza utiliza un modelo tridimensional del hombro y revela estructuras progresivamente para construir comprensión espacial desde elementos profundos hacia capas más superficiales o viceversa.",
+    "primary_visual_anchor": "El complejo anatómico del hombro.",
+    "primary_learning_mechanisms": [
+      "revelado progresivo por capas",
+      "cambio de profundidad",
+      "orientación espacial",
+      "movimiento de cámara",
+      "aislamiento temporal de estructuras"
+    ]
+  },
+  "temporal_structure": {
+    "overall_pattern": [
+      "presentación del complejo anatómico",
+      "aislamiento o énfasis de estructuras profundas",
+      "aparición progresiva de nuevas capas",
+      "cambio de perspectiva o escala",
+      "integración de varias estructuras",
+      "cierre con visión anatómica más completa"
+    ],
+    "scene_behavior": [
+      "Las capas no se presentan todas simultáneamente desde el inicio.",
+      "La secuencia temporal permite reducir oclusión visual.",
+      "La relación entre estructuras se construye mediante aparición progresiva.",
+      "Los cambios de cámara modifican qué relaciones espaciales son visibles."
+    ],
+    "pacing": "medium",
+    "continuity": "La continuidad depende de conservar orientación anatómica reconocible entre cambios de capa y perspectiva."
+  },
+  "anatomical_scope": {
+    "region": "shoulder",
+    "observed_categories": [
+      "bone",
+      "ligament_or_capsular_structures",
+      "deep_musculature",
+      "superficial_musculature",
+      "tendon_or_musculotendinous_structures"
+    ],
+    "specific_structure_identification": "requires_validation",
+    "anatomical_fidelity_status": "unverified"
+  },
+  "scene_components": [
+    {
+      "observed_role": "3d-anatomical-model",
+      "description": "Modelo tridimensional que actúa como soporte espacial principal."
+    },
+    {
+      "observed_role": "anatomical-layer",
+      "description": "Conjunto de estructuras mostrado u ocultado temporalmente para controlar la complejidad visual."
+    },
+    {
+      "observed_role": "camera-orientation",
+      "description": "Perspectiva desde la que se presenta la región anatómica."
+    },
+    {
+      "observed_role": "structure-reveal",
+      "description": "Aparición progresiva de una estructura o capa."
+    },
+    {
+      "observed_role": "structure-isolation",
+      "description": "Ocultación parcial de otras estructuras para favorecer la comprensión de una estructura concreta."
+    },
+    {
+      "observed_role": "anatomical-transition",
+      "description": "Cambio temporal entre dos estados anatómicos de visibilidad."
+    }
+  ],
+  "visual_behavior": {
+    "composition": [
+      "El modelo anatómico ocupa la mayor parte del encuadre.",
+      "El fondo mantiene bajo protagonismo.",
+      "La profundidad tridimensional sustituye parcialmente a etiquetas o diagramas planos.",
+      "La escala del modelo permite observar relaciones espaciales complejas."
+    ],
+    "camera": [
+      "La cámara puede rotar o cambiar de perspectiva para revelar relaciones ocultas.",
+      "El movimiento de cámara modifica la interpretación espacial.",
+      "La orientación debe permanecer suficientemente estable para que el usuario no pierda la referencia anatómica.",
+      "Cambios excesivos de perspectiva pueden aumentar carga cognitiva."
+    ],
+    "layering": [
+      "La aparición progresiva de capas reduce oclusión.",
+      "Ocultar estructuras puede ser útil para enseñar relaciones profundas.",
+      "El orden de aparición de las capas puede crear una jerarquía conceptual.",
+      "El orden visual no debe interpretarse automáticamente como jerarquía funcional o clínica."
+    ],
+    "depth": [
+      "La profundidad aporta información espacial difícil de comunicar en una ilustración plana.",
+      "La oclusión debe gestionarse de forma deliberada.",
+      "El sistema debe conservar orientación suficiente al ocultar o mostrar estructuras."
+    ],
+    "color": [
+      "El color puede ayudar a diferenciar tejidos o capas.",
+      "La diferenciación anatómica no debería depender exclusivamente del color.",
+      "Los colores de una referencia no constituyen codificación anatómica canónica."
+    ],
+    "text": [
+      "El texto puede ser secundario frente a la anatomía 3D.",
+      "Las etiquetas, si existen, deben mantener correspondencia inequívoca con estructuras.",
+      "Las etiquetas deben permanecer legibles durante movimiento de cámara o cambios de capa."
+    ]
+  },
+  "anatomical_semantic_layers": [
+    {
+      "layer": "spatial_relationship",
+      "description": "Relación de posición entre estructuras.",
+      "authority": "requires_validation"
+    },
+    {
+      "layer": "depth_relationship",
+      "description": "Qué estructuras aparecen superficiales o profundas respecto a otras.",
+      "authority": "requires_validation"
+    },
+    {
+      "layer": "attachment_or_continuity",
+      "description": "Relaciones visuales de continuidad entre músculos, tendones, huesos u otras estructuras.",
+      "authority": "requires_validation"
+    },
+    {
+      "layer": "functional_interpretation",
+      "description": "Cualquier inferencia sobre función, movimiento o mecanismo basada únicamente en la animación.",
+      "authority": "not_authorized_from_reference"
+    },
+    {
+      "layer": "pathology",
+      "description": "Cualquier interpretación de lesión o alteración derivada del modelo.",
+      "authority": "not_authorized_from_reference"
+    }
+  ],
+  "strengths": [
+    "La secuenciación por capas reduce la saturación visual de anatomía compleja.",
+    "La profundidad 3D permite comunicar relaciones espaciales difíciles de representar en dos dimensiones.",
+    "El aislamiento temporal de estructuras puede facilitar aprendizaje progresivo.",
+    "Los cambios de perspectiva permiten observar relaciones no visibles desde una única vista.",
+    "El fondo discreto favorece que la anatomía mantenga el protagonismo.",
+    "La animación permite construir una representación anatómica paso a paso."
+  ],
+  "weaknesses": [
+    "El realismo 3D puede transmitir una falsa sensación de exactitud científica.",
+    "Cambios de cámara rápidos pueden hacer perder la orientación anatómica.",
+    "Ocultar estructuras puede eliminar referencias espaciales necesarias.",
+    "El orden de aparición de las capas puede interpretarse erróneamente como jerarquía funcional.",
+    "Una perspectiva atractiva visualmente puede no ser la más adecuada para identificar una estructura.",
+    "Modelos anatómicos incorrectos pueden resultar difíciles de detectar para usuarios no expertos."
+  ],
+  "uncertainties": [
+    "No se ha verificado la procedencia del modelo anatómico.",
+    "No se ha validado la geometría de las estructuras representadas.",
+    "No puede asumirse exactitud de inserciones, trayectos o relaciones únicamente por apariencia.",
+    "No puede determinarse si el orden de capas responde a un criterio anatómico, docente o puramente visual.",
+    "No se ha comprobado si todas las estructuras mantienen proporciones anatómicas correctas.",
+    "No se ha validado la orientación exacta del modelo en cada momento."
+  ],
+  "knowledge_candidates": [
+    {
+      "candidate": "La anatomía compleja puede enseñarse mediante revelado progresivo de capas para reducir oclusión y carga visual.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "El orden de capas debe responder a un objetivo educativo explícito y no ser decidido únicamente por conveniencia visual.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "La cámara puede utilizarse para revelar relaciones anatómicas, pero debe mantener suficiente continuidad de orientación.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "El sistema debería conservar referencias anatómicas estables cuando oculta estructuras para mostrar capas profundas.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Una animación anatómica puede necesitar múltiples vistas cuando una única perspectiva no permite comunicar correctamente todas las relaciones.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "La profundidad 3D es información clínica potencial y debe someterse a validación anatómica.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "El orden temporal de aparición no debe introducir significado funcional o clínico no respaldado.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "La diferenciación de tejidos debe utilizar señales redundantes además del color cuando sea clínicamente relevante.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Los modelos anatómicos reutilizables deberían disponer de estados de visibilidad aprobados por capa.",
+      "confidence": "medium"
+    },
+    {
+      "candidate": "La biblioteca anatómica audiovisual podría estructurarse mediante assets base más configuraciones aprobadas de capa, vista y cámara.",
+      "confidence": "medium"
+    }
+  ],
+  "video_specific_qa_candidates": [
+    {
+      "constraint": "Toda estructura anatómica clínicamente significativa debe resolver a un asset aprobado y trazable.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "La orientación anatómica debe permanecer definida y validable durante cambios de cámara.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "Ocultar una estructura no puede alterar la interpretación espacial de las estructuras restantes.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "El orden de aparición de capas no puede implicar jerarquía funcional, causal o patológica salvo contenido aprobado.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "La cámara no puede utilizar vistas que deformen o hagan ambiguas relaciones anatómicas relevantes.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "Las etiquetas anatómicas deben mantenerse asociadas inequívocamente a su estructura durante movimiento y cambios de capa.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "La escala de una estructura debe permanecer suficiente para reconocerla cuando sea relevante para el objetivo educativo.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "La diferenciación de estructuras no puede depender exclusivamente del color.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "La animación no puede introducir movimiento fisiológico, patología o mecanismo no definido por contenido clínico aprobado.",
+      "confidence": "high"
+    }
+  ],
+  "cross_media_observations": [
+    {
+      "observation": "La necesidad de múltiples vistas detectada en las infografías anatómicas se amplía en vídeo mediante movimiento de cámara.",
+      "implication": "Infografía y vídeo pueden compartir un modelo común de vista anatómica, aunque el vídeo añada trayectorias de cámara."
+    },
+    {
+      "observation": "El etiquetado anatómico estático se convierte en una relación dinámica cuando la estructura o la cámara se mueve.",
+      "implication": "El sistema audiovisual debe mantener bindings entre etiqueta y estructura a lo largo del tiempo."
+    },
+    {
+      "observation": "El concepto de capas anatómicas puede existir tanto en ilustraciones estáticas como en animación.",
+      "implication": "La biblioteca anatómica debería modelar capas como propiedad del asset y no como efecto exclusivo del renderer."
+    },
+    {
+      "observation": "La oclusión, poco relevante en una lista textual, se convierte en un problema central en representación anatómica.",
+      "implication": "El sistema necesita reglas explícitas de visibilidad y aislamiento de estructuras."
+    }
+  ],
+  "component_candidates": [
+    {
+      "component": "anatomical-3d-model",
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "anatomical-layer",
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "structure-reveal",
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "structure-isolation",
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "anatomical-camera-view",
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "dynamic-anatomical-label",
+      "confidence": "medium",
+      "status": "candidate"
+    }
+  ],
+  "render_authority": {
+    "reference_is_render_spec": false,
+    "reference_text_is_content_source": false,
+    "reference_anatomy_is_canonical": false,
+    "reference_layer_order_is_clinical_authority": false,
+    "reference_camera_path_is_canonical": false,
+    "reference_colors_are_anatomical_standard": false,
+    "reference_assets_are_production_assets": false
+  },
+  "analysis_status": "draft"
+}
