@@ -1,0 +1,329 @@
+{
+  "reference_id": "REF-VIDEO-000005",
+  "source_file": "REF-VIDEO-000005_source.mp4",
+  "media_type": "video",
+  "content_family": "exercise-program",
+  "subfamily": "shoulder-pain-exercise-demonstration",
+  "study_reason": "Analizar un vídeo vertical de demostración de ejercicios para dolor de hombro que combina explicación verbal, demostración corporal, subtítulos y dosificación para extraer patrones sobre técnica, secuencia, visibilidad del movimiento, instrucciones, carga informativa y seguridad clínica.",
+  "source_language": "es",
+  "duration_observation": {
+    "approx_seconds": 70,
+    "format": "short-form",
+    "orientation": "portrait",
+    "aspect_ratio": "9:16",
+    "distribution_fit": [
+      "mobile-first educational content",
+      "short-form social video",
+      "exercise education"
+    ]
+  },
+  "communicative_model": {
+    "primary_strategy": "clinician-led-exercise-demonstration",
+    "description": "La profesional presenta ejercicios para hombro mediante explicación directa a cámara, demostración corporal y subtítulos sincronizados.",
+    "primary_visual_anchor": "La profesional ejecutando o mostrando la posición asociada a cada movimiento.",
+    "primary_learning_mechanisms": [
+      "demostración corporal",
+      "explicación verbal",
+      "subtítulos sincronizados",
+      "secuenciación de ejercicios",
+      "repetición visual del patrón de movimiento"
+    ]
+  },
+  "temporal_structure": {
+    "overall_pattern": [
+      "introducción del problema y objetivo",
+      "presentación del ejercicio",
+      "demostración del movimiento",
+      "explicación breve de ejecución",
+      "transición al siguiente ejercicio",
+      "mención de repeticiones o dosis",
+      "cierre o llamada final"
+    ],
+    "scene_behavior": [
+      "Cada bloque temporal se centra en un movimiento o instrucción concreta.",
+      "La profesional alterna entre explicación frontal y demostración lateral o funcional.",
+      "Los títulos de ejercicio ayudan a segmentar la secuencia.",
+      "Los subtítulos acompañan el discurso durante prácticamente toda la pieza.",
+      "La demostración se integra dentro de la explicación en lugar de aparecer como vídeo separado."
+    ],
+    "pacing": "medium-fast",
+    "continuity": "La continuidad depende de mantener a la misma profesional, el mismo entorno y una progresión reconocible entre ejercicios."
+  },
+  "exercise_scope": {
+    "region": "shoulder",
+    "stated_program_size": 5,
+    "observed_examples": [
+      "flexión de hombro",
+      "extensión de hombro",
+      "rotación de hombro",
+      "ejercicios con apoyo o resistencia"
+    ],
+    "dosage_observation": "Se observa mención de repeticiones en algunos momentos, incluida una referencia visible a 10 repeticiones.",
+    "clinical_authority": false,
+    "note": "La inclusión de un ejercicio o una dosis en la referencia no autoriza su uso clínico en FisioForYou."
+  },
+  "scene_components": [
+    {
+      "observed_role": "exercise-title",
+      "description": "Etiqueta breve que identifica el movimiento o ejercicio mostrado."
+    },
+    {
+      "observed_role": "clinician-demonstrator",
+      "description": "Profesional que explica y ejecuta el movimiento."
+    },
+    {
+      "observed_role": "exercise-demonstration",
+      "description": "Representación corporal de la posición o trayectoria del ejercicio."
+    },
+    {
+      "observed_role": "subtitle-layer",
+      "description": "Texto sincronizado con el discurso que ayuda a seguir la explicación."
+    },
+    {
+      "observed_role": "dosage-cue",
+      "description": "Información de repeticiones o cantidad asociada al ejercicio."
+    },
+    {
+      "observed_role": "exercise-transition",
+      "description": "Paso temporal entre un ejercicio y el siguiente."
+    }
+  ],
+  "visual_behavior": {
+    "composition": [
+      "La profesional ocupa el centro o zona dominante del encuadre.",
+      "El fondo es clínico y relativamente estable entre escenas.",
+      "Los cambios de orientación corporal permiten mostrar distintos planos del movimiento.",
+      "La cámara permanece mayoritariamente estable, facilitando observar la ejecución."
+    ],
+    "exercise_visibility": [
+      "La extremidad superior necesita permanecer completamente visible cuando la trayectoria del movimiento es relevante.",
+      "Los cambios de encuadre deben preservar las articulaciones necesarias para interpretar la técnica.",
+      "Los primeros planos pueden ayudar a mostrar detalles, pero pueden ocultar compensaciones o segmentos relevantes."
+    ],
+    "movement": [
+      "El movimiento real del cuerpo constituye el principal recurso explicativo.",
+      "La demostración permite observar trayectoria mejor que una imagen estática.",
+      "Una sola repetición visual puede no mostrar variabilidad, compensaciones o errores frecuentes.",
+      "La velocidad de demostración condiciona la capacidad de analizar la técnica."
+    ],
+    "typography": [
+      "Los títulos de ejercicio aparecen en mayúsculas y con alto contraste.",
+      "Los subtítulos son breves y están sincronizados con el discurso.",
+      "El texto ocupa zonas centrales o inferiores sin dominar completamente la escena.",
+      "La cantidad de texto simultáneo es relativamente baja."
+    ],
+    "audio": [
+      "La explicación oral guía la secuencia.",
+      "Los subtítulos permiten recuperar parte importante del contenido sin audio.",
+      "La información clínica esencial no debería quedar exclusivamente en la narración."
+    ],
+    "transitions": [
+      "Las transiciones entre ejercicios son simples.",
+      "La continuidad depende más del cambio de movimiento que de efectos visuales complejos.",
+      "La simplicidad favorece la función educativa."
+    ]
+  },
+  "exercise_semantic_layers": [
+    {
+      "layer": "movement_name",
+      "description": "Identificación del ejercicio o dirección de movimiento.",
+      "authority": "requires_content_validation"
+    },
+    {
+      "layer": "demonstrated_technique",
+      "description": "Forma concreta en la que la profesional ejecuta el ejercicio.",
+      "authority": "reference_behavior_only"
+    },
+    {
+      "layer": "dosage",
+      "description": "Número de repeticiones, series, duración o frecuencia.",
+      "authority": "not_authorized_from_reference"
+    },
+    {
+      "layer": "indication",
+      "description": "Relación entre el ejercicio y dolor de hombro u otra condición.",
+      "authority": "not_authorized_from_reference"
+    },
+    {
+      "layer": "progression_or_regression",
+      "description": "Cualquier interpretación de dificultad, orden o progresión entre ejercicios.",
+      "authority": "not_authorized_from_reference"
+    }
+  ],
+  "strengths": [
+    "La demostración en movimiento comunica mejor la trayectoria que una imagen estática.",
+    "La profesional permanece visible y reconocible durante toda la pieza.",
+    "Los títulos permiten identificar rápidamente cada ejercicio.",
+    "Los subtítulos mejoran accesibilidad y consumo sin audio.",
+    "El entorno estable reduce distracciones.",
+    "Los cambios de posición corporal ayudan a mostrar diferentes direcciones de movimiento.",
+    "La división por ejercicios crea unidades temporales fáciles de seguir.",
+    "La mención de dosis puede convertir la pieza en material práctico para el usuario."
+  ],
+  "weaknesses": [
+    "La demostración de una sola persona puede interpretarse como técnica universal.",
+    "La dosis mostrada puede percibirse como prescripción individual aunque no exista valoración clínica.",
+    "El formato breve deja poco espacio para contraindicaciones, errores frecuentes o criterios de progresión.",
+    "Los encuadres parciales pueden ocultar compensaciones del tronco o de otras articulaciones.",
+    "El usuario puede priorizar completar repeticiones sobre calidad de movimiento.",
+    "La presencia de una profesional aumenta la autoridad percibida del contenido.",
+    "El título 'dolor de hombro' puede sugerir que los mismos ejercicios son adecuados para cualquier causa de dolor."
+  ],
+  "uncertainties": [
+    "No se ha validado la indicación clínica de los cinco ejercicios.",
+    "No puede asumirse que la dosis observada sea apropiada para todos los pacientes.",
+    "No se ha verificado si existe un orden terapéutico intencional entre los ejercicios.",
+    "No se puede determinar si las demostraciones incluyen todos los criterios técnicos relevantes.",
+    "No se han identificado posibles contraindicaciones o criterios de suspensión.",
+    "La referencia no permite establecer qué pacientes deberían realizar o evitar cada ejercicio."
+  ],
+  "knowledge_candidates": [
+    {
+      "candidate": "Los vídeos de ejercicio deberían separar explícitamente nombre del ejercicio, demostración, técnica, dosis e indicación clínica.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "La trayectoria relevante debe mostrarse en movimiento y con encuadre suficiente para observar las articulaciones implicadas.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Cuando existan compensaciones clínicamente importantes, el encuadre debe incluir los segmentos necesarios para detectarlas.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Los subtítulos son especialmente valiosos en vídeos de ejercicio porque permiten mantener la atención visual sobre el movimiento sin depender exclusivamente del audio.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "La dosis debe presentarse como contenido clínico independiente de la demostración visual.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "La demostración de una profesional no debe convertirse automáticamente en técnica canónica sin validación previa.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Una colección de ejercicios debe comunicar si existe o no un orden, progresión o relación entre ellos.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "El sistema debería poder representar variantes, progresiones y regresiones como estados diferenciados del mismo ejercicio.",
+      "confidence": "medium"
+    },
+    {
+      "candidate": "Los vídeos de ejercicio deberían incluir criterios de calidad de ejecución cuando estos sean relevantes para el objetivo clínico.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "Una pieza titulada para una región dolorosa no debe implicar que todos los ejercicios son adecuados para cualquier diagnóstico o presentación clínica.",
+      "confidence": "high"
+    },
+    {
+      "candidate": "El número de repeticiones no debería ser el principal objetivo visual si compromete la calidad del movimiento.",
+      "confidence": "medium"
+    }
+  ],
+  "video_specific_qa_candidates": [
+    {
+      "constraint": "Toda dosis de ejercicio debe proceder de contenido clínico validado.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "Toda indicación clínica del ejercicio debe proceder de contenido validado y no inferirse del título o contexto visual.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "La demostración debe mostrar suficiente anatomía funcional para interpretar correctamente el movimiento.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "El encuadre no puede ocultar segmentos necesarios para evaluar compensaciones clínicamente relevantes.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "El vídeo no puede presentar una técnica demostrada como universal si requiere individualización.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "Los subtítulos deben permanecer sincronizados con el contenido verbal y visual correspondiente.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "La información esencial de técnica o seguridad no puede depender únicamente del audio.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "La secuencia de ejercicios no puede interpretarse como progresión terapéutica salvo que esté definida explícitamente.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "El sistema debe diferenciar ejercicio, variante, progresión y regresión mediante identificadores explícitos.",
+      "confidence": "high"
+    },
+    {
+      "constraint": "El idioma visible debe proceder de la especificación aprobada y no de la referencia.",
+      "confidence": "high"
+    }
+  ],
+  "cross_media_observations": [
+    {
+      "observation": "El exercise-card identificado en las infografías puede evolucionar en vídeo hacia una unidad temporal con demostración dinámica.",
+      "implication": "Infografía y vídeo pueden compartir el mismo modelo semántico de ejercicio aunque utilicen renderers diferentes."
+    },
+    {
+      "observation": "La separación entre técnica y dosificación detectada en infografías sigue siendo necesaria en vídeo.",
+      "implication": "La estructura de datos del ejercicio debería ser independiente del medio de representación."
+    },
+    {
+      "observation": "El vídeo resuelve mejor la trayectoria, pero no elimina la necesidad de texto clínico estructurado.",
+      "implication": "El movimiento debe complementar, no sustituir, la especificación clínica."
+    },
+    {
+      "observation": "Los subtítulos introducen una dimensión temporal del texto inexistente en una ficha estática.",
+      "implication": "El sistema necesita controles de sincronización y persistencia además de legibilidad tipográfica."
+    }
+  ],
+  "component_candidates": [
+    {
+      "component": "exercise-video-unit",
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "exercise-title-overlay",
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "exercise-demonstration-sequence",
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "exercise-dosage-overlay",
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "subtitle-track",
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "exercise-variant-state",
+      "confidence": "medium",
+      "status": "candidate"
+    }
+  ],
+  "render_authority": {
+    "reference_is_render_spec": false,
+    "reference_text_is_content_source": false,
+    "reference_audio_is_content_source": false,
+    "reference_exercise_indication_is_clinical_authority": false,
+    "reference_exercise_dosage_is_clinical_authority": false,
+    "reference_exercise_technique_is_canonical": false,
+    "reference_sequence_is_progression_authority": false,
+    "reference_assets_are_production_assets": false
+  },
+  "analysis_status": "draft"
+}

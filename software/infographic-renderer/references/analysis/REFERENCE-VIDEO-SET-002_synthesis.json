@@ -1,0 +1,23 @@
+{
+  "synthesis_id": "",
+  "version": "1.0",
+  "reference_ids": [],
+  "media_type": "image",
+  "families_represented": [],
+  "purpose": "",
+  "evidence_summary": {
+    "reference_count": 0,
+    "family_count": 0,
+    "notes": []
+  },
+  "cross_reference_patterns": [],
+  "family_specific_patterns": [],
+  "anti_patterns": [],
+  "contradictions": [],
+  "component_candidates": [],
+  "design_rule_candidates": [],
+  "qa_constraint_candidates": [],
+  "knowledge_gaps": [],
+  "open_questions": [],
+  "synthesis_status": "draft"
+}
