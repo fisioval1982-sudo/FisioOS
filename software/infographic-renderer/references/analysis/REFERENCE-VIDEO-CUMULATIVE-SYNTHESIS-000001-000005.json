@@ -1,0 +1,1010 @@
+{
+  "synthesis_id": "REFERENCE-VIDEO-CUMULATIVE-000001-000005",
+  "version": "1.0",
+  "reference_ids": [
+    "REF-VIDEO-000001",
+    "REF-VIDEO-000002",
+    "REF-VIDEO-000003",
+    "REF-VIDEO-000004",
+    "REF-VIDEO-000005"
+  ],
+  "source_syntheses": [
+    "REFERENCE-VIDEO-SET-001",
+    "REFERENCE-VIDEO-SET-002"
+  ],
+  "media_type": "video",
+  "families_represented": [
+    "clinical-education-short",
+    "clinical-education",
+    "anatomy-animation",
+    "exercise-program"
+  ],
+  "purpose": "Consolidar el conocimiento extraído de las cinco primeras referencias audiovisuales para identificar principios transversales del medio vídeo, patrones específicos por familia, restricciones de QA respaldadas por evidencia, componentes candidatos, relaciones con el conocimiento multimodal de FisioForYou y dependencias que deben resolverse antes de construir un sistema audiovisual de producción.",
+  "evidence_summary": {
+    "reference_count": 5,
+    "set_count": 2,
+    "family_count": 4,
+    "notes": [
+      "Las cinco referencias cubren anatomía 3D, personificación educativa, contexto profesional-paciente, localización corporal, anatomía por capas y demostración de ejercicio.",
+      "Los dos sets independientes coinciden en varios principios audiovisuales fundamentales: arquitectura temporal, foco visual por escena, distribución progresiva de información y movimiento con función comunicativa.",
+      "La evidencia permite promover varios principios generales de vídeo a candidatos transversales de alta confianza.",
+      "El segundo set amplía el conocimiento desde principios narrativos generales hacia problemas semánticos específicos de montaje, anatomía dinámica y ejercicio.",
+      "El vídeo introduce dimensiones de QA que no existen de la misma forma en medios estáticos: tiempo, persistencia, sincronización, montaje, continuidad, movimiento y significado entre escenas.",
+      "La evidencia todavía no permite definir una identidad audiovisual definitiva de FisioForYou.",
+      "Las referencias son evidencia de diseño y comunicación, no autoridad clínica ni especificaciones directas de producción."
+    ]
+  },
+  "cross_reference_patterns": [
+    {
+      "pattern_id": "VIDEO-GLOBAL-CRP-001",
+      "pattern": "La arquitectura de información audiovisual debe diseñarse como una secuencia temporal de unidades comunicativas con funciones explícitas.",
+      "evidence_count": 5,
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004",
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "pattern_id": "VIDEO-GLOBAL-CRP-002",
+      "pattern": "Cada escena o unidad temporal debe mantener un foco visual principal claramente relacionado con el objetivo educativo de ese momento.",
+      "evidence_count": 5,
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004",
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "pattern_id": "VIDEO-GLOBAL-CRP-003",
+      "pattern": "La información compleja debe distribuirse temporalmente antes que aumentar excesivamente la densidad de una escena individual.",
+      "evidence_count": 5,
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004",
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "pattern_id": "VIDEO-GLOBAL-CRP-004",
+      "pattern": "El movimiento debe cumplir una función explicativa, atencional, demostrativa, espacial o narrativa y no utilizarse únicamente como decoración.",
+      "evidence_count": 5,
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004",
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "pattern_id": "VIDEO-GLOBAL-CRP-005",
+      "pattern": "Movimiento, transición, montaje y proximidad temporal pueden introducir significado clínico aunque ese significado no aparezca explícitamente en texto o audio.",
+      "evidence_count": 4,
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004",
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "pattern_id": "VIDEO-GLOBAL-CRP-006",
+      "pattern": "Texto, audio, imagen, anatomía, personajes y movimiento deben funcionar como canales complementarios y evitar competir simultáneamente por la atención.",
+      "evidence_count": 5,
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004",
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "pattern_id": "VIDEO-GLOBAL-CRP-007",
+      "pattern": "La legibilidad audiovisual depende conjuntamente de tamaño, longitud, densidad, contraste y tiempo efectivo de exposición.",
+      "evidence_count": 4,
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "pattern_id": "VIDEO-GLOBAL-CRP-008",
+      "pattern": "La información clínica esencial debe poder recuperarse sin depender exclusivamente del audio.",
+      "evidence_count": 4,
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "pattern_id": "VIDEO-GLOBAL-CRP-009",
+      "pattern": "Los elementos clínicos, anatómicos o conceptuales recurrentes deben conservar identidad y significado a lo largo de las escenas.",
+      "evidence_count": 5,
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004",
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "pattern_id": "VIDEO-GLOBAL-CRP-010",
+      "pattern": "El realismo visual no constituye evidencia de fidelidad científica, anatómica, biomecánica o clínica.",
+      "evidence_count": 4,
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004",
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    }
+  ],
+  "family_specific_patterns": [
+    {
+      "family": "clinical-education-short",
+      "patterns": [
+        {
+          "pattern": "Las microescenas permiten introducir conceptos progresivamente dentro de formatos breves.",
+          "supported_by": [
+            "REF-VIDEO-000001",
+            "REF-VIDEO-000002"
+          ],
+          "confidence": "high",
+          "status": "strong_candidate"
+        },
+        {
+          "pattern": "El tiempo disponible constituye un límite estructural y obliga a priorizar explícitamente el contenido.",
+          "supported_by": [
+            "REF-VIDEO-000001",
+            "REF-VIDEO-000002"
+          ],
+          "confidence": "high",
+          "status": "strong_candidate"
+        },
+        {
+          "pattern": "La personificación puede utilizarse para conceptos abstractos si los atributos ficticios del personaje no se presentan como propiedades científicas.",
+          "supported_by": [
+            "REF-VIDEO-000002"
+          ],
+          "confidence": "medium",
+          "status": "candidate"
+        }
+      ]
+    },
+    {
+      "family": "clinical-education",
+      "patterns": [
+        {
+          "pattern": "El contexto humano puede introducir una región o problema antes de aumentar el nivel de abstracción mediante anatomía.",
+          "supported_by": [
+            "REF-VIDEO-000003"
+          ],
+          "confidence": "medium",
+          "status": "candidate"
+        },
+        {
+          "pattern": "La región corporal puede funcionar como ancla de continuidad entre paciente, gesto, texto y anatomía.",
+          "supported_by": [
+            "REF-VIDEO-000003"
+          ],
+          "confidence": "high",
+          "status": "strong_candidate"
+        },
+        {
+          "pattern": "Síntoma, localización, anatomía, hipótesis y diagnóstico deben permanecer como capas semánticas diferenciadas.",
+          "supported_by": [
+            "REF-VIDEO-000003"
+          ],
+          "confidence": "high",
+          "status": "strong_candidate"
+        }
+      ]
+    },
+    {
+      "family": "anatomy-animation",
+      "patterns": [
+        {
+          "pattern": "El revelado progresivo y los cambios de escala pueden reducir oclusión y comunicar relaciones anatómicas complejas.",
+          "supported_by": [
+            "REF-VIDEO-000001",
+            "REF-VIDEO-000004"
+          ],
+          "confidence": "high",
+          "status": "strong_candidate"
+        },
+        {
+          "pattern": "La cámara puede funcionar como herramienta pedagógica para revelar relaciones espaciales cuando mantiene orientación anatómica suficiente.",
+          "supported_by": [
+            "REF-VIDEO-000001",
+            "REF-VIDEO-000004"
+          ],
+          "confidence": "high",
+          "status": "strong_candidate"
+        },
+        {
+          "pattern": "La progresión macro a micro puede utilizarse para conectar anatomía regional con representaciones tisulares cuando la relación esté clínicamente validada.",
+          "supported_by": [
+            "REF-VIDEO-000001"
+          ],
+          "confidence": "medium",
+          "status": "candidate"
+        },
+        {
+          "pattern": "El orden de aparición de estructuras debe responder a un objetivo educativo y no introducir jerarquía funcional, causal o patológica implícita.",
+          "supported_by": [
+            "REF-VIDEO-000004"
+          ],
+          "confidence": "high",
+          "status": "strong_candidate"
+        }
+      ]
+    },
+    {
+      "family": "exercise-program",
+      "patterns": [
+        {
+          "pattern": "El modelo de ejercicio debe separar nombre, demostración, técnica, dosis, indicación, variante, progresión y regresión.",
+          "supported_by": [
+            "REF-VIDEO-000005"
+          ],
+          "confidence": "high",
+          "status": "strong_candidate"
+        },
+        {
+          "pattern": "El encuadre debe incluir los segmentos necesarios para interpretar trayectoria y compensaciones clínicamente relevantes.",
+          "supported_by": [
+            "REF-VIDEO-000005"
+          ],
+          "confidence": "high",
+          "status": "strong_candidate"
+        },
+        {
+          "pattern": "Los subtítulos permiten mantener disponible información verbal mientras la atención visual se concentra en la ejecución.",
+          "supported_by": [
+            "REF-VIDEO-000005"
+          ],
+          "confidence": "high",
+          "status": "strong_candidate"
+        }
+      ]
+    }
+  ],
+  "anti_patterns": [
+    {
+      "anti_pattern_id": "VIDEO-GLOBAL-ANTI-001",
+      "description": "Tratar el vídeo como una composición estática a la que se añade movimiento posteriormente sin diseñar arquitectura temporal.",
+      "observed_or_discovered_in": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002"
+      ],
+      "severity": "high",
+      "status": "supported"
+    },
+    {
+      "anti_pattern_id": "VIDEO-GLOBAL-ANTI-002",
+      "description": "Mostrar texto durante un tiempo insuficiente para que pueda ser leído y comprendido.",
+      "observed_or_discovered_in": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000005"
+      ],
+      "severity": "critical",
+      "status": "supported"
+    },
+    {
+      "anti_pattern_id": "VIDEO-GLOBAL-ANTI-003",
+      "description": "Utilizar movimiento, cámara o transiciones que compitan con el conocimiento principal.",
+      "observed_or_discovered_in": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004",
+        "REF-VIDEO-000005"
+      ],
+      "severity": "high",
+      "status": "supported"
+    },
+    {
+      "anti_pattern_id": "VIDEO-GLOBAL-ANTI-004",
+      "description": "Introducir demasiadas ideas dentro de una escena únicamente para reducir la duración total del vídeo.",
+      "observed_or_discovered_in": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004",
+        "REF-VIDEO-000005"
+      ],
+      "severity": "high",
+      "status": "supported"
+    },
+    {
+      "anti_pattern_id": "VIDEO-GLOBAL-ANTI-005",
+      "description": "Depender exclusivamente del audio para comunicar información clínica esencial.",
+      "observed_or_discovered_in": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000005"
+      ],
+      "severity": "critical",
+      "status": "supported"
+    },
+    {
+      "anti_pattern_id": "VIDEO-GLOBAL-ANTI-006",
+      "description": "Utilizar montaje, proximidad temporal o transición para insinuar una relación diagnóstica, causal o terapéutica no presente en contenido aprobado.",
+      "observed_or_discovered_in": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004",
+        "REF-VIDEO-000005"
+      ],
+      "severity": "critical",
+      "status": "supported"
+    },
+    {
+      "anti_pattern_id": "VIDEO-GLOBAL-ANTI-007",
+      "description": "Tratar una representación anatómica o tisular visualmente realista como garantía de exactitud científica.",
+      "observed_or_discovered_in": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004"
+      ],
+      "severity": "critical",
+      "status": "supported"
+    },
+    {
+      "anti_pattern_id": "VIDEO-GLOBAL-ANTI-008",
+      "description": "Permitir que una personificación introduzca propiedades científicas inexistentes en el concepto representado.",
+      "observed_or_discovered_in": [
+        "REF-VIDEO-000002"
+      ],
+      "severity": "high",
+      "status": "supported"
+    },
+    {
+      "anti_pattern_id": "VIDEO-GLOBAL-ANTI-009",
+      "description": "Interpretar el orden de aparición de capas o estructuras como jerarquía funcional, causal o patológica.",
+      "observed_or_discovered_in": [
+        "REF-VIDEO-000004"
+      ],
+      "severity": "high",
+      "status": "supported"
+    },
+    {
+      "anti_pattern_id": "VIDEO-GLOBAL-ANTI-010",
+      "description": "Presentar una demostración de ejercicio o una dosis observada como prescripción universal.",
+      "observed_or_discovered_in": [
+        "REF-VIDEO-000005"
+      ],
+      "severity": "critical",
+      "status": "supported"
+    },
+    {
+      "anti_pattern_id": "VIDEO-GLOBAL-ANTI-011",
+      "description": "Utilizar encuadres de ejercicio que oculten segmentos necesarios para interpretar correctamente la ejecución.",
+      "observed_or_discovered_in": [
+        "REF-VIDEO-000005"
+      ],
+      "severity": "high",
+      "status": "supported"
+    }
+  ],
+  "contradictions": [
+    {
+      "topic": "primary_visual_anchor",
+      "description": "El anclaje principal puede ser anatomía, personaje, paciente, profesional o demostración corporal. La evidencia contradice la existencia de un único tipo de anclaje visual universal.",
+      "references": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004",
+        "REF-VIDEO-000005"
+      ],
+      "resolution": "family-and-purpose-dependent"
+    },
+    {
+      "topic": "camera_behavior",
+      "description": "El movimiento de cámara puede ser pedagógicamente útil en anatomía, mientras que una cámara más estable favorece el análisis de ejercicio.",
+      "references": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000004",
+        "REF-VIDEO-000005"
+      ],
+      "resolution": "purpose-dependent"
+    },
+    {
+      "topic": "realism_vs_simplification",
+      "description": "Algunas piezas utilizan anatomía relativamente realista y otras personificación o simplificación. Ninguno de los dos enfoques puede imponerse globalmente.",
+      "references": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004"
+      ],
+      "resolution": "content-dependent-with-clinical-safety"
+    },
+    {
+      "topic": "text_density",
+      "description": "La cantidad adecuada de texto cambia según exista narración, demostración, anatomía o personajes, pero todas las referencias favorecen evitar alta densidad simultánea.",
+      "references": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000005"
+      ],
+      "resolution": "timing-and-purpose-dependent"
+    },
+    {
+      "topic": "scene_duration",
+      "description": "Las referencias utilizan ritmos diferentes y no existe evidencia suficiente para fijar una duración universal por escena.",
+      "references": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004",
+        "REF-VIDEO-000005"
+      ],
+      "resolution": "unresolved"
+    }
+  ],
+  "component_candidates": [
+    {
+      "component": "temporal-scene-unit",
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004",
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "short-text-overlay",
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "subtitle-track",
+      "supported_by": [
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "concept-character",
+      "supported_by": [
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "medium",
+      "status": "candidate"
+    },
+    {
+      "component": "patient-clinician-scene",
+      "supported_by": [
+        "REF-VIDEO-000003"
+      ],
+      "confidence": "medium",
+      "status": "candidate"
+    },
+    {
+      "component": "body-location-cue",
+      "supported_by": [
+        "REF-VIDEO-000003"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "body-to-anatomy-transition",
+      "supported_by": [
+        "REF-VIDEO-000003"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "anatomical-3d-model",
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000004"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "anatomical-layer",
+      "supported_by": [
+        "REF-VIDEO-000004"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "anatomical-camera-view",
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000004"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "structure-reveal",
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000004"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "exercise-video-unit",
+      "supported_by": [
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "exercise-demonstration-sequence",
+      "supported_by": [
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "component": "exercise-dosage-overlay",
+      "supported_by": [
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    }
+  ],
+  "design_rule_candidates": [
+    {
+      "rule_id": "VIDEO-GLOBAL-DESIGN-001",
+      "rule": "Definir primero el objetivo comunicativo y la secuencia temporal; diseñar después composición, cámara, movimiento, texto y audio.",
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004",
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "rule_id": "VIDEO-GLOBAL-DESIGN-002",
+      "rule": "Mantener un foco visual dominante por escena y dividir conceptos complejos entre varias unidades temporales cuando sea necesario.",
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004",
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "rule_id": "VIDEO-GLOBAL-DESIGN-003",
+      "rule": "Utilizar movimiento y cámara únicamente cuando aporten explicación, orientación, demostración, atención o continuidad.",
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004",
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "rule_id": "VIDEO-GLOBAL-DESIGN-004",
+      "rule": "Diseñar las transiciones como relaciones semánticas y no únicamente como efectos visuales.",
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004",
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "rule_id": "VIDEO-GLOBAL-DESIGN-005",
+      "rule": "Diseñar todo texto temporal según longitud, tamaño, contraste, posición y tiempo efectivo de exposición.",
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "rule_id": "VIDEO-GLOBAL-DESIGN-006",
+      "rule": "Mantener continuidad visual y semántica suficiente para que conceptos, estructuras y personajes conserven identidad entre escenas.",
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004",
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    },
+    {
+      "rule_id": "VIDEO-GLOBAL-DESIGN-007",
+      "rule": "Separar el contenido canónico de su representación audiovisual para permitir múltiples renderizados sin modificar el significado clínico.",
+      "supported_by": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004",
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "strong_candidate"
+    }
+  ],
+  "qa_constraint_candidates": [
+    {
+      "constraint_id": "VIDEO-GLOBAL-QA-001",
+      "constraint": "El montaje, movimiento, transición, proximidad temporal o cambio de escala no puede introducir una relación clínica no presente en contenido aprobado.",
+      "related_references": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004",
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint_id": "VIDEO-GLOBAL-QA-002",
+      "constraint": "Todo texto debe permanecer visible durante tiempo suficiente para su lectura y comprensión.",
+      "related_references": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint_id": "VIDEO-GLOBAL-QA-003",
+      "constraint": "La información clínica esencial no puede depender exclusivamente del audio.",
+      "related_references": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint_id": "VIDEO-GLOBAL-QA-004",
+      "constraint": "Toda anatomía clínicamente significativa debe resolver a un asset o modelo aprobado y trazable.",
+      "related_references": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint_id": "VIDEO-GLOBAL-QA-005",
+      "constraint": "El realismo visual no puede utilizarse como sustituto de validación anatómica o científica.",
+      "related_references": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint_id": "VIDEO-GLOBAL-QA-006",
+      "constraint": "La orientación anatómica y las relaciones espaciales relevantes deben permanecer validables durante cambios de cámara, escala y visibilidad.",
+      "related_references": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint_id": "VIDEO-GLOBAL-QA-007",
+      "constraint": "La localización corporal de dolor o síntomas no puede convertirse visualmente en diagnóstico o causalidad estructural.",
+      "related_references": [
+        "REF-VIDEO-000003"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint_id": "VIDEO-GLOBAL-QA-008",
+      "constraint": "La personificación no puede atribuir al concepto clínico propiedades ficticias del personaje.",
+      "related_references": [
+        "REF-VIDEO-000002"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint_id": "VIDEO-GLOBAL-QA-009",
+      "constraint": "Toda dosis, indicación, progresión o regresión de ejercicio debe proceder de contenido clínico validado.",
+      "related_references": [
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint_id": "VIDEO-GLOBAL-QA-010",
+      "constraint": "El encuadre de una demostración debe incluir los segmentos necesarios para interpretar la técnica y las compensaciones clínicamente relevantes.",
+      "related_references": [
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint_id": "VIDEO-GLOBAL-QA-011",
+      "constraint": "Texto, subtítulos, narración y acción visual deben permanecer semántica y temporalmente sincronizados.",
+      "related_references": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint_id": "VIDEO-GLOBAL-QA-012",
+      "constraint": "El idioma visible y narrado debe proceder de la especificación de salida y no heredarse automáticamente de la referencia.",
+      "related_references": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004",
+        "REF-VIDEO-000005"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    },
+    {
+      "constraint_id": "VIDEO-GLOBAL-QA-013",
+      "constraint": "Los efectos dramáticos de lesión, degeneración, inflamación, rotura o daño no pueden introducir mecanismos clínicos no respaldados.",
+      "related_references": [
+        "REF-VIDEO-000001"
+      ],
+      "confidence": "high",
+      "status": "supported"
+    }
+  ],
+  "cross_media_knowledge": [
+    {
+      "knowledge_domain": "anatomy",
+      "conclusion": "La anatomía debe existir como conocimiento y assets canónicos independientes del renderer.",
+      "video_evidence": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000004"
+      ],
+      "implication": "Infografía, vídeo y futuros medios deberían consumir el mismo registro anatómico aprobado y aplicar únicamente transformaciones de presentación autorizadas.",
+      "status": "ready_for_data_model_design"
+    },
+    {
+      "knowledge_domain": "exercise",
+      "conclusion": "El ejercicio debe modelarse semánticamente de forma independiente de su representación estática o audiovisual.",
+      "video_evidence": [
+        "REF-VIDEO-000005"
+      ],
+      "implication": "Nombre, técnica, dosis, indicación, variante, progresión y regresión deberían ser campos canónicos consumidos por diferentes renderers.",
+      "status": "ready_for_data_model_design"
+    },
+    {
+      "knowledge_domain": "body-location-and-symptoms",
+      "conclusion": "La localización corporal debe existir como dato separado de diagnóstico, estructura causal e hipótesis clínica.",
+      "video_evidence": [
+        "REF-VIDEO-000003"
+      ],
+      "implication": "Un mismo modelo de body-location puede alimentar mapas estáticos, señalización sobre paciente y transiciones hacia anatomía sin alterar su significado clínico.",
+      "status": "ready_for_data_model_design"
+    },
+    {
+      "knowledge_domain": "text-and-accessibility",
+      "conclusion": "La legibilidad comparte fundamentos entre medios, pero el vídeo añade persistencia y sincronización como variables obligatorias.",
+      "video_evidence": [
+        "REF-VIDEO-000001",
+        "REF-VIDEO-000002",
+        "REF-VIDEO-000003",
+        "REF-VIDEO-000005"
+      ],
+      "implication": "El QA audiovisual necesita métricas temporales además de las reglas tipográficas estáticas.",
+      "status": "ready_for_qa_design"
+    }
+  ],
+  "knowledge_gaps": [
+    {
+      "gap_id": "VIDEO-GAP-001",
+      "gap": "No existe una métrica aprobada de velocidad de lectura, tiempo mínimo de exposición o densidad textual por escena.",
+      "priority": "critical"
+    },
+    {
+      "gap_id": "VIDEO-GAP-002",
+      "gap": "No existe todavía un registro canónico y trazable de anatomía aprobado para reutilización multimodal.",
+      "priority": "critical"
+    },
+    {
+      "gap_id": "VIDEO-GAP-003",
+      "gap": "No se ha formalizado el modelo semántico común de ejercicio.",
+      "priority": "critical"
+    },
+    {
+      "gap_id": "VIDEO-GAP-004",
+      "gap": "No se ha formalizado el modelo semántico de localización corporal, síntomas, hipótesis y diagnóstico.",
+      "priority": "critical"
+    },
+    {
+      "gap_id": "VIDEO-GAP-005",
+      "gap": "No existe una política formal para detectar o revisar afirmaciones implícitas creadas por montaje, movimiento y proximidad temporal.",
+      "priority": "critical"
+    },
+    {
+      "gap_id": "VIDEO-GAP-006",
+      "gap": "No se han definido políticas de subtítulos, narración, música, efectos sonoros, silencios y mezcla de audio.",
+      "priority": "high"
+    },
+    {
+      "gap_id": "VIDEO-GAP-007",
+      "gap": "No existe evidencia suficiente para fijar duración de escena, ritmo, velocidad de transición o duración total por familia.",
+      "priority": "high"
+    },
+    {
+      "gap_id": "VIDEO-GAP-008",
+      "gap": "No existe evidencia suficiente para definir una identidad audiovisual propia de FisioForYou.",
+      "priority": "high"
+    },
+    {
+      "gap_id": "VIDEO-GAP-009",
+      "gap": "Las familias de ejercicio, contexto profesional-paciente y personificación siguen representadas por una sola referencia cada una.",
+      "priority": "high"
+    },
+    {
+      "gap_id": "VIDEO-GAP-010",
+      "gap": "No se ha definido qué decisiones puede tomar automáticamente un renderer audiovisual y cuáles requieren especificación o aprobación humana.",
+      "priority": "critical"
+    },
+    {
+      "gap_id": "VIDEO-GAP-011",
+      "gap": "No se han definido métricas automáticas para continuidad anatómica, visibilidad de estructuras o suficiencia del encuadre de ejercicio.",
+      "priority": "high"
+    }
+  ],
+  "open_questions": [
+    "¿Cuál debe ser el schema canónico de una escena audiovisual?",
+    "¿Qué campos pertenecen al conocimiento clínico y cuáles a la especificación de render?",
+    "¿Cómo debe modelarse una estructura anatómica para soportar imagen estática, capas 3D, cámara y animación sin duplicar conocimiento?",
+    "¿Cómo debe modelarse un ejercicio para soportar infografía, vídeo, variantes, progresiones y regresiones?",
+    "¿Cómo puede QA detectar una afirmación clínica creada únicamente por montaje o transición?",
+    "¿Qué métrica debe determinar el tiempo mínimo de exposición de texto y subtítulos?",
+    "¿Qué elementos audiovisuales deben seguir funcionando cuando el usuario reproduce el vídeo sin sonido?",
+    "¿Cómo debe validarse automáticamente que una demostración de ejercicio mantiene visibles los segmentos necesarios?",
+    "¿Qué autonomía puede tener el renderer sobre cámara, ritmo, transición y movimiento?",
+    "¿Qué elementos deben constituir identidad audiovisual estable y cuáles deben variar según la familia de contenido?"
+  ],
+  "recommended_next_architecture_work": [
+    {
+      "priority": 1,
+      "work": "Diseñar el modelo semántico canónico de anatomía compartido entre medios.",
+      "reason": "Es una dependencia crítica repetida en múltiples referencias audiovisuales y estáticas."
+    },
+    {
+      "priority": 2,
+      "work": "Diseñar el modelo semántico canónico de ejercicio.",
+      "reason": "Permite separar contenido clínico de demostración, dosis y representación audiovisual."
+    },
+    {
+      "priority": 3,
+      "work": "Diseñar el modelo de body-location, síntomas, hipótesis y diagnóstico.",
+      "reason": "Evita que relaciones visuales conviertan localización corporal en causalidad clínica."
+    },
+    {
+      "priority": 4,
+      "work": "Definir un schema de escena audiovisual y timeline.",
+      "reason": "Los cinco vídeos respaldan la necesidad de arquitectura temporal explícita."
+    },
+    {
+      "priority": 5,
+      "work": "Diseñar QA audiovisual para legibilidad temporal, sincronización y semántica de montaje.",
+      "reason": "Son restricciones propias del vídeo que no pueden resolverse únicamente con QA de assets estáticos."
+    }
+  ],
+  "synthesis_status": "draft",
+  "promotion_readiness": {
+    "temporal_information_architecture": "ready_for_approval_review",
+    "scene_function_model": "ready_for_approval_review",
+    "single_visual_focus_principle": "ready_for_approval_review",
+    "purposeful_motion_principle": "ready_for_approval_review",
+    "temporal_information_distribution": "ready_for_approval_review",
+    "semantic_editing_constraints": "ready_for_approval_review",
+    "temporal_text_legibility": "ready_for_qa_design",
+    "audio_independence": "ready_for_qa_design",
+    "anatomical_video_constraints": "ready_for_approval_review",
+    "exercise_video_constraints": "partially_ready",
+    "personification_constraints": "partially_ready",
+    "cross_media_anatomy_model": "ready_for_data_model_design",
+    "cross_media_exercise_model": "ready_for_data_model_design",
+    "body_location_semantic_model": "ready_for_data_model_design",
+    "video_component_library": "partially_ready",
+    "audiovisual_identity": "not_ready",
+    "autonomous_video_renderer": "not_ready"
+  },
+  "render_authority": {
+    "references_are_render_specs": false,
+    "reference_text_is_content_authority": false,
+    "reference_audio_is_content_authority": false,
+    "reference_anatomy_is_canonical": false,
+    "reference_exercise_prescription_is_authority": false,
+    "reference_motion_is_automatically_approved": false,
+    "reference_camera_paths_are_canonical": false,
+    "reference_timing_is_canonical": false,
+    "reference_style_is_fisioforyou_identity": false
+  }
+}
