@@ -11,3 +11,20 @@
 # Temporales
 *.tmp
 *.temp
+
+# Reference source binaries
+software/infographic-renderer/references/source/*.mp4
+software/infographic-renderer/references/source/*.MP4
+software/infographic-renderer/references/source/*.mov
+software/infographic-renderer/references/source/*.MOV
+software/infographic-renderer/references/source/*.jpg
+software/infographic-renderer/references/source/*.JPG
+software/infographic-renderer/references/source/*.jpeg
+software/infographic-renderer/references/source/*.JPEG
+software/infographic-renderer/references/source/*.png
+software/infographic-renderer/references/source/*.PNG
+software/infographic-renderer/references/source/*.webp
+software/infographic-renderer/references/source/*.WEBP
+
+# Local Obsidian workspace state
+.obsidian/workspace.json
