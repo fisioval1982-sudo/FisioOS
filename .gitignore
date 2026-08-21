@@ -28,3 +28,6 @@ software/infographic-renderer/references/source/*.WEBP
 
 # Local Obsidian workspace state
 .obsidian/workspace.json
+
+# Installed Obsidian community plugins
+.obsidian/plugins/
