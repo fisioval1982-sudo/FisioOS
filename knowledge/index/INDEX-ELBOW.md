@@ -1,6 +1,7 @@
 ---
 id: INDEX-ELBOW
 title: Índice dinámico — Codo
+Relaciones: REG-000005 — Miembro superior STR-000230 — Codo
 type: Index
 status: Draft
 version: 0.1
@@ -10,6 +11,11 @@ updated: 2026-08-21
 ---
 
 # Índice dinámico — Codo
+
+## Relaciones
+
+- [[REG-000005]] — Miembro superior
+- [[STR-000230]] — Codo
 
 ## Anatomía
 

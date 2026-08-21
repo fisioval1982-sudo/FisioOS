@@ -11,6 +11,11 @@ updated: 2026-08-21
 
 # Índice dinámico — Hombro
 
+## Relaciones
+
+- [[REG-000005]] — Miembro superior
+- [[STR-000100]] — Hombro
+
 ## Anatomía
 
 ```dataview
