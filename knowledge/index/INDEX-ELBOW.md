@@ -39,6 +39,7 @@ SORT id ASC
 
 ```dataview
 TABLE id, title, status
-FROM "knowledge/ultrasound/findings/elbow"
+FROM "knowledge/ultrasound/findings"
+WHERE contains(file.outlinks, [[STR-000233]]) OR contains(file.outlinks, [[PAT-000006]])
 SORT id ASC
 ```
