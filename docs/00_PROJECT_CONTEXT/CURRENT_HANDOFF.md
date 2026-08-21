@@ -3,7 +3,7 @@ id: FISIOOS-CURRENT-HANDOFF
 title: FisioOS Current Handoff
 type: Project Handoff
 status: Active
-version: 1.0
+version: 1.1
 created: 2026-08-21
 updated: 2026-08-21
 ---
@@ -32,11 +32,11 @@ Rama: `main`
 
 HEAD confirmado:
 
-`1e84b93fb5aa00981d1ba702dc7788e6f227d3ec`
+`bd2377de2848519ed8ce15443fe030488caf9fe3`
 
 Último commit:
 
-`1e84b93 — chore(repo): document media storage and resolve test references`
+`bd2377d — feat(elbow): add anatomy and complete clinical test battery`
 
 Commit clínico inmediatamente anterior:
 
@@ -156,6 +156,68 @@ Existe al menos una estructura identificada que podría necesitar nodo propio:
 - ligamento glenohumeral medio.
 
 No crear automáticamente salvo que el desarrollo clínico o anatómico actual lo requiera.
+
+
+## Bloque de codo completado
+
+Batería inicial de codo cerrada:
+
+`TEST-000020` → `TEST-000030`
+
+Total:
+
+- 11 tests clínicos.
+- 30 nodos anatómicos específicos de codo.
+
+Tests incluidos:
+
+- `TEST-000020 — Prueba de Cozen`
+- `TEST-000021 — Prueba de Mill`
+- `TEST-000022 — Prueba de Maudsley`
+- `TEST-000023 — Prueba del codo de golfista`
+- `TEST-000024 — Prueba de estrés en valgo`
+- `TEST-000025 — Prueba de estrés en varo`
+- `TEST-000026 — Prueba de estrés en valgo dinámico`
+- `TEST-000027 — Signo de Tinel del nervio cubital`
+- `TEST-000028 — Prueba de flexión del codo`
+- `TEST-000029 — Prueba del gancho`
+- `TEST-000030 — Prueba de elevación de la silla`
+
+Anatomía específica de codo creada:
+
+`STR-000230` → `STR-000259`
+
+Incluye:
+
+- bloque extensor lateral;
+- sistema radial y túnel radial;
+- supinador;
+- bloque flexor-pronador medial;
+- complejo ligamentoso medial;
+- complejo ligamentoso lateral;
+- nervio cubital y túnel cubital;
+- tendón distal del bíceps;
+- tuberosidad del radio.
+
+Durante la validación se corrigió `STR-000240 — Supinador` y se creó correctamente `STR-000241 — Epicóndilo medial del húmero`.
+
+Validaciones realizadas antes del commit:
+
+- 11/11 tests con ID correcto;
+- 30/30 STR con ID correcto;
+- sin IDs duplicados;
+- sin placeholders `[[TEST-*]]` o `[[STR-*]]`;
+- sin archivos sin `id:` o `title:`;
+- `git diff --check` limpio;
+- `git diff --cached --check` limpio.
+
+Principios mantenidos:
+
+1. Un test no equivale a un diagnóstico estructural.
+2. Diferenciar dolor, laxitud, aprehensión, síntomas neurales y debilidad.
+3. No duplicar nodos anatómicos ya existentes.
+4. Crear anatomía específica solo cuando aporta valor clínico, ecográfico o relacional.
+5. Reforzar posteriormente el conocimiento con ecografía, informes e imágenes reales.
 
 ## Próxima fase
 
