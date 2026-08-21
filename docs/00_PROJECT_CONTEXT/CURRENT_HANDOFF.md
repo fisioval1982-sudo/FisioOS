@@ -3,7 +3,7 @@ id: FISIOOS-CURRENT-HANDOFF
 title: FisioOS Current Handoff
 type: Project Handoff
 status: Active
-version: 1.1
+version: 1.2
 created: 2026-08-21
 updated: 2026-08-21
 ---
@@ -32,17 +32,26 @@ Rama: `main`
 
 HEAD confirmado:
 
-`bd2377de2848519ed8ce15443fe030488caf9fe3`
+`2c8e780be049efdc3e349e2d862b557afdf4f5f4`
 
 Último commit:
 
-`bd2377d — feat(elbow): add anatomy and complete clinical test battery`
+`2c8e780 — chore(obsidian): add Dataview and normalize anatomy metadata`
 
-Commit clínico inmediatamente anterior:
+Commits recientes relevantes:
 
-`130f9fd — feat(shoulder): complete instability labral and acromioclavicular test battery`
+- `1e1d44d — chore(knowledge): add templates and resolve provisional references`
+- `11f34e9 — feat(elbow): add initial pathology knowledge`
+- `8d1cdf9 — docs(project): update handoff after elbow knowledge block`
+- `bd2377d — feat(elbow): add anatomy and complete clinical test battery`
 
 El working tree estaba limpio después del último push antes de crear los documentos de contexto.
+
+Trabajo local pendiente y todavía no incorporado a Git:
+
+`knowledge/ultrasound/findings/elbow/`
+
+No incluirlo accidentalmente en commits de otros bloques.
 
 ## Trabajo clínico completado
 
@@ -218,20 +227,110 @@ Principios mantenidos:
 3. No duplicar nodos anatómicos ya existentes.
 4. Crear anatomía específica solo cuando aporta valor clínico, ecográfico o relacional.
 5. Reforzar posteriormente el conocimiento con ecografía, informes e imágenes reales.
+## Patología de codo
+
+Se creó el primer bloque de patología específica de codo:
+
+`PAT-000006` → `PAT-000012`
+
+Total:
+
+- 7 nodos de patología.
+
+Último nodo creado:
+
+`PAT-000012 — Rotura distal del bíceps braquial`
+
+Los nodos se encuentran actualmente en estado `Review`.
+
+Commit:
+
+`11f34e9 — feat(elbow): add initial pathology knowledge`
+
+## Plantillas y referencias provisionales
+
+Se crearon:
+
+- `templates/TEMPLATE-TEST-CLINICO.md`
+- `templates/TEMPLATE-ESTRUCTURA-ANATOMICA.md`
+
+Regla fijada:
+
+Las relaciones deben utilizar nodos reales cuando existan. No deben crearse wikilinks provisionales como `[[TEST-*]]` o `[[STR-*]]`.
+
+La comprobación posterior no detectó estos comodines pendientes dentro de `knowledge/`.
+
+Commit:
+
+`1e1d44d — chore(knowledge): add templates and resolve provisional references`
+
+## Obsidian y Dataview
+
+Dataview está instalado y operativo en el vault.
+
+Configuración adoptada:
+
+- Dataview declarado mediante `.obsidian/community-plugins.json`.
+- `.obsidian/plugins/` excluido de Git.
+- Consultas JavaScript desactivadas por el momento.
+- Uso inicial de consultas Dataview declarativas.
+
+Durante la validación se normalizó el campo `region:` de 9 nodos anatómicos antiguos de hombro.
+
+Estado actual:
+
+- 61 estructuras anatómicas totales.
+- 61/61 estructuras con campo `region:`.
+- `REG-000005` corresponde a `Miembro superior`.
+
+Commit:
+
+`2c8e780 — chore(obsidian): add Dataview and normalize anatomy metadata`
+
+## Índices dinámicos
+
+Se inició la navegación dinámica del conocimiento mediante Dataview.
+
+Primer índice creado:
+
+`knowledge/index/INDEX-SHOULDER.md`
+
+El índice de hombro consulta automáticamente:
+
+- anatomía;
+- tests clínicos;
+- patologías;
+- hallazgos ecográficos;
+- tratamientos;
+- ejercicios.
+
+Conteo actual:
+
+- Anatomía: 31 nodos.
+- Tests: 19 nodos.
+- Patologías: 4 nodos.
+- Hallazgos ecográficos: 6 nodos.
+- Tratamientos: 4 nodos.
+- Ejercicios: 4 nodos.
+
+Las consultas han sido comprobadas en Obsidian.
+
+`INDEX-SHOULDER.md` todavía no ha sido incorporado a Git.
+
 
 ## Próxima fase
 
-La primera batería de 19 tests de hombro está cerrada.
+Prioridad inmediata:
 
-Antes de continuar debe decidirse entre:
+1. terminar y validar `INDEX-SHOULDER.md`;
+2. replicar el patrón validado mediante `INDEX-ELBOW.md`;
+3. decidir y cerrar el estado del hallazgo ecográfico de codo pendiente en `knowledge/ultrasound/findings/elbow/`;
+4. desarrollar la capa ecográfica de hombro, especialmente `FIND-000001` → `FIND-000006`;
+5. continuar reduciendo deuda estructural detectada mediante consultas Dataview.
 
-1. enriquecer nodos anatómicos antiguos;
-2. desarrollar la capa de hallazgos ecográficos;
-3. continuar con baterías de tests de otras regiones;
-4. desarrollar patologías y hallazgos asociados al hombro;
-5. revisar arquitectura de consultas y Obsidian.
+No abrir una tercera región anatómica por el momento.
 
-La decisión debe tomarse según prioridad clínica y utilidad para FisioOS.
+La prioridad es aumentar profundidad e integración de hombro y codo antes de ampliar la cobertura regional.
 
 ## Comprobaciones al retomar
 
