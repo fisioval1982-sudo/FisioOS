@@ -3,9 +3,9 @@ id: FISIOOS-CURRENT-HANDOFF
 title: FisioOS Current Handoff
 type: Project Handoff
 status: Active
-version: 1.4
+version: 1.5
 created: 2026-08-21
-updated: 2026-09-18
+updated: 2026-09-19
 ---
 
 # FisioOS — Current Handoff
@@ -38,14 +38,16 @@ Estado confirmado:
 
 HEAD confirmado:
 
-`19e0ac73dea5d142ae732d0f5ec61ed2a520824f`
+`c28c9fb81a27a632968b51c574233818090038e2`
 
 Último commit:
 
-`19e0ac7 — feat(clinical): add CASE-000004 shoulder ultrasound case`
+`c28c9fb — feat(clinical): add CASE-000005 shoulder ultrasound case`
 
 Commits recientes relevantes:
 
+- `c28c9fb — feat(clinical): add CASE-000005 shoulder ultrasound case`
+- `75ba5a8 — docs(project): update handoff after CASE-000004`
 - `19e0ac7 — feat(clinical): add CASE-000004 shoulder ultrasound case`
 - `7270bfe — docs(project): update handoff after ultrasound case architecture`
 - `23f69c4 — feat(clinical): add CASE-000003 ultrasound case and images`
@@ -60,7 +62,7 @@ Commits recientes relevantes:
 
 Último estado confirmado del working tree:
 
-limpio después del push de `19e0ac7`.
+limpio después del push de `c28c9fb`.
 
 ---
 
@@ -522,6 +524,164 @@ No se documentan signos inequívocos de rotura parcial profunda ni rotura transf
 
 ---
 
+## CASE-000005
+
+Archivo:
+
+`corpus/cases/shoulder/CASE-000005.md`
+
+Título:
+
+`Hombro izquierdo — tendinopatía moderada del supraespinoso y bursopatía SASD`
+
+Estado:
+
+`Review`
+
+Contexto clínico:
+
+- dolor de hombro izquierdo;
+- profesión: pintor;
+- limitación funcional de la movilidad;
+- pérdida de fuerza;
+- ausencia de antecedente traumático agudo;
+- Test de Neer positivo;
+- Test de Jobe positivo;
+- cuadro descrito como subagudo-crónico;
+- contexto laboral con actividad manual repetitiva y trabajo por encima de la cabeza.
+
+Hallazgos del estudio ecográfico:
+
+- engrosamiento moderado del tendón del supraespinoso;
+- pérdida parcial del patrón fibrilar;
+- áreas hipoecoicas intratendinosas de predominio insercional y en la zona crítica;
+- ausencia de signos claros de rotura transfixiante completa;
+- leve engrosamiento de la bursa subacromial-subdeltoidea sin derrame importante;
+- disminución del espacio subacromial;
+- signos dinámicos sugestivos de conflicto mecánico funcional subacromial;
+- porción larga del bíceps sin signos evidentes de luxación ni tenosinovitis significativa;
+- subescapular e infraespinoso sin alteraciones estructurales relevantes claramente visibles;
+- ausencia de derrame glenohumeral significativo.
+
+Diagnóstico ecográfico estructurado:
+
+- `PAT-000001 — Tendinopatía del supraespinoso`
+- `PAT-000002 — Bursopatía subacromial-subdeltoidea`
+
+Hallazgos reutilizados:
+
+- `FIND-000001 — Hipoecogenicidad intratendinosa`
+- `FIND-000002 — Engrosamiento tendinoso`
+- `FIND-000003 — Pérdida parcial del patrón fibrilar`
+- `FIND-000005 — Disminución del espacio subacromial`
+- `FIND-000006 — Ausencia de rotura completa`
+
+Diagnóstico funcional documentado en el informe:
+
+`Síndrome subacromial con impingement mecánico asociado a tendinopatía del supraespinoso`
+
+Este diagnóstico funcional se conserva como parte del caso y no se creó automáticamente como nueva entidad `PAT`.
+
+No fue necesario crear nuevos nodos `STR`, `FIND` ni `PAT` para este caso.
+
+---
+
+## Imágenes de CASE-000005
+
+Se incorporaron tres imágenes:
+
+### IMG-000013
+
+`Corredera bicipital izquierda — corte transversal`
+
+Plano:
+
+`Transversal`
+
+Estructura principal:
+
+`STR-000204 — Porción larga del bíceps`
+
+Referencias anatómicas:
+
+- `STR-000261 — Tubérculo mayor del húmero`
+- `STR-000262 — Tubérculo menor del húmero`
+
+El tendón se encuentra centrado en la corredera bicipital.
+
+No se observa colección líquida peritendinosa significativa ni signos evidentes de desplazamiento en la captura estática.
+
+La ecogenicidad discretamente reducida y la definición fibrilar limitada se mantienen como observaciones potencialmente relacionadas con anisotropía y calidad de captura.
+
+No se asignó un `FIND` patológico específico.
+
+### IMG-000014
+
+`Tendón del subescapular izquierdo — corte transversal`
+
+Plano:
+
+`Transversal`
+
+Estructura principal:
+
+`STR-000203 — Tendón del subescapular`
+
+Referencias anatómicas:
+
+- `STR-000262 — Tubérculo menor del húmero`
+- `STR-000264 — Deltoides`
+- `STR-000265 — Cabeza del húmero`
+
+Hallazgo asociado:
+
+`FIND-000006 — Ausencia de rotura completa`
+
+El tendón mantiene continuidad y grosor aparentemente conservado.
+
+La arquitectura fascicular característica del subescapular en corte transversal no se interpretó como pérdida patológica del patrón fibrilar.
+
+No se observa líquido significativo alrededor del tendón ni distensión evidente de la bursa subcoracoidea en la captura.
+
+### IMG-000015
+
+`Tendón del supraespinoso izquierdo en inserción — corte longitudinal`
+
+Plano:
+
+`Longitudinal`
+
+Estructura principal:
+
+`STR-000201 — Tendón del supraespinoso`
+
+Referencias anatómicas:
+
+- `STR-000205 — Bursa subacromial-subdeltoidea`
+- `STR-000261 — Tubérculo mayor del húmero`
+- `STR-000264 — Deltoides`
+- `STR-000265 — Cabeza del húmero`
+
+Hallazgo asociado:
+
+`FIND-000006 — Ausencia de rotura completa`
+
+El supraespinoso mantiene continuidad hasta su inserción.
+
+Se observa discreta heterogeneidad e hipoecogenicidad insercional, compatible con posible anisotropía o cambios tendinosos leves.
+
+No se asignaron específicamente a esta captura:
+
+- `FIND-000001`
+- `FIND-000002`
+- `FIND-000003`
+
+porque los hallazgos del estudio completo no deben atribuirse automáticamente a una imagen estática cuando la captura aislada no permite establecerlos con suficiente certeza.
+
+No se identifican signos concluyentes de rotura parcial ni transfixiante en esta imagen aislada.
+
+---
+
 ## Almacenamiento de originales clínicos
 
 Decisión arquitectónica consolidada mediante:
@@ -728,8 +888,8 @@ Prioridad inmediata:
 1. actualizar, validar, commit y push de este `CURRENT_HANDOFF.md`;
 2. después continuar enriqueciendo el grafo mediante nuevos casos clínicos reales;
 3. mantener numeración global:
-   - siguiente CASE esperado: `CASE-000005`;
-   - siguiente IMG esperado: `IMG-000013`;
+   - siguiente CASE esperado: `CASE-000006`;
+   - siguiente IMG esperado: `IMG-000016`;
    - siguiente STR esperado, si realmente se necesita: `STR-000269`;
    - siguiente FIND esperado, si realmente se necesita: `FIND-000010`;
 4. comprobar siempre los namespaces reales antes de utilizar esos IDs;
@@ -767,15 +927,15 @@ Después:
 
 Último bloque clínico completado:
 
-`CASE-000004`
+`CASE-000005`
 
 Últimas imágenes incorporadas:
 
-`IMG-000008` → `IMG-000012`
+`IMG-000013` → `IMG-000015`
 
 Último commit clínico sincronizado:
 
-`19e0ac7 — feat(clinical): add CASE-000004 shoulder ultrasound case`
+`c28c9fb — feat(clinical): add CASE-000005 shoulder ultrasound case`
 
 Siguiente acción inmediata:
 
@@ -783,9 +943,9 @@ validar, commit y push de esta actualización de `CURRENT_HANDOFF.md`.
 
 Después:
 
-iniciar `CASE-000005` cuando exista un nuevo caso clínico real para incorporar.
+iniciar `CASE-000006` cuando exista un nuevo caso clínico real para incorporar.
 
 Numeración esperada:
 
-- `CASE-000005`
-- `IMG-000013`
+- `CASE-000006`
+- `IMG-000016`
