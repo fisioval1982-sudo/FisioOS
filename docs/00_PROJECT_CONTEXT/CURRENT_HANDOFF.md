@@ -3,7 +3,7 @@ id: FISIOOS-CURRENT-HANDOFF
 title: FisioOS Current Handoff
 type: Project Handoff
 status: Active
-version: 1.6
+version: 1.7
 created: 2026-08-21
 updated: 2026-09-19
 ---
@@ -38,14 +38,17 @@ Estado confirmado:
 
 HEAD confirmado:
 
-`536b2b043e6e8a7dd2641478d262b054255972bd`
+`45caecd99261343c7d25f0eb652d5279824a2672`
 
 Último commit:
 
-`536b2b0 — feat(clinical): add CASE-000006 shoulder ultrasound case`
+`45caecd — docs(clinical): add Drive source URLs for CASE-000003 to CASE-000006`
 
 Commits recientes relevantes:
 
+- `45caecd — docs(clinical): add Drive source URLs for CASE-000003 to CASE-000006`
+- `9d061ee — docs(clinical): update Drive provenance for CASE-000005 and CASE-000006`
+- `e3d54a7 — docs(project): update handoff after CASE-000006`
 - `536b2b0 — feat(clinical): add CASE-000006 shoulder ultrasound case`
 - `c28c9fb — feat(clinical): add CASE-000005 shoulder ultrasound case`
 - `75ba5a8 — docs(project): update handoff after CASE-000004`
@@ -63,7 +66,7 @@ Commits recientes relevantes:
 
 Último estado confirmado del working tree:
 
-limpio después del push de `536b2b0`.
+limpio después del push de `45caecd`.
 
 ---
 
@@ -938,7 +941,7 @@ Convenciones:
 - el informe se denomina `CASE-XXXXXX_REPORT.pdf`;
 - las imágenes se denominan `IMG-XXXXXX.jpg` o formato equivalente admitido.
 
-Para `CASE-000004`, las referencias `source_url` permanecen pendientes hasta registrar la ubicación correspondiente en Google Drive.
+Para `CASE-000003`, `CASE-000004`, `CASE-000005` y `CASE-000006`, `source_url` está registrado y apunta a la carpeta correspondiente del caso en Google Drive.
 
 ---
 
@@ -1085,7 +1088,7 @@ No completar por inferencia sin revisión clínica.
 
 ### Procedencia externa
 
-Permanecen pendientes algunos `source_url` de casos e imágenes almacenados externamente.
+Los `source_url` de `CASE-000003` a `CASE-000006` están registrados. La trazabilidad externa individual de entidades `IMG` permanece pendiente cuando proceda.
 
 No inventar URLs.
 
