@@ -3,9 +3,9 @@ id: FISIOOS-CURRENT-HANDOFF
 title: FisioOS Current Handoff
 type: Project Handoff
 status: Active
-version: 1.7
+version: 1.8
 created: 2026-08-21
-updated: 2026-09-19
+updated: 2026-10-02
 ---
 
 # FisioOS — Current Handoff
@@ -38,35 +38,30 @@ Estado confirmado:
 
 HEAD confirmado:
 
-`45caecd99261343c7d25f0eb652d5279824a2672`
+`75513b2f6dcb72ff3a790e14ca99d04eff3a5997`
 
 Último commit:
 
-`45caecd — docs(clinical): add Drive source URLs for CASE-000003 to CASE-000006`
+`75513b2 — docs(clinical): enrich FIND-000006 absence of complete tear`
 
 Commits recientes relevantes:
 
+- `75513b2 — docs(clinical): enrich FIND-000006 absence of complete tear`
+- `3575cc4 — fix(clinical): remove duplicate FIND-000003 frontmatter`
+- `cc095e8 — docs(clinical): enrich FIND-000005 subacromial space narrowing`
+- `5bc8085 — docs(clinical): enrich FIND-000004 bursal anechoic content`
+- `7aa2f3b — docs(clinical): enrich FIND-000003 fibrillar pattern loss`
+- `e8bc934 — docs(clinical): enrich FIND-000002 tendon thickening`
+- `7d1e625 — docs(clinical): enrich FIND-000001 hypoechogenicity`
+- `f1cfe36 — docs(project): update handoff after Drive traceability`
 - `45caecd — docs(clinical): add Drive source URLs for CASE-000003 to CASE-000006`
 - `9d061ee — docs(clinical): update Drive provenance for CASE-000005 and CASE-000006`
 - `e3d54a7 — docs(project): update handoff after CASE-000006`
 - `536b2b0 — feat(clinical): add CASE-000006 shoulder ultrasound case`
-- `c28c9fb — feat(clinical): add CASE-000005 shoulder ultrasound case`
-- `75ba5a8 — docs(project): update handoff after CASE-000004`
-- `19e0ac7 — feat(clinical): add CASE-000004 shoulder ultrasound case`
-- `7270bfe — docs(project): update handoff after ultrasound case architecture`
-- `23f69c4 — feat(clinical): add CASE-000003 ultrasound case and images`
-- `9e66087 — feat(clinical): update case template for ultrasound provenance`
-- `1da1a89 — feat(ontology): add clinical image entity and template`
-- `9766755 — docs(adr): define external storage for ultrasound cases`
-- `f0422e4 — fix(knowledge): link dynamic indexes to graph`
-- `c1a0034 — feat(ultrasound): add reusable intratendinous Doppler finding`
-- `09439ac — feat(knowledge): add elbow dynamic index`
-- `e285874 — feat(knowledge): add shoulder index and update handoff`
-- `2c8e780 — chore(obsidian): add Dataview and normalize anatomy metadata`
 
 Último estado confirmado del working tree:
 
-limpio después del push de `45caecd`.
+limpio después del push de `75513b2`.
 
 ---
 
@@ -221,18 +216,31 @@ La localización anatómica debe establecerse mediante relaciones con `CASE`, `I
 
 Los hallazgos deben describir observaciones ecográficas y no convertirse automáticamente en diagnósticos.
 
-### Precaución con FIND-000001
+ ### Normalización de FIND-000001 → FIND-000006
 
-`FIND-000001 — Hipoecogenicidad intratendinosa` posee un título genérico, pero su descripción histórica está ligada al supraespinoso y a los casos piloto.
+Los seis hallazgos ecográficos iniciales han sido enriquecidos y normalizados:
 
-No reutilizar automáticamente en otros tendones hasta normalizar este nodo.
+- `FIND-000001 — Hipoecogenicidad intratendinosa`
+- `FIND-000002 — Engrosamiento tendinoso`
+- `FIND-000003 — Pérdida parcial del patrón fibrilar`
+- `FIND-000004 — Contenido anecoico bursal leve`
+- `FIND-000005 — Disminución del espacio subacromial`
+- `FIND-000006 — Ausencia de rotura completa`
 
-En `IMG-000010` la heterogeneidad e hipoecogenicidad del subescapular no se vinculó a `FIND-000001` debido a:
+Los seis nodos se encuentran actualmente en `Review`, con modelado clínico ampliado y procedencia activa basada en el corpus clínico de FisioOS.
 
-- posible anisotropía;
-- incertidumbre de la captura aislada;
-- especificidad histórica del nodo.
+Principios consolidados durante esta normalización:
 
+- un hallazgo ecográfico no equivale automáticamente a un diagnóstico;
+- la hipoecogenicidad, el engrosamiento y la alteración del patrón fibrilar deben interpretarse considerando artefactos, especialmente anisotropía;
+- la pérdida parcial del patrón fibrilar no equivale por sí sola a una rotura parcial;
+- el contenido anecoico bursal leve no equivale automáticamente a bursitis ni a distensión bursal;
+- una medición estática del espacio subacromial no demuestra por sí sola conflicto mecánico funcional;
+- la ausencia de rotura completa no implica normalidad tendinosa y puede coexistir con tendinopatía, lesión parcial o lesión intrasustancia;
+- debe mantenerse separada la evidencia de una imagen estática de la interpretación derivada del estudio ecográfico completo;
+- no se han incorporado umbrales diagnósticos universales sin respaldo suficiente del corpus o de literatura específica.
+
+La revisión bibliográfica formal de estos nodos permanece pendiente antes de considerar su paso de `Review` a `Approved`.
 ---
 
 ## Arquitectura de casos clínicos ecográficos
@@ -1098,33 +1106,37 @@ No inventar URLs.
 
 Prioridad inmediata:
 
-1. actualizar, validar, commit y push de este `CURRENT_HANDOFF.md`;
-2. después continuar enriqueciendo el grafo mediante nuevos casos clínicos reales;
-3. mantener numeración global:
+1. validar, commit y push de esta actualización de `CURRENT_HANDOFF.md`;
+2. realizar una revisión controlada de la deuda estructural pendiente antes de abrir nuevas capas taxonómicas;
+3. mantener como tareas separadas:
+   - investigar la referencia a `FIND-000045`;
+   - revisar las referencias históricas a `Airtable / Hombro.zip` mediante una migración de procedencia controlada;
+   - mantener pendiente la clasificación del plano de `IMG-000006` hasta revisión clínica;
+   - valorar la trazabilidad externa individual de entidades `IMG` cuando proceda;
+   - realizar revisión bibliográfica de `FIND-000001` → `FIND-000006` antes de considerar su paso de `Review` a `Approved`;
+4. después continuar enriqueciendo el grafo mediante nuevos casos clínicos reales;
+5. mantener numeración global:
    - siguiente CASE esperado: `CASE-000007`;
    - siguiente IMG esperado: `IMG-000021`;
    - siguiente STR esperado, si realmente se necesita: `STR-000269`;
    - siguiente FIND esperado, si realmente se necesita: `FIND-000010`;
-4. comprobar siempre los namespaces reales antes de utilizar esos IDs;
-5. crear nuevas STR, FIND o PAT únicamente cuando el caso lo requiera;
-6. mantener explícita la diferencia entre imagen aislada y estudio ecográfico completo.
+6. comprobar siempre los namespaces reales antes de utilizar esos IDs;
+7. crear nuevas STR, FIND o PAT únicamente cuando el caso lo requiera;
+8. mantener explícita la diferencia entre imagen aislada y estudio ecográfico completo.
 
 No abrir nuevas capas taxonómicas de forma especulativa.
 
-La prioridad continúa siendo enriquecer FisioOS mediante casos reales, imágenes clínicas y relaciones verificables.
-
+La prioridad continúa siendo enriquecer FisioOS mediante conocimiento clínico reutilizable, casos reales, imágenes clínicas y relaciones verificables.
 ---
 
 ## Comprobaciones al retomar
 
 Antes de modificar nada:
 
-```bash
+bash
 git status --short
 git rev-parse HEAD
 git rev-parse origin/main
-
-```
 
 Después:
 
@@ -1140,6 +1152,10 @@ Después:
 
 Último bloque clínico completado:
 
+normalización y enriquecimiento de `FIND-000001` → `FIND-000006`.
+
+Último caso clínico incorporado:
+
 `CASE-000006`
 
 Últimas imágenes incorporadas:
@@ -1148,7 +1164,20 @@ Después:
 
 Último commit clínico sincronizado:
 
-`536b2b0 — feat(clinical): add CASE-000006 shoulder ultrasound case`
+`75513b2 — docs(clinical): enrich FIND-000006 absence of complete tear`
+
+Estado de los hallazgos normalizados:
+
+- `FIND-000001` → `Review 1.1`
+- `FIND-000002` → `Review 1.1`
+- `FIND-000003` → `Review 1.1`
+- `FIND-000004` → `Review 1.1`
+- `FIND-000005` → `Review 1.1`
+- `FIND-000006` → `Review 1.1`
+
+Durante este bloque también se corrigió el frontmatter duplicado de `FIND-000003` mediante:
+
+`3575cc4 — fix(clinical): remove duplicate FIND-000003 frontmatter`
 
 Siguiente acción inmediata:
 
@@ -1156,9 +1185,11 @@ validar, commit y push de esta actualización de `CURRENT_HANDOFF.md`.
 
 Después:
 
-iniciar `CASE-000007` cuando exista un nuevo caso clínico real para incorporar.
+abordar de forma controlada la deuda estructural pendiente y continuar con `CASE-000007` cuando exista un nuevo caso clínico real para incorporar.
 
-Numeración esperada:
+Numeración esperada, siempre pendiente de comprobar el namespace real antes de crear entidades:
 
 - `CASE-000007`
 - `IMG-000021`
+- `STR-000269`, solo si se necesita una nueva estructura;
+- `FIND-000010`, solo si existe evidencia suficiente para un nuevo hallazgo.
