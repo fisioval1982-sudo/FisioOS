@@ -29,4 +29,4 @@ status:
 version:
 ```
 
-Ejemplo: `PROCESS-000001 — Gestión de un caso ecográfico` puede contener `WORKFLOW-000001 — PDF + imágenes → extracción → validación → Airtable → Obsidian`.
+Ejemplo: `PROCESS-000001 — Gestión de un caso ecográfico` puede contener `WORKFLOW-000001 — PDF + imágenes → extracción → validación → conocimiento estructurado → Git`.

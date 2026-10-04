@@ -3,16 +3,21 @@ id: MODULE-002
 title: Hombro ecográfico - piloto
 status: Approved
 version: 1.0
-source: Airtable / Hombro.zip
+source: Hombro.zip
+historical_provenance: Airtable
 ---
 
 # MODULE-002 — Hombro ecográfico piloto
 
 ## Objetivo
 
-Validar el flujo completo de FisioOS:
+Documentar y validar el piloto inicial de hombro ecográfico que dio origen a este módulo.
 
-ZIP → extracción → Airtable → knowledge → Obsidian → GitHub.
+El flujo utilizado históricamente durante el piloto fue:
+
+`ZIP → extracción → Airtable → knowledge → Obsidian → GitHub`
+
+Este flujo se conserva únicamente como registro histórico. Airtable ya no forma parte de la arquitectura operativa vigente de FisioOS, conforme a `ADR-014`.
 
 ## Casos incluidos
 
@@ -70,4 +75,6 @@ ZIP → extracción → Airtable → knowledge → Obsidian → GitHub.
 
 ## Estado
 
-Piloto aprobado en Airtable y migrado a estructura `knowledge/`.
+Piloto histórico completado e incorporado a la estructura `knowledge/`.
+
+La aprobación realizada originalmente en Airtable forma parte de la procedencia histórica del módulo y no representa el sistema de aprobación vigente de FisioOS.

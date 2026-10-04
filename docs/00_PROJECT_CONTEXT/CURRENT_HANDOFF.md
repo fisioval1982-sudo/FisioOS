@@ -1060,31 +1060,28 @@ Flujo preferido para creación de nuevos nodos:
 
 ## Deuda estructural conocida
 
-### FIND-000045
+### FIND-000045 — resuelto
 
-Existe una referencia textual previa a `FIND-000045`, pero no se confirmó la existencia de un archivo correspondiente.
+La referencia a `FIND-000045` ha sido verificada.
 
-Debe investigarse posteriormente como posible referencia colgante o deuda histórica.
+No corresponde a una entidad clínica real ni a un archivo ausente. Es un ID ficticio utilizado en el ejemplo JSON de `docs/03_Architecture/SPEC-000.md`, junto con otros IDs igualmente ilustrativos.
 
-No utilizar `FIND-000045` hasta verificar su origen.
+Se ha actualizado `SPEC-000.md` para indicar explícitamente que los IDs de sus ejemplos JSON y FML son ficticios y no representan necesariamente entidades existentes en el registro de FisioOS.
 
-### FIND-000001
+Por tanto, `FIND-000045` no debe crearse, recuperarse ni reservarse como consecuencia de esa referencia.
 
-El título es genérico, pero su descripción histórica está ligada al supraespinoso y a los casos piloto.
 
-Debe valorarse una normalización futura antes de reutilizarlo sistemáticamente en otros tendones.
+### Airtable histórico — resuelto
 
-### Airtable histórico
+Las referencias heredadas a Airtable han sido revisadas mediante una migración de procedencia controlada.
 
-Existen nodos antiguos que todavía contienen referencias de procedencia a:
+`ADR-014` sustituye la arquitectura operativa definida en `ADR-007`: Airtable ya no forma parte del flujo operativo de FisioOS.
 
-`Airtable / Hombro.zip`
+Los nodos heredados del piloto que utilizaban `source: Airtable / Hombro.zip` han sido normalizados para conservar `Hombro.zip` como procedencia y describir Airtable únicamente como antecedente histórico.
 
-Airtable ya no forma parte del flujo actual de creación de casos.
+Las referencias explícitamente históricas en documentación, tests y hallazgos se conservan cuando aportan trazabilidad real.
 
-Estas referencias históricas no deben eliminarse de forma oportunista durante la creación de nuevos casos.
-
-Debe abordarse como una migración de procedencia separada y controlada.
+No interpretar ninguna referencia histórica a Airtable como dependencia activa del sistema.
 
 ### IMG-000006
 
@@ -1109,8 +1106,6 @@ Prioridad inmediata:
 1. validar, commit y push de esta actualización de `CURRENT_HANDOFF.md`;
 2. realizar una revisión controlada de la deuda estructural pendiente antes de abrir nuevas capas taxonómicas;
 3. mantener como tareas separadas:
-   - investigar la referencia a `FIND-000045`;
-   - revisar las referencias históricas a `Airtable / Hombro.zip` mediante una migración de procedencia controlada;
    - mantener pendiente la clasificación del plano de `IMG-000006` hasta revisión clínica;
    - valorar la trazabilidad externa individual de entidades `IMG` cuando proceda;
    - realizar revisión bibliográfica de `FIND-000001` → `FIND-000006` antes de considerar su paso de `Review` a `Approved`;

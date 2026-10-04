@@ -554,6 +554,7 @@ La IA no podrá:
 
 Toda entidad deberá poder representarse como JSON.
 
+> **Nota:** el siguiente bloque es un ejemplo ilustrativo del modelo de datos. Los IDs utilizados son ficticios y no representan necesariamente entidades existentes en el registro de FisioOS.
 ```json
 {
   "id": "PAT-000123",
@@ -589,7 +590,7 @@ FML significa FisioOS Modeling Language.
 Es el lenguaje interno para describir conocimiento.
 
 Ejemplo:
-
+> **Nota:** el siguiente bloque es un ejemplo ilustrativo de FML. Los IDs utilizados son ficticios y no representan necesariamente entidades existentes en el registro de FisioOS.
 ```yaml
 entity:
   id: STR-000145
