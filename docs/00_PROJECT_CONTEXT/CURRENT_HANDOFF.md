@@ -3,1188 +3,557 @@ id: FISIOOS-CURRENT-HANDOFF
 title: FisioOS Current Handoff
 type: Project Handoff
 status: Active
-version: 1.8
+version: 1.9
 created: 2026-08-21
-updated: 2026-10-02
+updated: 2026-10-23
 ---
 
 # FisioOS — Current Handoff
 
 ## Propósito
 
-Este documento describe el estado operativo inmediato de FisioOS.
+Estado operativo de FisioOS para retomar el proyecto sin depender del historial de conversación.
 
-Debe actualizarse al terminar una sesión o bloque importante de trabajo para permitir retomar el proyecto desde un nuevo chat sin depender del historial de conversación.
+Consultar también:
 
-Para el contexto estructural y las decisiones persistentes consultar:
+- `docs/00_PROJECT_CONTEXT/FISIOOS_MASTER_CONTEXT.md`
+- ADR aceptados.
+- Archivos reales del repositorio.
 
-`FISIOOS_MASTER_CONTEXT.md`
+Este documento resume el estado documentado; no sustituye la revisión de las entidades ni su validación clínica.
 
----
+## Repositorio y estado Git
 
-## Estado Git
+Repositorio local:
 
-Repositorio:
+`~/Documents/GitHub/FisiOS_v1`
 
-`FisiOS_v1`
+Remoto:
 
-Rama:
+https://github.com/fisioval1982-sudo/FisioOS.git
 
-`main`
+Rama: `main`.
 
-Estado confirmado:
+Último commit clínico confirmado y subido:
 
-`main == origin/main`
+`1ffff83 — docs(clinical): add CASE-000007 and ultrasound image records`
 
-HEAD confirmado:
+Último estado confirmado antes de editar este handoff:
 
-`75513b2f6dcb72ff3a790e14ca99d04eff3a5997`
+`## main...origin/main`
 
-Último commit:
+Árbol de trabajo limpio y rama sincronizada.
 
-`75513b2 — docs(clinical): enrich FIND-000006 absence of complete tear`
+Esta actualización del handoff todavía debe comprobarse, versionarse y subirse. No se presupone su commit ni su sincronización.
 
-Commits recientes relevantes:
+## Arquitectura vigente
 
-- `75513b2 — docs(clinical): enrich FIND-000006 absence of complete tear`
-- `3575cc4 — fix(clinical): remove duplicate FIND-000003 frontmatter`
-- `cc095e8 — docs(clinical): enrich FIND-000005 subacromial space narrowing`
-- `5bc8085 — docs(clinical): enrich FIND-000004 bursal anechoic content`
-- `7aa2f3b — docs(clinical): enrich FIND-000003 fibrillar pattern loss`
-- `e8bc934 — docs(clinical): enrich FIND-000002 tendon thickening`
-- `7d1e625 — docs(clinical): enrich FIND-000001 hypoechogenicity`
-- `f1cfe36 — docs(project): update handoff after Drive traceability`
-- `45caecd — docs(clinical): add Drive source URLs for CASE-000003 to CASE-000006`
-- `9d061ee — docs(clinical): update Drive provenance for CASE-000005 and CASE-000006`
-- `e3d54a7 — docs(project): update handoff after CASE-000006`
-- `536b2b0 — feat(clinical): add CASE-000006 shoulder ultrasound case`
+[[ADR-014]] sustituye la dependencia operativa de Airtable definida en ADR-007.
 
-Último estado confirmado del working tree:
+Distribución de responsabilidades:
 
-limpio después del push de `75513b2`.
+- Git y Markdown: conocimiento estructurado y versionado.
+- Obsidian: edición y navegación.
+- GitHub: copia remota e histórico.
+- Google Drive: binarios clínicos originales.
 
----
+Airtable no es una dependencia operativa. Sus referencias conservadas son históricas o de procedencia.
+
+Los originales PDF, imágenes y otros medios clínicos pesados permanecen fuera de Git conforme a [[ADR-008]] y [[ADR-013]].
+
+El repositorio conserva metadatos, relaciones, descripciones y trazabilidad.
+
+## Reglas de trabajo
+
+1. Trabajar paso a paso.
+2. Dar una única acción o comando cada vez cuando se trabaje con archivos o Git y esperar el resultado.
+3. No utilizar `git add .`.
+4. Stagear exclusivamente archivos concretos revisados.
+5. Comprobar contenido y estado antes del commit.
+6. Comprobar sincronización después del push.
+7. No inventar datos clínicos, referencias bibliográficas, URLs ni resultados.
+8. Mantener los nodos en `Review` mientras no estén suficientemente sustentados.
+9. No reutilizar IDs ni reservarlos a partir de ejemplos.
+10. Comprobar el namespace real antes de crear entidades.
+11. Evitar duplicados y conexiones especulativas.
+12. No incorporar identidad del paciente a los nodos anonimizados.
+13. No completar planos ni condiciones de adquisición por inferencia insuficientemente sustentada.
+
+En el terminal del usuario `rg` no está disponible. Utilizar `grep` o `git grep`.
+
+Para evitar el paginador:
+
+`git -C "$HOME/Documents/GitHub/FisiOS_v1" --no-pager ...`
+
+Los textos Markdown se pegan en Obsidian, no en la terminal.
+
+## Separación de afirmaciones clínicas
+
+Diferenciar siempre:
+
+1. Observación directa.
+2. Información del caso o del informe.
+3. Interpretación clínica.
+4. Inferencia.
+5. Evidencia científica.
+
+Una captura estática no verifica automáticamente las conclusiones del estudio completo ni sus maniobras dinámicas.
+
+La hipoecogenicidad o heterogeneidad aisladas no se convierten automáticamente en lesión estructural confirmada.
+
+Los tests clínicos no equivalen por sí solos a un diagnóstico estructural.
+
+Las relaciones FIND → TRT o EX no son indicaciones automáticas.
+
+La ecografía aporta información estructural. La decisión terapéutica integra síntomas, exploración, función, objetivos y tolerancia.
+
+Distinguir tratamiento propuesto, tratamiento aplicado y resultados documentados.
 
 ## Estado general del conocimiento
 
-FisioOS dispone actualmente de una base clínica estructurada para:
+La base estructurada incluye hombro, codo, anatomía, tests, patologías, hallazgos ecográficos, casos, imágenes, tratamientos y ejercicios.
 
-- hombro;
-- codo;
-- anatomía;
-- tests clínicos;
-- patologías;
-- hallazgos ecográficos;
-- casos clínicos;
-- imágenes clínicas;
-- tratamientos;
-- ejercicios.
+Modelo:
 
-Se utiliza Obsidian como interfaz del grafo y Dataview para navegación dinámica.
+- CASE: caso clínico.
+- IMG: imagen individual y su descripción.
+- STR: estructura anatómica.
+- FIND: hallazgo reutilizable.
+- PAT: entidad patológica.
+- TRT: intervención terapéutica.
+- EX: ejercicio.
 
-La arquitectura CASE + IMG se ha utilizado ya en cuatro casos ecográficos reales consecutivos:
+Plantillas:
 
-- `CASE-000003`
-- `CASE-000004`
-- `CASE-000005`
-- `CASE-000006`
+- `templates/TPL-CASE.md`
+- `templates/TPL-IMG.md`
 
----
+Ubicaciones principales:
 
-## Tests clínicos
+- Casos: `corpus/cases/shoulder/`
+- Imágenes: `knowledge/ultrasound/images/`
+- Tratamientos: `knowledge/treatment/shoulder/`
+- Ejercicios: `knowledge/exercise/shoulder/`
+- Anatomía de hombro: `knowledge/anatomy/upper_limb/shoulder/`
+- Patología de hombro: `knowledge/pathology/shoulder/`
 
-### Hombro
+## Anatomía y tests
 
-Batería completada:
+Tests de hombro documentados:
 
 `TEST-000001` → `TEST-000019`
 
-### Codo
-
-Batería completada:
+Tests de codo documentados:
 
 `TEST-000020` → `TEST-000030`
 
-Último TEST existente confirmado:
+Último TEST conocido: `TEST-000030`.
 
-`TEST-000030`
+Bloques anatómicos documentados:
 
-Principios de modelado:
+- Hombro: `STR-000201` → `STR-000229`.
+- Codo: `STR-000230` → `STR-000259`.
+- Incorporaciones posteriores de hombro: `STR-000260` → `STR-000268`.
 
-1. un test clínico no equivale a un diagnóstico estructural;
-2. diferenciar dolor, aprehensión, laxitud, debilidad y síntomas neurales;
-3. evitar sobreinterpretar pruebas aisladas;
-4. utilizar relaciones anatómicas reales y evitar placeholders.
+Referencias relevantes:
 
----
+- STR-000201: tendón del supraespinoso.
+- STR-000203: tendón del subescapular.
+- STR-000204: porción larga del bíceps.
+- STR-000205: bursa subacromial-subdeltoidea.
+- STR-000206: espacio subacromial.
+- STR-000260: bursa subcoracoidea.
+- STR-000261: tubérculo mayor del húmero.
+- STR-000262: tubérculo menor del húmero.
+- STR-000263: ligamento transverso del húmero.
+- STR-000264: deltoides.
+- STR-000265: cabeza del húmero.
+- STR-000266: apófisis coracoides.
+- STR-000267: espacio subcoracoideo.
+- STR-000268: acromion.
 
-## Anatomía
+STR-000263 permanece en Review con formulación anatómica cautelosa.
 
-### Hombro
+Último STR conocido: `STR-000268`.
 
-Bloque anatómico previo:
+Región utilizada: `REG-000005 — Miembro superior`.
 
-`STR-000201` → `STR-000229`
+Estos límites deben comprobarse de nuevo antes de asignar IDs.
 
-Estructuras incorporadas con `CASE-000003`:
+## Patologías y hallazgos
 
-- `STR-000260 — Bursa subcoracoidea`
-- `STR-000261 — Tubérculo mayor del húmero`
-
-Estructuras incorporadas con `CASE-000004`:
-
-- `STR-000262 — Tubérculo menor del húmero`
-- `STR-000263 — Ligamento transverso del húmero`
-- `STR-000264 — Deltoides`
-- `STR-000265 — Cabeza del húmero`
-- `STR-000266 — Apófisis coracoides`
-- `STR-000267 — Espacio subcoracoideo`
-- `STR-000268 — Acromion`
-
-`STR-000263` permanece en `Review` y utiliza una formulación anatómica cautelosa debido a la variabilidad y discusión anatómica sobre la consideración del ligamento transverso del húmero como estructura independiente.
-
-### Codo
-
-Bloque específico:
-
-`STR-000230` → `STR-000259`
-
-Último STR existente confirmado:
-
-`STR-000268`
-
-Región anatómica utilizada para miembro superior:
-
-`REG-000005 — Miembro superior`
-
-No crear nuevos IDs anatómicos sin comprobar previamente el namespace real.
-
----
-
-## Patología
-
-### Hombro
+Último PAT conocido: `PAT-000014`.
 
 Patologías relevantes:
 
-- `PAT-000001 — Tendinopatía del supraespinoso`
-- `PAT-000002 — Bursopatía subacromial-subdeltoidea`
-- `PAT-000013 — Bursopatía subcoracoidea`
+- PAT-000001: tendinopatía del supraespinoso.
+- PAT-000002: bursopatía subacromial-subdeltoidea.
+- PAT-000013: bursopatía subcoracoidea.
+- PAT-000014: rotura parcial del tendón del supraespinoso.
 
-### Codo
+PAT-000014 permanece en Review. Se creó con CASE-000006 y se relaciona en CASE-000007 con la interpretación del informe, sin afirmar que una captura aislada confirme la rotura.
 
-Bloque:
+Hallazgos existentes:
 
-`PAT-000006` → `PAT-000012`
+- FIND-000001: hipoecogenicidad intratendinosa.
+- FIND-000002: engrosamiento tendinoso.
+- FIND-000003: pérdida parcial del patrón fibrilar.
+- FIND-000004: contenido anecoico bursal leve.
+- FIND-000005: disminución del espacio subacromial.
+- FIND-000006: ausencia de rotura completa.
+- FIND-000007: señal Doppler intratendinosa.
+- FIND-000008: distensión bursal con contenido anecoico.
+- FIND-000009: irregularidad cortical insercional.
 
-Último PAT existente confirmado:
+Último FIND conocido: `FIND-000009`.
 
-`PAT-000014`
+FIND-000001–000006 fueron enriquecidos y permanecen en Review 1.1. Su revisión bibliográfica formal sigue pendiente antes de considerar Approved.
 
-Las patologías deben mantenerse separadas de los hallazgos ecográficos individuales.
+Commits de ese bloque:
 
-Un hallazgo aislado no implica automáticamente una entidad diagnóstica.
+- `7d1e625`: FIND-000001.
+- `e8bc934`: FIND-000002.
+- `7aa2f3b`: FIND-000003.
+- `5bc8085`: FIND-000004.
+- `cc095e8`: FIND-000005.
+- `75513b2`: FIND-000006.
+- `3575cc4`: corrección de frontmatter duplicado de FIND-000003.
 
----
+No se creó FIND-000010 durante la incorporación de CASE-000006 ni CASE-000007.
 
-## Hallazgos ecográficos
+### FIND-000045 — resuelto
 
-Hallazgos iniciales de hombro:
+Es un ID ficticio del ejemplo de `docs/03_Architecture/SPEC-000.md`.
 
-- `FIND-000001 — Hipoecogenicidad intratendinosa`
-- `FIND-000002 — Engrosamiento tendinoso`
-- `FIND-000003 — Pérdida parcial del patrón fibrilar`
-- `FIND-000004 — Contenido anecoico bursal leve`
-- `FIND-000005 — Disminución del espacio subacromial`
-- `FIND-000006 — Ausencia de rotura completa`
+No es una entidad ausente y no debe crearse ni reservarse.
 
-Hallazgos reutilizables posteriores:
+## Bloque completado: TRT y EX
 
-- `FIND-000007 — Señal Doppler intratendinosa`
-- `FIND-000008 — Distensión bursal con contenido anecoico`
-- `FIND-000009 — Irregularidad cortical insercional`
+Se enriquecieron los cuatro tratamientos y los cuatro ejercicios del piloto.
 
-Último FIND existente confirmado:
+Todos se mantienen en Review. El enriquecimiento documental no equivale a aprobación clínica ni a comprobación bibliográfica definitiva.
 
-`FIND-000009`
+### Tratamientos
 
-### Regla arquitectónica
+| ID | Título | Commit |
+| --- | --- | --- |
+| TRT-000001 | Control motor escapular | 52e83ca |
+| TRT-000002 | Fortalecimiento progresivo del manguito rotador | 01d52dc |
+| TRT-000003 | Reeducación del ritmo escapulohumeral | 82cdb62 |
+| TRT-000004 | Movilización escapular | 0f2fd6d |
 
-Los hallazgos reutilizables no deben duplicarse innecesariamente por estructura o caso.
+### Ejercicios
 
-La localización anatómica debe establecerse mediante relaciones con `CASE`, `IMG` y `STR`.
+| ID | Título | Commit |
+| --- | --- | --- |
+| EX-000001 | Rotación externa isométrica | 7c7ef93 |
+| EX-000002 | Abducción isométrica contra pared | ddca948 |
+| EX-000003 | Ejercicios pendulares | f3a9aa7 |
+| EX-000004 | Punches de serrato anterior | dd1cd12 |
 
-Los hallazgos deben describir observaciones ecográficas y no convertirse automáticamente en diagnósticos.
+Los ocho commits fueron subidos a main.
 
- ### Normalización de FIND-000001 → FIND-000006
+Principios mantenidos:
 
-Los seis hallazgos ecográficos iniciales han sido enriquecidos y normalizados:
+- Dosificación contextual, sin cifras universales inventadas.
+- Selección y progresión según objetivos, capacidad y respuesta.
+- Separación entre mecanismos propuestos y resultados demostrados.
+- No asumir una posición escapular universalmente ideal.
+- No atribuir analgesia automática a los isométricos.
+- No convertir relaciones documentales en prescripciones.
+- Registro de precauciones, suspensión y reevaluación.
+- Trazabilidad y límites de la evidencia.
 
-- `FIND-000001 — Hipoecogenicidad intratendinosa`
-- `FIND-000002 — Engrosamiento tendinoso`
-- `FIND-000003 — Pérdida parcial del patrón fibrilar`
-- `FIND-000004 — Contenido anecoico bursal leve`
-- `FIND-000005 — Disminución del espacio subacromial`
-- `FIND-000006 — Ausencia de rotura completa`
+Consultar cada ficha antes de reutilizar recomendaciones o referencias.
 
-Los seis nodos se encuentran actualmente en `Review`, con modelado clínico ampliado y procedencia activa basada en el corpus clínico de FisioOS.
+[[ADR-010]] establece el modelo de EX, incluida dosificación contextual y registro de contraindicaciones y criterios de suspensión.
 
-Principios consolidados durante esta normalización:
+La auditoría de octubre identificó TRT y EX como cuello de botella documental. Su enriquecimiento se completó; la validación sigue abierta.
 
-- un hallazgo ecográfico no equivale automáticamente a un diagnóstico;
-- la hipoecogenicidad, el engrosamiento y la alteración del patrón fibrilar deben interpretarse considerando artefactos, especialmente anisotropía;
-- la pérdida parcial del patrón fibrilar no equivale por sí sola a una rotura parcial;
-- el contenido anecoico bursal leve no equivale automáticamente a bursitis ni a distensión bursal;
-- una medición estática del espacio subacromial no demuestra por sí sola conflicto mecánico funcional;
-- la ausencia de rotura completa no implica normalidad tendinosa y puede coexistir con tendinopatía, lesión parcial o lesión intrasustancia;
-- debe mantenerse separada la evidencia de una imagen estática de la interpretación derivada del estudio ecográfico completo;
-- no se han incorporado umbrales diagnósticos universales sin respaldo suficiente del corpus o de literatura específica.
+## Casos anteriores conservados
 
-La revisión bibliográfica formal de estos nodos permanece pendiente antes de considerar su paso de `Review` a `Approved`.
----
+Los resúmenes siguientes son antecedentes documentales. No representan una nueva validación de sus conclusiones clínicas.
 
-## Arquitectura de casos clínicos ecográficos
+### CASE-000003
 
-Modelo consolidado:
+Hombro derecho; informe de tendinopatía del supraespinoso y bursopatía subcoracoidea.
 
-`CASE` → caso clínico estructurado.
+Imágenes: IMG-000004–000007.
 
-`IMG` → imagen clínica original individual asociada al caso.
+Generó STR-000260, STR-000261, PAT-000013 y FIND-000008.
 
-`STR` → estructura anatómica.
+IMG-000005 registra 1,01 cm como espacio subcoracoideo, no como grosor bursal.
 
-`FIND` → hallazgo ecográfico.
+IMG-000006 registra 0,98 cm como espacio subacromial; su plano sigue pendiente.
 
-`PAT` → entidad patológica.
+### CASE-000004
 
-Los casos integran:
+Hombro izquierdo; tendinopatía focal del supraespinoso y bursopatía SASD descritas en el informe.
 
-- contexto clínico;
-- exploración;
-- hallazgos ecográficos;
-- diagnóstico funcional;
-- diagnóstico ecográfico;
-- imágenes;
-- informe original;
-- correlación clínico-ecográfica;
-- tratamiento;
-- entidades relacionadas;
-- procedencia;
-- validación;
-- estado.
+Imágenes: IMG-000008–000012.
 
-Plantilla actual:
+Generó STR-000262–000268.
 
-`templates/TPL-CASE.md`
+IMG-000009 conserva el plano sin clasificar.
 
----
+Las variaciones tendinosas inespecíficas no se convirtieron automáticamente en FIND patológicos.
 
-## Entidad IMG
+### CASE-000005
 
-Entidad:
+Hombro izquierdo; pintor con limitación funcional y pérdida de fuerza.
 
-`IMG | Imagen clínica`
+Imágenes: IMG-000013–000015.
 
-Definición operativa:
+Se reutilizaron entidades existentes, sin crear nuevos STR, FIND o PAT.
 
-Imagen clínica original anonimizada asociada a un caso, destinada a documentación, clasificación, análisis e IA.
+Las conclusiones del informe se mantienen separadas del alcance de las capturas individuales.
 
-Plantilla:
+### CASE-000006
 
-`templates/TPL-IMG.md`
+Hombro derecho; dolor desde noviembre tras bajar una garrafa de aproximadamente 5 litros.
 
-Ubicación de metadatos:
+Imágenes: IMG-000016–000020.
 
-`knowledge/ultrasound/images/`
+Introdujo PAT-000014 en Review.
 
-Principio fundamental:
+La interpretación de lesión parcial procede de la integración del estudio descrito, sin confirmación inequívoca mediante una única captura.
 
-Una imagen estática solo debe contener los hallazgos atribuibles razonablemente a esa imagen.
+IMG-000017 registra 0,96 cm (9,6 mm).
 
-Las conclusiones procedentes del estudio ecográfico global deben identificarse como tales y no presentarse como inferencias exclusivas de una captura.
+No se creó FIND-000010 ni una patología nueva para los cambios acromioclaviculares.
 
-Cuando exista incertidumbre entre anisotropía y alteración tendinosa real, debe conservarse explícitamente la incertidumbre y evitar crear o asignar un `FIND` patológico sin evidencia suficiente.
+No confundir este caso con CASE-000007.
 
----
+## Último bloque clínico: CASE-000007
 
-## CASE-000003
+Commit:
 
-Archivo:
+`1ffff83 — docs(clinical): add CASE-000007 and ultrasound image records`
 
-`corpus/cases/shoulder/CASE-000003.md`
+Se incorporaron seis archivos:
 
-Título:
+- `corpus/cases/shoulder/CASE-000007.md`
+- `knowledge/ultrasound/images/IMG-000021.md`
+- `knowledge/ultrasound/images/IMG-000022.md`
+- `knowledge/ultrasound/images/IMG-000023.md`
+- `knowledge/ultrasound/images/IMG-000024.md`
+- `knowledge/ultrasound/images/IMG-000025.md`
 
-`Hombro derecho — tendinopatía del supraespinoso y bursitis subcoracoidea`
+Los seis nodos están en Review 0.1.
 
-Hallazgos principales:
+### Información del caso
 
-- tendinopatía del supraespinoso sin evidencia de rotura;
-- bursopatía subcoracoidea;
-- distensión bursal con contenido anecoico;
-- pruebas clínicas de hombro positivas;
-- resto del manguito evaluado dentro del estudio global.
+Hombro derecho doloroso desde septiembre tras cierre forzado de una puerta en contexto laboral.
 
-Anatomía generada:
+El informe recoge limitación funcional, Neer positivo y Jobe positivo.
 
-- `STR-000260 — Bursa subcoracoidea`
-- `STR-000261 — Tubérculo mayor del húmero`
+No constan año de inicio, fecha de exploración, edad, sexo, dominancia ni medidas funcionales iniciales.
 
-Patología generada:
+No completar estos datos por inferencia.
 
-- `PAT-000013 — Bursopatía subcoracoidea`
+### Interpretación del informe
 
-Hallazgo generado:
+El informe describe tendinopatía del supraespinoso con lesión parcial insercional de predominio articular/intrasustancia, sin rotura completa ni retracción, y cambios bursales leves.
 
-- `FIND-000008 — Distensión bursal con contenido anecoico`
+También describe reducción dinámica subacromial, cambios leves peritendinosos bicipitales y cambios degenerativos acromioclaviculares.
 
----
+Estas afirmaciones se registran como contenido del informe.
 
-## Imágenes de CASE-000003
+La relación con PAT-000001, PAT-000002 y PAT-000014 representa esa interpretación documental, sujeta a revisión.
 
-### IMG-000004
+No se asumieron:
 
-`Porción larga del bíceps derecho — corte transversal`
+- causalidad directa entre tests y cambios ecográficos;
+- origen traumático de todas las alteraciones;
+- predominio biomecánico demostrado;
+- capacidad tisular para una carga concreta;
+- pronóstico individual favorable por ausencia de rotura completa.
 
-Estructura:
+### Tratamiento
 
-`STR-000204`
+La orientación terapéutica se conserva como propuesta del informe.
 
-No se asignó FIND patológico específico.
+No constan aplicación, dosis ni resultados.
 
-### IMG-000005
+No se asignaron automáticamente TRT o EX.
 
-`Espacio subcoracoideo y tendón del subescapular derecho — corte transversal`
+### Imágenes
 
-Medición visible:
+| ID | Contenido | Dato o límite principal |
+| --- | --- | --- |
+| IMG-000021 | Bíceps derecho en corredera | Plano transversal; descripción local |
+| IMG-000022 | Espacio subcoracoideo derecho | 1,23 cm / 12,3 mm |
+| IMG-000023 | Tendón del subescapular derecho | Patrón fibrilar local |
+| IMG-000024 | Espacio subacromial derecho | 1,05 cm / 10,5 mm |
+| IMG-000025 | Supraespinoso derecho | Área focal de menor ecogenicidad señalada |
 
-`1,01 cm`
+El explorador confirmó que IMG-000022 mide el espacio subcoracoideo y que IMG-000024 mide el espacio subacromial.
 
-Interpretación:
+No se clasificaron las distancias como normales o disminuidas.
 
-ancho del espacio subcoracoideo.
+IMG-000025 no confirma por sí sola una rotura parcial ni cuantifica su extensión.
 
-No corresponde al espesor de la bursa.
+Los planos de IMG-000022–000025 siguen pendientes.
 
-### IMG-000006
+Las cinco fichas tienen `findings: []`.
 
-`Espacio subacromial y tendón del supraespinoso derecho`
+No se crearon nuevos STR, FIND ni PAT.
 
-Medición visible:
+### Procedencia externa
 
-`0,98 cm`
+Carpeta facilitada por el usuario:
 
-Interpretación:
+https://drive.google.com/drive/folders/13cdK0eqBZ3iXtPjxMam_F-M_AEDypjvP
 
-ancho del espacio subacromial.
+Referencia documental del informe:
 
-El campo `plane:` permanece pendiente de clasificación definitiva.
+`CASE-000007_REPORT.pdf`
 
-### IMG-000007
+Los source_url de CASE-000007 e IMG-000021–000025 apuntan a la carpeta, no a URLs individuales verificadas.
 
-`Tendón del supraespinoso derecho — corte transversal`
+No afirmar una verificación independiente del contenido de Drive.
 
-Hallazgo directamente atribuible:
+## Trazabilidad y almacenamiento
 
-`FIND-000001 — Hipoecogenicidad intratendinosa`
-
-La caracterización como tendinopatía pertenece a la integración del estudio completo.
-
----
-
-## CASE-000004
-
-Archivo:
-
-`corpus/cases/shoulder/CASE-000004.md`
-
-Título:
-
-`Hombro izquierdo — tendinopatía focal del supraespinoso y bursopatía SASD`
-
-Estado:
-
-`Review`
-
-Contexto clínico:
-
-- dolor de hombro izquierdo de larga evolución;
-- actividad deportiva y entrenamiento en gimnasio;
-- trabajo de oficina;
-- aumento del dolor y limitación funcional durante la fase aguda;
-- mayor sintomatología en elevación y gestos por encima de la cabeza.
-
-Hallazgos del estudio ecográfico:
-
-- tendón del supraespinoso con patrón fibrilar conservado en la mayor parte de su espesor;
-- pequeño foco de hipoecogenicidad intratendinosa;
-- sin rotura parcial descrita;
-- sin rotura completa;
-- mínima reacción de la bursa subacromial-subdeltoidea;
-- subescapular sin rotura estructural significativa en el estudio global;
-- porción larga del bíceps correctamente situada en la corredera;
-- infraespinoso sin alteraciones estructurales significativas;
-- sin calcificaciones tendinosas descritas;
-- sin derrame glenohumeral significativo.
-
-Diagnóstico ecográfico estructurado:
-
-- `PAT-000001 — Tendinopatía del supraespinoso`
-- `PAT-000002 — Bursopatía subacromial-subdeltoidea`
-
-Diagnóstico funcional documentado en el informe:
-
-`Síndrome subacromial de sobreuso`
-
-Este diagnóstico funcional se conserva como parte del caso y no se ha creado automáticamente como nueva entidad `PAT`.
-
----
-
-## Imágenes de CASE-000004
-
-Se crearon cinco imágenes:
-
-### IMG-000008
-
-`Corredera bicipital — corte transversal`
-
-Estructura principal:
-
-`STR-000204 — Porción larga del bíceps`
-
-Referencias anatómicas relevantes:
-
-- `STR-000211 — Subescapular`
-- `STR-000261 — Tubérculo mayor del húmero`
-- `STR-000262 — Tubérculo menor del húmero`
-- `STR-000263 — Ligamento transverso del húmero`
-- `STR-000264 — Deltoides`
-
-No se asignó FIND patológico específico.
-
-### IMG-000009
-
-`Espacio subcoracoideo — corte ecográfico`
-
-Estructura principal:
-
-`STR-000267 — Espacio subcoracoideo`
-
-Referencias:
-
-- `STR-000265 — Cabeza del húmero`
-- `STR-000203 — Tendón del subescapular`
-- `STR-000266 — Apófisis coracoides`
-- `STR-000264 — Deltoides`
-
-El plano no se documentó porque no se estableció con suficiente certeza.
-
-No se asignó FIND patológico específico.
-
-### IMG-000010
-
-`Tendón del subescapular en inserción — corte transversal`
-
-Estructura principal:
-
-`STR-000203 — Tendón del subescapular`
-
-Hallazgos asociados:
-
-- `FIND-000006 — Ausencia de rotura completa`
-- `FIND-000009 — Irregularidad cortical insercional`
-
-Se documentó heterogeneidad e hipoecogenicidad insercional, pero no se convirtió en `FIND-000001` debido a posible anisotropía y falta de certeza suficiente.
-
-No existe evidencia suficiente en esta captura aislada para afirmar rotura parcial.
-
-### IMG-000011
-
-`Supraespinoso y espacio subacromial — corte longitudinal`
-
-Plano registrado con cautela como probablemente longitudinal en la descripción técnica.
-
-Medición visible:
-
-`≈ 1,55 cm`
-
-Interpretación:
-
-medición del espacio subacromial según la referencia presente en la imagen.
-
-Hallazgo asociado:
-
-`FIND-000006 — Ausencia de rotura completa`
-
-La heterogeneidad fibrilar observada se mantiene como observación inespecífica por posible anisotropía.
-
-### IMG-000012
-
-`Supraespinoso en inserción sobre tubérculo mayor — corte longitudinal`
-
-Estructura principal:
-
-`STR-000201 — Tendón del supraespinoso`
-
-Hallazgo asociado:
-
-`FIND-000006 — Ausencia de rotura completa`
-
-El tendón mantiene continuidad hasta su inserción.
-
-La discreta heterogeneidad e hipoecogenicidad insercional no se convirtió automáticamente en un FIND debido a posible anisotropía o cambios tendinosos leves.
-
-No se documentan signos inequívocos de rotura parcial profunda ni rotura transfixiante en la captura aislada.
-
----
-
-## CASE-000005
-
-Archivo:
-
-`corpus/cases/shoulder/CASE-000005.md`
-
-Título:
-
-`Hombro izquierdo — tendinopatía moderada del supraespinoso y bursopatía SASD`
-
-Estado:
-
-`Review`
-
-Contexto clínico:
-
-- dolor de hombro izquierdo;
-- profesión: pintor;
-- limitación funcional de la movilidad;
-- pérdida de fuerza;
-- ausencia de antecedente traumático agudo;
-- Test de Neer positivo;
-- Test de Jobe positivo;
-- cuadro descrito como subagudo-crónico;
-- contexto laboral con actividad manual repetitiva y trabajo por encima de la cabeza.
-
-Hallazgos del estudio ecográfico:
-
-- engrosamiento moderado del tendón del supraespinoso;
-- pérdida parcial del patrón fibrilar;
-- áreas hipoecoicas intratendinosas de predominio insercional y en la zona crítica;
-- ausencia de signos claros de rotura transfixiante completa;
-- leve engrosamiento de la bursa subacromial-subdeltoidea sin derrame importante;
-- disminución del espacio subacromial;
-- signos dinámicos sugestivos de conflicto mecánico funcional subacromial;
-- porción larga del bíceps sin signos evidentes de luxación ni tenosinovitis significativa;
-- subescapular e infraespinoso sin alteraciones estructurales relevantes claramente visibles;
-- ausencia de derrame glenohumeral significativo.
-
-Diagnóstico ecográfico estructurado:
-
-- `PAT-000001 — Tendinopatía del supraespinoso`
-- `PAT-000002 — Bursopatía subacromial-subdeltoidea`
-
-Hallazgos reutilizados:
-
-- `FIND-000001 — Hipoecogenicidad intratendinosa`
-- `FIND-000002 — Engrosamiento tendinoso`
-- `FIND-000003 — Pérdida parcial del patrón fibrilar`
-- `FIND-000005 — Disminución del espacio subacromial`
-- `FIND-000006 — Ausencia de rotura completa`
-
-Diagnóstico funcional documentado en el informe:
-
-`Síndrome subacromial con impingement mecánico asociado a tendinopatía del supraespinoso`
-
-Este diagnóstico funcional se conserva como parte del caso y no se creó automáticamente como nueva entidad `PAT`.
-
-No fue necesario crear nuevos nodos `STR`, `FIND` ni `PAT` para este caso.
-
----
-
-## Imágenes de CASE-000005
-
-Se incorporaron tres imágenes:
-
-### IMG-000013
-
-`Corredera bicipital izquierda — corte transversal`
-
-Plano:
-
-`Transversal`
-
-Estructura principal:
-
-`STR-000204 — Porción larga del bíceps`
-
-Referencias anatómicas:
-
-- `STR-000261 — Tubérculo mayor del húmero`
-- `STR-000262 — Tubérculo menor del húmero`
-
-El tendón se encuentra centrado en la corredera bicipital.
-
-No se observa colección líquida peritendinosa significativa ni signos evidentes de desplazamiento en la captura estática.
-
-La ecogenicidad discretamente reducida y la definición fibrilar limitada se mantienen como observaciones potencialmente relacionadas con anisotropía y calidad de captura.
-
-No se asignó un `FIND` patológico específico.
-
-### IMG-000014
-
-`Tendón del subescapular izquierdo — corte transversal`
-
-Plano:
-
-`Transversal`
-
-Estructura principal:
-
-`STR-000203 — Tendón del subescapular`
-
-Referencias anatómicas:
-
-- `STR-000262 — Tubérculo menor del húmero`
-- `STR-000264 — Deltoides`
-- `STR-000265 — Cabeza del húmero`
-
-Hallazgo asociado:
-
-`FIND-000006 — Ausencia de rotura completa`
-
-El tendón mantiene continuidad y grosor aparentemente conservado.
-
-La arquitectura fascicular característica del subescapular en corte transversal no se interpretó como pérdida patológica del patrón fibrilar.
-
-No se observa líquido significativo alrededor del tendón ni distensión evidente de la bursa subcoracoidea en la captura.
-
-### IMG-000015
-
-`Tendón del supraespinoso izquierdo en inserción — corte longitudinal`
-
-Plano:
-
-`Longitudinal`
-
-Estructura principal:
-
-`STR-000201 — Tendón del supraespinoso`
-
-Referencias anatómicas:
-
-- `STR-000205 — Bursa subacromial-subdeltoidea`
-- `STR-000261 — Tubérculo mayor del húmero`
-- `STR-000264 — Deltoides`
-- `STR-000265 — Cabeza del húmero`
-
-Hallazgo asociado:
-
-`FIND-000006 — Ausencia de rotura completa`
-
-El supraespinoso mantiene continuidad hasta su inserción.
-
-Se observa discreta heterogeneidad e hipoecogenicidad insercional, compatible con posible anisotropía o cambios tendinosos leves.
-
-No se asignaron específicamente a esta captura:
-
-- `FIND-000001`
-- `FIND-000002`
-- `FIND-000003`
-
-porque los hallazgos del estudio completo no deben atribuirse automáticamente a una imagen estática cuando la captura aislada no permite establecerlos con suficiente certeza.
-
-No se identifican signos concluyentes de rotura parcial ni transfixiante en esta imagen aislada.
-
----
-## CASE-000006
-
-Archivo:
-
-`corpus/cases/shoulder/CASE-000006.md`
-
-Título:
-
-`Hombro derecho — tendinopatía y rotura parcial del supraespinoso con afectación subacromial`
-
-Estado:
-
-`Review`
-
-Contexto clínico:
-
-- dolor y afectación funcional del hombro derecho desde noviembre;
-- inicio tras esfuerzo al bajar una garrafa de agua de aproximadamente 5 litros;
-- `TEST-000001 — Neer` positivo;
-- `TEST-000002 — Jobe` positivo.
-
-Hallazgos del estudio ecográfico:
-
-- alteración del tendón del supraespinoso compatible con tendinopatía;
-- lesión estructural parcial del supraespinoso integrada a partir del estudio ecográfico completo;
-- ausencia de rotura completa o transfixiante;
-- ausencia de retracción tendinosa;
-- afectación reactiva leve-moderada de la bursa subacromial-subdeltoidea en el estudio global;
-- disminución del espacio subacromial;
-- reducción funcional del espacio subacromial durante la valoración dinámica, compatible con componente de conflicto mecánico;
-- discretas irregularidades corticales marginales de la articulación acromioclavicular compatibles con posibles cambios degenerativos leves;
-- subescapular continuo, sin defecto focal inequívoco compatible con rotura;
-- porción larga del bíceps continua en el segmento proximal evaluado.
-
-Diagnóstico ecográfico estructurado:
-
-- `PAT-000001 — Tendinopatía del supraespinoso`
-- `PAT-000002 — Bursopatía subacromial-subdeltoidea`
-- `PAT-000003 — Síndrome subacromial`
-- `PAT-000004 — Impingement mecánico funcional`
-- `PAT-000014 — Rotura parcial del tendón del supraespinoso`
-
-Nueva patología incorporada:
-
-`PAT-000014 — Rotura parcial del tendón del supraespinoso`
-
-Estado:
-
-`Review`
-
-Principio de modelado aplicado:
-
-La asignación de `PAT-000014` a `CASE-000006` procede de la integración del estudio ecográfico completo.
-
-Ninguna captura individual se utilizó por sí sola para afirmar de forma inequívoca la rotura parcial.
-
-No se creó `FIND-000010` porque las imágenes disponibles no muestran una discontinuidad parcial inequívoca que justifique todavía un nuevo hallazgo estructurado específico.
-
-Tampoco se creó una nueva patología para los cambios acromioclaviculares, ya que se mantienen como posibles cambios degenerativos leves sin establecer una artrosis acromioclavicular definitiva.
-
----
-
-## Imágenes de CASE-000006
-
-Se incorporaron cinco imágenes:
-
-### IMG-000016
-
-`Tendón del subescapular derecho — corte transversal`
-
-Plano:
-
-`Transversal`
-
-Estructura principal:
-
-`STR-000203 — Tendón del subescapular`
-
-Referencias anatómicas:
-
-- `STR-000262 — Tubérculo menor del húmero`
-- `STR-000264 — Deltoides`
-
-Hallazgos asociados:
-
-- `FIND-000006 — Ausencia de rotura completa`
-- `FIND-000009 — Irregularidad cortical insercional`
-
-El tendón mantiene continuidad.
-
-Se observa discreta heterogeneidad y menor ecogenicidad en algunos sectores, potencialmente condicionadas por anisotropía.
-
-No se asignaron `FIND-000001` ni `FIND-000003` a esta captura.
-
-### IMG-000017
-
-`Supraespinoso derecho y espacio subacromial — corte longitudinal`
-
-Plano:
-
-`Longitudinal`
-
-Estructura principal:
-
-`STR-000201 — Tendón del supraespinoso`
-
-Referencias anatómicas principales:
-
-- `STR-000205 — Bursa subacromial-subdeltoidea`
-- `STR-000206 — Espacio subacromial`
-- `STR-000261 — Tubérculo mayor del húmero`
-- `STR-000264 — Deltoides`
-- `STR-000265 — Cabeza del húmero`
-- `STR-000268 — Acromion`
-
-Medición:
-
-`0,96 cm (9,6 mm)`
-
-Hallazgos asociados:
-
-- `FIND-000005 — Disminución del espacio subacromial`
-- `FIND-000006 — Ausencia de rotura completa`
-
-La medición se conserva como dato objetivo de la captura.
-
-No se utiliza un valor de referencia aislado como criterio diagnóstico universal.
-
-La heterogeneidad y menor ecogenicidad tendinosa no se convirtieron automáticamente en `FIND-000001` ni `FIND-000003` debido a posible anisotropía.
-
-### IMG-000018
-
-`Fibras anteriores del supraespinoso derecho y espacio subacromial — corte longitudinal`
-
-Plano:
-
-`Longitudinal`
-
-Estructura principal:
-
-`STR-000201 — Tendón del supraespinoso`
-
-Hallazgos asociados:
-
-- `FIND-000006 — Ausencia de rotura completa`
-- `FIND-000009 — Irregularidad cortical insercional`
-
-Las fibras anteriores muestran alteración morfológica tipo “rueda pinchada”, discreta heterogeneidad fibrilar y áreas de menor ecogenicidad anterior-insercional.
-
-La imagen es compatible con posible afectación intrasustancia del supraespinoso.
-
-No se identifica en esta captura aislada un defecto focal suficientemente definido para modelarlo como discontinuidad parcial inequívoca.
-
-Por este motivo no se creó `FIND-000010`.
-
-### IMG-000019
-
-`Articulación acromioclavicular derecha — corte longitudinal`
-
-Plano:
-
-`Longitudinal`
-
-Estructura principal:
-
-`STR-000217 — Articulación acromioclavicular`
-
-La articulación mantiene alineación conservada.
-
-Se observan discretas irregularidades corticales marginales compatibles con posibles cambios degenerativos leves.
-
-No se aprecia derrame articular significativo, separación anormal ni signos evidentes de luxación en la captura.
-
-No se asignó `FIND-000009`, ya que este nodo representa irregularidad cortical insercional y la alteración observada en esta imagen corresponde a márgenes articulares acromioclaviculares.
-
-No se creó un nuevo `FIND` ni una nueva `PAT` específica.
-
-### IMG-000020
-
-`Porción larga del bíceps derecho — trayecto proximal intraarticular`
-
-Plano:
-
-`Longitudinal`
-
-Estructura principal:
-
-`STR-000204 — Porción larga del bíceps`
-
-Referencias anatómicas:
-
-- `STR-000264 — Deltoides`
-- `STR-000265 — Cabeza del húmero`
-
-Hallazgo asociado:
-
-`FIND-000006 — Ausencia de rotura completa`
-
-La porción larga del bíceps mantiene continuidad en el segmento proximal representado.
-
-La discreta heterogeneidad y menor ecogenicidad focal se consideran potencialmente condicionadas por la curvatura tendinosa y anisotropía.
-
-No se asignó `FIND-000001`.
-
-La valoración del origen labral y del anclaje bicipital superior se considera limitada mediante esta captura ecográfica aislada.
-
----
-
-## Almacenamiento de originales clínicos
-
-Decisión arquitectónica consolidada mediante:
-
-- `ADR-008`
-- `ADR-013`
-
-Los archivos binarios clínicos originales no se versionan en Git.
-
-Google Drive almacena:
-
-- informes PDF;
-- imágenes ecográficas originales;
-- otros medios clínicos pesados.
-
-FisioOS almacena:
-
-- metadatos;
-- IDs;
-- relaciones;
-- hallazgos;
-- interpretación estructurada;
-- trazabilidad.
-
----
-
-## Convención de almacenamiento en Google Drive
-
-Jerarquía adoptada:
+Convención:
 
 `FisioOS/Casos ecográficos/REGIÓN/ZONA/CASE-XXXXXX/`
 
-Ejemplo:
+Informe:
 
-`FisioOS/Casos ecográficos/Miembro superior/Hombro/CASE-000003/`
+`CASE-XXXXXX_REPORT.pdf`
 
-Convenciones:
+Imágenes:
 
-- cada CASE tiene un ID global permanente;
-- cada IMG tiene un ID global permanente;
-- los IMG no reinician numeración por caso ni por región;
-- los IDs nunca se reutilizan;
-- el identificador de Drive debe coincidir con el identificador de FisioOS;
-- el informe se denomina `CASE-XXXXXX_REPORT.pdf`;
-- las imágenes se denominan `IMG-XXXXXX.jpg` o formato equivalente admitido.
+`IMG-XXXXXX.jpg` o formato equivalente documentado.
 
-Para `CASE-000003`, `CASE-000004`, `CASE-000005` y `CASE-000006`, `source_url` está registrado y apunta a la carpeta correspondiente del caso en Google Drive.
+Los IDs de IMG son globales y no reinician por caso.
 
----
+Los source_url de CASE-000003–000007 están registrados como carpetas de procedencia.
 
-## Procedencia y trazabilidad
+La trazabilidad individual de imágenes permanece pendiente cuando proceda.
 
-Estándar:
+Campos de procedencia:
 
-`docs/04_Ontology/PROVENANCE-STANDARD.md`
+- source
+- source_type
+- source_file
+- source_url
+- created_by
+- reviewer
+- review_date
+- confidence
 
-Campos principales:
+Consultar `docs/04_Ontology/PROVENANCE-STANDARD.md`.
 
-- `source`
-- `source_type`
-- `source_file`
-- `source_url`
-- `created_by`
-- `reviewer`
-- `review_date`
-- `confidence`
+## Obsidian e índices
 
-Tipos conceptuales de afirmación:
-
-- hecho verificado;
-- afirmación procedente de fuente;
-- interpretación clínica;
-- inferencia del sistema;
-- pendiente de verificación.
-
-Una inferencia nunca debe presentarse como un hecho verificado.
-
-Debe mantenerse diferenciación entre:
-
-1. contenido del informe original;
-2. observación directa de una imagen;
-3. interpretación clínica;
-4. inferencia del sistema.
-
----
-
-## Índices dinámicos
-
-Disponibles:
+Índices existentes:
 
 - `knowledge/index/INDEX-SHOULDER.md`
 - `knowledge/index/INDEX-ELBOW.md`
 
-Ambos utilizan Dataview.
+Utilizan Dataview.
 
-Se añadieron wikilinks estructurales para evitar que los índices quedasen aislados en el grafo.
+Configuración documentada:
 
-Shoulder:
+- `.obsidian/community-plugins.json` versionado.
+- `.obsidian/plugins/` excluido de Git.
+- Consultas JavaScript desactivadas.
+- Preferencia por consultas declarativas.
 
-- `REG-000005`
-- `STR-000100`
+La navegación y configuración no se han vuelto a comprobar en este último bloque clínico.
 
-Elbow:
+## Pendientes vigentes
 
-- `REG-000005`
-- `STR-000230`
+### Validación clínica
 
----
+- Mantener TRT-000001–000004 y EX-000001–000004 en Review.
+- Completar comprobaciones clínicas y bibliográficas antes de valorar Approved.
+- Revisar bibliografía de FIND-000001–000006.
+- No interpretar estados Approved heredados de otros nodos como validación nueva.
 
-## Obsidian y Dataview
+### Imágenes
 
-Dataview está instalado y operativo.
+- Confirmar plano de IMG-000006.
+- Conservar pendiente el plano de IMG-000009 mientras no exista confirmación.
+- Confirmar planos de IMG-000022–000025.
+- Completar condiciones de adquisición y referencias de cálipers de IMG-000022 e IMG-000024.
+- Completar URLs individuales cuando proceda.
 
-Configuración:
+### CASE-000007
 
-- `.obsidian/community-plugins.json` versionado;
-- `.obsidian/plugins/` excluido de Git;
-- consultas JavaScript desactivadas;
-- utilización preferente de consultas Dataview declarativas.
+- Completar fechas y contexto clínico relevante.
+- Registrar síntomas, movilidad, fuerza, objetivos y capacidad funcional.
+- Documentar tratamiento aplicado y evolución si existen.
+- Mantener separadas observaciones, informe e interpretación.
+- No confirmar rotura o extensión únicamente desde IMG-000025.
 
-La anatomía existente fue normalizada para incorporar `region:`.
+### Mantenimiento
 
-Flujo preferido para creación de nuevos nodos:
+- Revisar de forma controlada descripciones heredadas excesivamente mecanicistas.
+- No modificar retrospectivamente casos o asignar tratamientos sin evidencia documental.
+- Mantener mantenimiento y cambios clínicos como bloques revisables separados.
 
-1. identificar la entidad o imagen;
-2. comprobar IDs y nodos existentes;
-3. crear el archivo Markdown en Obsidian;
-4. pegar el contenido completo;
-5. realizar una validación global;
-6. stagear únicamente archivos explícitamente revisados.
+## Numeración para futuras incorporaciones
 
----
+Últimos IDs conocidos al cierre del bloque:
 
-## Reglas de trabajo consolidadas
+- CASE-000007.
+- IMG-000025.
+- STR-000268.
+- FIND-000009.
+- PAT-000014.
+- TEST-000030.
+- TRT-000004.
+- EX-000004.
 
-1. No utilizar `git add .`.
-2. Stagear únicamente archivos explícitamente revisados.
-3. Verificar `git status` antes y después del staging.
-4. Verificar el contenido staged antes del commit.
-5. Verificar sincronización con `origin/main` antes de cerrar un bloque.
-6. No reutilizar IDs.
-7. Comprobar el namespace antes de crear CASE, IMG, STR, FIND, PAT o TEST.
-8. No crear wikilinks provisionales como `[[TEST-*]]` o `[[STR-*]]`.
-9. No duplicar anatomía existente.
-10. No confundir hallazgo ecográfico con diagnóstico.
-11. No confundir observación de una imagen estática con conclusión del estudio completo.
-12. Mantener separados originales binarios y conocimiento estructurado.
-13. Evitar sobreconectar el grafo.
-14. Registrar incertidumbre, procedencia e interpretación de forma explícita.
-15. No asignar un FIND cuando una alteración pueda explicarse razonablemente por anisotropía y no exista evidencia suficiente.
-16. No inferir el plano ecográfico cuando no pueda establecerse con suficiente certeza.
-17. No incorporar identidad del paciente a los nodos clínicos anonimizados.
+Siguientes candidatos, siempre sujetos a comprobación del namespace real:
 
----
+- CASE-000008.
+- IMG-000026.
+- STR-000269, solo si hace falta.
+- FIND-000010, solo si está suficientemente sustentado.
+- PAT-000015, solo si hace falta.
 
-## Deuda estructural conocida
+No se consideran reservados por aparecer en este documento.
 
-### FIND-000045 — resuelto
+## Verificación realizada del último bloque
 
-La referencia a `FIND-000045` ha sido verificada.
+- Lectura del contenido guardado de los seis archivos.
+- Revisión documental frente a los textos validados.
+- Staging de archivos explícitos.
+- `git diff --cached --check` sin errores.
+- Resumen staged: seis archivos y 1.080 líneas añadidas.
+- Commit 1ffff83 completado.
+- Push `dd1cd12..1ffff83 main -> main` correcto.
+- Estado final limpio y sincronizado.
 
-No corresponde a una entidad clínica real ni a un archivo ausente. Es un ID ficticio utilizado en el ejemplo JSON de `docs/03_Architecture/SPEC-000.md`, junto con otros IDs igualmente ilustrativos.
+No se afirma haber ejecutado un validador automático de YAML, IDs o enlaces.
 
-Se ha actualizado `SPEC-000.md` para indicar explícitamente que los IDs de sus ejemplos JSON y FML son ficticios y no representan necesariamente entidades existentes en el registro de FisioOS.
-
-Por tanto, `FIND-000045` no debe crearse, recuperarse ni reservarse como consecuencia de esa referencia.
-
-
-### Airtable histórico — resuelto
-
-Las referencias heredadas a Airtable han sido revisadas mediante una migración de procedencia controlada.
-
-`ADR-014` sustituye la arquitectura operativa definida en `ADR-007`: Airtable ya no forma parte del flujo operativo de FisioOS.
-
-Los nodos heredados del piloto que utilizaban `source: Airtable / Hombro.zip` han sido normalizados para conservar `Hombro.zip` como procedencia y describir Airtable únicamente como antecedente histórico.
-
-Las referencias explícitamente históricas en documentación, tests y hallazgos se conservan cuando aportan trazabilidad real.
-
-No interpretar ninguna referencia histórica a Airtable como dependencia activa del sistema.
-
-### IMG-000006
-
-El plano ecográfico permanece sin clasificar formalmente:
-
-`plane:`
-
-No completar por inferencia sin revisión clínica.
-
-### Procedencia externa
-
-Los `source_url` de `CASE-000003` a `CASE-000006` están registrados. La trazabilidad externa individual de entidades `IMG` permanece pendiente cuando proceda.
-
-No inventar URLs.
-
----
-
-## Próxima fase recomendada
-
-Prioridad inmediata:
-
-1. validar, commit y push de esta actualización de `CURRENT_HANDOFF.md`;
-2. realizar una revisión controlada de la deuda estructural pendiente antes de abrir nuevas capas taxonómicas;
-3. mantener como tareas separadas:
-   - mantener pendiente la clasificación del plano de `IMG-000006` hasta revisión clínica;
-   - valorar la trazabilidad externa individual de entidades `IMG` cuando proceda;
-   - realizar revisión bibliográfica de `FIND-000001` → `FIND-000006` antes de considerar su paso de `Review` a `Approved`;
-4. después continuar enriqueciendo el grafo mediante nuevos casos clínicos reales;
-5. mantener numeración global:
-   - siguiente CASE esperado: `CASE-000007`;
-   - siguiente IMG esperado: `IMG-000021`;
-   - siguiente STR esperado, si realmente se necesita: `STR-000269`;
-   - siguiente FIND esperado, si realmente se necesita: `FIND-000010`;
-6. comprobar siempre los namespaces reales antes de utilizar esos IDs;
-7. crear nuevas STR, FIND o PAT únicamente cuando el caso lo requiera;
-8. mantener explícita la diferencia entre imagen aislada y estudio ecográfico completo.
-
-No abrir nuevas capas taxonómicas de forma especulativa.
-
-La prioridad continúa siendo enriquecer FisioOS mediante conocimiento clínico reutilizable, casos reales, imágenes clínicas y relaciones verificables.
----
-
-## Comprobaciones al retomar
-
-Antes de modificar nada:
-
-bash
-git status --short
-git rev-parse HEAD
-git rev-parse origin/main
-
-Después:
-
-1. leer `FISIOOS_MASTER_CONTEXT.md`;
-2. leer `CURRENT_HANDOFF.md`;
-3. comprobar los últimos IDs reales;
-4. verificar el contenido del repositorio;
-5. continuar desde el estado encontrado y no desde recuerdos de conversaciones anteriores.
-
----
+No se afirma una validación clínica definitiva ni una revisión bibliográfica nueva durante la incorporación de CASE-000007.
 
 ## Punto exacto de reanudación
 
-Último bloque clínico completado:
+Último trabajo clínico incorporado y sincronizado:
 
-normalización y enriquecimiento de `FIND-000001` → `FIND-000006`.
+CASE-000007 e IMG-000021–000025.
 
-Último caso clínico incorporado:
+Bloque previo completado:
 
-`CASE-000006`
+Enriquecimiento documental de TRT-000001–000004 y EX-000001–000004.
 
-Últimas imágenes incorporadas:
+Acción inmediata:
 
-`IMG-000016` → `IMG-000020`
-
-Último commit clínico sincronizado:
-
-`75513b2 — docs(clinical): enrich FIND-000006 absence of complete tear`
-
-Estado de los hallazgos normalizados:
-
-- `FIND-000001` → `Review 1.1`
-- `FIND-000002` → `Review 1.1`
-- `FIND-000003` → `Review 1.1`
-- `FIND-000004` → `Review 1.1`
-- `FIND-000005` → `Review 1.1`
-- `FIND-000006` → `Review 1.1`
-
-Durante este bloque también se corrigió el frontmatter duplicado de `FIND-000003` mediante:
-
-`3575cc4 — fix(clinical): remove duplicate FIND-000003 frontmatter`
-
-Siguiente acción inmediata:
-
-validar, commit y push de esta actualización de `CURRENT_HANDOFF.md`.
+Comprobar, versionar y subir esta actualización de CURRENT_HANDOFF.md siguiendo el flujo de un comando cada vez.
 
 Después:
 
-abordar de forma controlada la deuda estructural pendiente y continuar con `CASE-000007` cuando exista un nuevo caso clínico real para incorporar.
+Resolver los pendientes clínicos y documentales de forma controlada o incorporar un nuevo caso real según la prioridad indicada por el usuario.
 
-Numeración esperada, siempre pendiente de comprobar el namespace real antes de crear entidades:
+Antes de cualquier nueva incorporación:
 
-- `CASE-000007`
-- `IMG-000021`
-- `STR-000269`, solo si se necesita una nueva estructura;
-- `FIND-000010`, solo si existe evidencia suficiente para un nuevo hallazgo.
+1. Leer el contexto maestro y este handoff.
+2. Comprobar estado Git.
+3. Verificar archivos y namespaces reales.
+4. Continuar desde el estado encontrado.
