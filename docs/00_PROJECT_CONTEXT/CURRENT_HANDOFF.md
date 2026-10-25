@@ -3,9 +3,9 @@ id: FISIOOS-CURRENT-HANDOFF
 title: FisioOS Current Handoff
 type: Project Handoff
 status: Active
-version: 1.11
+version: 1.12
 created: 2026-08-21
-updated: 2026-10-24
+updated: 2026-10-25
 ---
 
 # FisioOS — Current Handoff
@@ -36,17 +36,17 @@ Rama: `main`.
 
 Último commit confirmado y subido:
 
-`115cbcc — docs(clinical): confirm IMG-000022 plane and update case and handoff`
+`cb0b9a6 — docs(clinical): confirm IMG-000023 plane and update case and handoff`
 
 Ese commit incorporó:
 
-- IMG-000022 en Review 0.2.
-- CASE-000007 en Review 0.2.
-- CURRENT_HANDOFF en versión 1.10.
+- IMG-000023 en Review 0.2.
+- CASE-000007 en Review 0.3.
+- CURRENT_HANDOFF en versión 1.11.
 
 Push confirmado:
 
-`ae09b86..115cbcc main -> main`
+`115cbcc..cb0b9a6 main -> main`
 
 Después se comprobó:
 
@@ -56,10 +56,12 @@ El árbol de trabajo estaba limpio y la rama sincronizada en esa comprobación.
 
 Posteriormente se guardaron y revisaron cambios locales en:
 
-- `knowledge/ultrasound/images/IMG-000023.md`: Review 0.2.
-- `corpus/cases/shoulder/CASE-000007.md`: Review 0.3.
+- `knowledge/ultrasound/images/IMG-000024.md`: Review 0.2.
+- `corpus/cases/shoulder/CASE-000007.md`: Review 0.4.
 
-Esta actualización del handoff acompaña la confirmación específica del plano de IMG-000023.
+Esta actualización del handoff acompaña la confirmación específica del plano y de la identificación del supraespinoso en IMG-000024.
+
+La confirmación del explorador se registró el 2026-10-24. Su incorporación a CASE-000007 0.4 y a este handoff corresponde al 2026-10-25.
 
 Los cambios actuales todavía requieren comprobación final, staging explícito, commit y push.
 
@@ -110,6 +112,8 @@ El usuario prefiere recibir el Markdown completo para sustituir el contenido de 
 
 Los comandos Git se ejecutan en Terminal.
 
+Diferenciar la fecha de una confirmación del explorador, la fecha de actualización documental y la fecha de exploración clínica.
+
 ## Separación de afirmaciones clínicas
 
 Diferenciar siempre:
@@ -129,6 +133,10 @@ Los tests clínicos no equivalen por sí solos a un diagnóstico estructural.
 Una confirmación anatómica del explorador debe registrarse como tal, diferenciada de la observación directa.
 
 La confirmación del plano de una imagen no se traslada automáticamente a otra captura.
+
+La orientación longitudinal respecto a un tendón no describe necesariamente la dirección de una línea de medición.
+
+La confirmación del plano no completa las referencias de los cálipers ni estandariza por sí misma una medición.
 
 Las relaciones FIND → TRT o EX no son indicaciones automáticas.
 
@@ -368,15 +376,15 @@ Se incorporaron seis archivos:
 
 Los seis nodos se incorporaron en Review 0.1.
 
-Estado documental tras las revisiones guardadas del 2026-10-24:
+Estado documental al preparar este handoff el 2026-10-25:
 
 | Entidad | Estado | Versión | Situación |
 | --- | --- | --- | --- |
-| CASE-000007 | Review | 0.3 | Cambio local revisado; pendiente de commit |
+| CASE-000007 | Review | 0.4 | Cambio local revisado; pendiente de commit |
 | IMG-000021 | Review | 0.1 | Sin cambios en este bloque |
 | IMG-000022 | Review | 0.2 | Sincronizada mediante 115cbcc |
-| IMG-000023 | Review | 0.2 | Cambio local revisado; pendiente de commit |
-| IMG-000024 | Review | 0.1 | Plano pendiente |
+| IMG-000023 | Review | 0.2 | Sincronizada mediante cb0b9a6 |
+| IMG-000024 | Review | 0.2 | Cambio local revisado; pendiente de commit |
 | IMG-000025 | Review | 0.1 | Plano pendiente |
 
 ### Información del caso
@@ -422,7 +430,7 @@ No se asignaron automáticamente TRT o EX.
 | IMG-000021 | Bíceps derecho en corredera | Plano transversal; descripción local |
 | IMG-000022 | Espacio subcoracoideo derecho | 1,23 cm / 12,3 mm; longitudinal respecto al subescapular, confirmado por el explorador |
 | IMG-000023 | Tendón del subescapular derecho | Patrón fibrilar local; plano longitudinal confirmado específicamente por el explorador |
-| IMG-000024 | Espacio subacromial derecho | 1,05 cm / 10,5 mm; plano pendiente |
+| IMG-000024 | Espacio subacromial derecho | 1,05 cm / 10,5 mm; longitudinal respecto al supraespinoso, confirmado por el explorador |
 | IMG-000025 | Supraespinoso derecho | Área focal de menor ecogenicidad señalada; plano pendiente |
 
 El explorador confirmó que IMG-000022 mide el espacio subcoracoideo y que IMG-000024 mide el espacio subacromial.
@@ -431,7 +439,7 @@ No se clasificaron las distancias como normales o disminuidas.
 
 IMG-000025 no confirma por sí sola una rotura parcial ni cuantifica su extensión.
 
-Los planos de IMG-000024 e IMG-000025 siguen pendientes.
+En este caso, únicamente el plano de IMG-000025 sigue pendiente de confirmación.
 
 Las cinco fichas conservan `findings: []`.
 
@@ -474,33 +482,75 @@ La confirmación del plano no estandariza por sí misma la medición ni equivale
 
 Este bloque se completó y sincronizó mediante 115cbcc, incluyendo el handoff 1.10.
 
-### Revisión de IMG-000023 — cambios locales
+### Revisión de IMG-000023 — completada y sincronizada
 
 El 2026-10-24, el explorador confirmó específicamente un corte longitudinal del tendón del subescapular en IMG-000023.
 
 La confirmación corresponde a esta captura y no procede de trasladar el plano de IMG-000022.
 
-IMG-000023 pasa a versión 0.2:
+IMG-000023 pasó a versión 0.2:
 
-- completa `plane: Longitudinal`;
-- registra la confirmación específica del explorador;
-- retira el plano de los datos pendientes;
-- conserva STR-000203, `findings: []` y Review;
-- mantiene separadas la observación local y la descripción global del informe.
+- completó `plane: Longitudinal`;
+- registró la confirmación específica del explorador;
+- retiró el plano de los datos pendientes;
+- conservó STR-000203, `findings: []` y Review;
+- mantuvo separadas la observación local y la descripción global del informe.
 
 La confirmación del plano no demuestra integridad de todo el tendón, ausencia de lesión ni capacidad de carga.
 
-CASE-000007 pasa a versión 0.3:
+CASE-000007 pasó a versión 0.3:
 
-- incorpora esta confirmación en fuentes, descripción de la captura y procedencia;
-- retira IMG-000023 de los planos pendientes actuales;
-- mantiene pendientes IMG-000024 e IMG-000025;
-- conserva el historial de la versión 0.2;
+- incorporó esta confirmación en fuentes, descripción de la captura y procedencia;
+- retiró IMG-000023 de los planos pendientes de esa versión;
+- mantuvo pendientes IMG-000024 e IMG-000025 en aquella revisión;
+- conservó el historial de la versión 0.2;
+- mantuvo estructuras, patologías atribuidas al informe, mediciones y Review.
+
+Este bloque se completó y sincronizó mediante cb0b9a6, incluyendo el handoff 1.11.
+
+### Revisión de IMG-000024 — cambios locales
+
+El 2026-10-24, el explorador confirmó específicamente:
+
+- corte longitudinal respecto al tendón del supraespinoso;
+- identificación del tendón a su salida por el espacio subacromial.
+
+La referencia a su salida se conserva como descripción anatómica aportada por el explorador. No equivale a observar deslizamiento mediante una secuencia dinámica.
+
+IMG-000024 pasa a versión 0.2:
+
+- completa `plane: Longitudinal`;
+- añade STR-000201 a las estructuras relacionadas;
+- registra la confirmación específica del explorador;
+- retira el plano de los datos pendientes;
+- conserva 1,05 cm (10,5 mm);
+- conserva `findings: []` y Review.
+
+No se confirma mediante esta actualización:
+
+- reducción patológica del espacio;
+- compresión sintomática;
+- alteración dinámica;
+- integridad global del supraespinoso;
+- capacidad de carga;
+- indicación terapéutica.
+
+La posición del brazo, la elevación o rotación, las referencias precisas de los cálipers y el protocolo de medición siguen pendientes.
+
+No se presupone que el valor represente una distancia acromiohumeral estandarizada sin completar esas condiciones.
+
+CASE-000007 pasa a versión 0.4 el 2026-10-25:
+
+- incorpora la confirmación del explorador registrada el 2026-10-24;
+- actualiza fuentes, descripción de IMG-000024 y procedencia;
+- retira IMG-000024 de los planos pendientes actuales;
+- mantiene pendiente IMG-000025;
+- conserva los historiales 0.2 y 0.3;
 - mantiene estructuras, patologías atribuidas al informe, mediciones y Review.
 
-La enumeración de planos pendientes del historial 0.2 describe el estado de aquella revisión. No debe confundirse con los pendientes actuales.
+Las enumeraciones de planos pendientes de los historiales 0.2 y 0.3 describen el estado existente en cada revisión. No deben confundirse con los pendientes actuales.
 
-Los cambios de IMG-000023 y CASE-000007 se guardaron y revisaron mediante diff.
+Los cambios de IMG-000024 y CASE-000007 se guardaron y revisaron mediante diff.
 
 Su commit y push siguen pendientes al redactar esta actualización.
 
@@ -582,10 +632,10 @@ La navegación y configuración no se han vuelto a comprobar durante este bloque
 
 - Confirmar plano de IMG-000006.
 - Conservar pendiente el plano de IMG-000009 mientras no exista confirmación.
-- Confirmar planos de IMG-000024 e IMG-000025.
+- Confirmar plano de IMG-000025.
 - Completar condiciones de adquisición y referencias de cálipers de IMG-000022 e IMG-000024.
 - Completar URLs individuales cuando proceda.
-- Mantener IMG-000022 e IMG-000023 en Review aunque sus planos ya estén confirmados.
+- Mantener IMG-000022, IMG-000023 e IMG-000024 en Review aunque sus planos ya estén confirmados.
 
 ### CASE-000007
 
@@ -614,7 +664,7 @@ La navegación y configuración no se han vuelto a comprobar durante este bloque
 - TRT-000004.
 - EX-000004.
 
-Las revisiones de planos del 2026-10-24 no crean entidades ni consumen nuevos IDs.
+Las revisiones de planos del 2026-10-24 y su integración documental posterior no crean entidades ni consumen nuevos IDs.
 
 Siguientes candidatos, siempre sujetos a comprobación del namespace real:
 
@@ -656,20 +706,33 @@ No se consideran reservados por aparecer en este documento.
 - Push `ae09b86..115cbcc main -> main` correcto.
 - Estado final limpio y sincronizado.
 
+### Confirmación de IMG-000023 y handoff 1.11
+
+- Revisión de los diffs de IMG-000023, CASE-000007 y CURRENT_HANDOFF.
+- `git diff --check` sin errores en los tres archivos.
+- Staging explícito de esos archivos.
+- `git diff --cached --check` sin errores.
+- Resumen staged: tres archivos, 176 inserciones y 63 eliminaciones.
+- Commit cb0b9a6 completado.
+- Push `115cbcc..cb0b9a6 main -> main` correcto.
+- Estado final limpio y sincronizado.
+
 Estas comprobaciones corresponden a esos bloques anteriores, no a los cambios locales posteriores.
 
 ## Verificación del bloque actual
 
 Se han leído y revisado mediante diff los cambios guardados de:
 
-- IMG-000023, versión 0.2.
-- CASE-000007, versión 0.3.
+- IMG-000024, versión 0.2.
+- CASE-000007, versión 0.4.
 
-Los cambios incorporan la confirmación específica del plano longitudinal de IMG-000023 y mantienen Review.
+Los cambios incorporan la confirmación específica del plano longitudinal respecto al supraespinoso en IMG-000024 y mantienen Review.
 
-El caso conserva el historial de la versión 0.2 y actualiza sus pendientes actuales.
+La medición permanece en 1,05 cm (10,5 mm), sin clasificación patológica ni asignación automática de FIND.
 
-Esta versión 1.11 del handoff se prepara para acompañar ese bloque.
+El caso conserva los historiales de las versiones 0.2 y 0.3 y actualiza sus pendientes actuales.
+
+Esta versión 1.12 del handoff se prepara para acompañar ese bloque.
 
 Quedan pendientes:
 
@@ -690,7 +753,7 @@ No se afirma validación clínica definitiva ni revisión bibliográfica nueva d
 
 Último commit confirmado y sincronizado:
 
-`115cbcc`
+`cb0b9a6`
 
 Último caso incorporado:
 
@@ -698,13 +761,13 @@ CASE-000007, con IMG-000021–000025, mediante 1ffff83.
 
 Última revisión sincronizada del caso:
 
-Review 0.2 mediante 115cbcc.
+Review 0.3 mediante cb0b9a6.
 
 Trabajo local posterior:
 
-- IMG-000023: Review 0.2, plano longitudinal respecto al subescapular confirmado específicamente.
-- CASE-000007: Review 0.3, actualizado para reflejar esa confirmación.
-- CURRENT_HANDOFF: actualización propuesta a versión 1.11.
+- IMG-000024: Review 0.2, plano longitudinal respecto al supraespinoso confirmado específicamente.
+- CASE-000007: Review 0.4, actualizado para reflejar esa confirmación.
+- CURRENT_HANDOFF: actualización propuesta a versión 1.12.
 
 Acción inmediata:
 
@@ -714,7 +777,7 @@ No asumir commit ni push hasta comprobar sus resultados.
 
 Después:
 
-Continuar con la confirmación del plano de IMG-000024 y posteriormente IMG-000025, o con otra prioridad indicada por el usuario.
+Continuar con la confirmación del plano de IMG-000025, o con otra prioridad indicada por el usuario.
 
 Las condiciones de adquisición y medición pendientes se mantienen separadas de la confirmación de los planos.
 
